@@ -1,0 +1,58 @@
+/**
+ * @section SVGs
+ * SVG icon sprite styling.
+ * @link http://css-tricks.com/svg-sprites-use-better-icon-fonts/
+ * @link http://css-tricks.com/svg-use-external-source/
+ */
+
+/**
+ * Base styles
+ */
+.icon {
+	display: inline-block;
+	fill: currentColor;
+	height: 0;
+	width: 0;
+
+	.svg & {
+		height: 1em;
+		width: 1em;
+	}
+}
+
+
+/**
+ * Icon sizes
+ */
+
+.svg .icon-large {
+	height: 2em;
+	width: 2em;
+}
+
+.svg .icon-xlarge {
+	height: 3em;
+	width: 3em;
+}
+
+
+/**
+ * Icon colors
+ */
+
+.icon-black { fill: $color-black; }
+.icon-gray { fill: $color-gray-dark; }
+.icon-primary { fill: $color-primary; }
+.icon-secondary { fill: $color-secondary; }
+.icon-tertiary { fill: $color-tertiary; }
+
+a:hover .icon-link {
+	fill: darken( $color-primary, 15% );
+}
+
+/**
+ * Hide fallback text if browser supports SVG
+ */
+.svg .icon-fallback-text {
+	@extend .screen-reader;
+}

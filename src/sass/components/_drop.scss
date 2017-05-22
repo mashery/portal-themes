@@ -1,0 +1,115 @@
+/**
+ * Dropdown links
+ */
+.dropdown {
+	position: relative;
+
+	& > a:after {
+		content: "+";
+		display: inline-block;
+		margin-left: calc-em(4px);
+		width: calc-em(8px);
+
+		.js-astro & {
+			@media (max-width: (calc-em(calc-px($bp-large) - 1))) {
+				content: "";
+			}
+		}
+	}
+
+	&:focus > a:after,
+	&:hover > a:after,
+	&.drop-active > a:after {
+		content: "\2013";
+
+		@media (max-width: (calc-em(calc-px($bp-large) - 1))) {
+			.js-astro & {
+				content: "";
+			}
+		}
+	}
+}
+
+
+/**
+ * Dropdown content
+ */
+.dropdown-menu {
+	background-color: $color-white;
+	border: 0;
+	border-radius: calc-em(1px);
+	box-shadow: 0 calc-em(4px) calc-em(8px) rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+	clip: rect(0 0 0 0);
+	float: left;
+	height: 1px;
+	margin: -1px;
+	min-width: 12em;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	top: 100%;
+	width: 1px;
+	z-index: 1000;
+
+	ul,
+	ol {
+		list-style: none;
+		margin-left: 0;
+	}
+
+	a {
+		display: block;
+		padding-left: calc-em(8px);
+		padding-right: calc-em(8px);
+
+		@media (max-width: (calc-em(calc-px($bp-large) - 1))) {
+			padding-left: $spacing;
+		}
+	}
+
+	.dropdown:focus &,
+	.dropdown:hover &,
+	.dropdown.drop-active & {
+		border: calc-em(1px) solid lighten( $color-gray-dark, 22% );
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		padding-top: calc-em(8px);
+		padding-bottom: calc-em(8px);
+		width: auto;
+
+		.js-drop & {
+			margin-top: calc-em(8px);
+		}
+
+		// .js-astro.js-drop & {
+		// 	@media (max-width: $bp-large) {
+		// 		margin-top: 0;
+		// 	}
+		// }
+	}
+
+	/**
+	 * Switch up styling on JS-supported small viewports
+	 */
+	@media (max-width: (calc-em(calc-px($bp-large) - 1))) {
+		.js-astro &,
+		.js-astro .dropdown.drop-active & {
+			background-color: transparent;
+			border: 0;
+			box-shadow: none;
+			clip: auto;
+			float: none;
+			height: auto;
+			margin: calc-em(11px) 0 0;
+			overflow: visible;
+			padding: 0;
+			position: static;
+			width: auto;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+/**
+ * Custom logo
+ */
+.logo {
+	width: 140px;
+}
+
+@media (min-width: 60em) {
+	.logo {
+		width: 220px;
+	}
+}
+
+#nav-menu {
+	margin-top: 24px;
+}
+
+#nav-menu-toggle {
+	margin-top: 16px;
+}

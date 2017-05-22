@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Sparrow</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Sparrow: A flexible, mobile-friendly theme for the Mashery Portal.">
+
+		<!-- Icons -->
+		<link rel="shortcut icon" type="image/ico" href="assets/img/icons/favicon.ico">
+
+		<!-- Feature detection -->
+		<script>
+			/**
+			 * detectSVG.js
+			 * @description Adds .svg class to <html> element if SVGs are supported.
+			 * @version 1.1.0
+			 * @author Chris Ferdinandi
+			 */
+			;(function (window, document, undefined) {
+
+				'use strict';
+
+				// SVG feature detection
+				var supports = !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect;
+
+				// Check against Opera Mini (throws a false positive)
+				var whitelist = navigator.userAgent.indexOf('Opera Mini') === -1;
+
+				// If SVG is supported, add `.svg` class to <html> element
+				if ( supports && whitelist ) {
+					document.documentElement.className += (document.documentElement.className ? ' ' : '') + 'svg';
+				}
+
+
+			})(window, document);
+		</script>
+
+		<!-- stylesheets -->
+		<link rel="stylesheet" href="dist/css/main.css" type="text/css">
+		<link rel="stylesheet" href="assets/css/custom.css" type="text/css">
+	</head>
+
+	<body>
+
+		<!-- Old Browser Warning -->
+		<!--[if lt IE 9]>
+		    <section class="container">
+		        Did you know that your web browser is a bit old? Some of the content on this site might not work right as a result. <a href="http://whatbrowser.org">Upgrade your browser</a> for a faster, better, and safer web experience.
+		    </section>
+		<![endif]-->
+
+		<div class="container">
+			<div class="row">
+
+					<header class="grid-fourth sticky-header padding-top ">
+
+						<!-- Skip Nav Link -->
+						<nav>
+							<a class="screen-reader screen-reader-focusable" href="#main">Skip to content</a>
+						</nav>
+
+						<p>
+							<strong>
+								<a class="docs-logo" href="index.html">
+									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-xlarge" viewBox="0 0 48 48"><path d="M44.009 18h2.99c.26 0 .52-.1.72-.29.39-.39.39-1.03 0-1.42-.271-.26-3.62-4.29-3.62-4.29s3.35-4.03 3.62-4.29c.39-.39.39-1.03 0-1.42-.2-.19-.46-.29-.72-.29h-4.811c-2.189-3.6-6.16-6-10.68-6-6.9 0-12.5 5.6-12.5 12.5 0 4.14-3.36 7.5-7.5 7.5H1.989c-1.101 0-2 .9-2 2l.01.27c.89 8.7 6.979 15.9 15.01 18.59v4.64a2.5 2.5 0 0 0 5 0v-3.59a22.135 22.135 0 0 0 4 0v3.59a2.5 2.5 0 0 0 5 0v-4.64c8.72-2.921 15-11.16 15-20.86v-2zm-12-9.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1-5 0zm-7.76 14.76c1.41 3.061.859 6.801-1.66 9.32a8.239 8.239 0 0 1-9.19 1.71l-.32-.17a2.01 2.01 0 0 1-1.069-1.78c0-.59.25-1.12.65-1.49.199-.18 8.27-8.26 8.27-8.26a2.01 2.01 0 0 1 2.85 0c.12.12.23.25.311.39l.158.28z"/></svg><br>
+									<span class="text-large">Sparrow</span>
+								</a>
+							</strong><br>
+							<span class="text-small text-muted">Version 9</span>
+						</p>
+						<nav class="docs-nav">
+							<ul class="list-unstyled nav-primary" data-nav-highlight>
+								<li><a href="https://github.com/mashery/sparrow/archive/master.zip">Download</a></li>
+								<li><a href="setup.html">Setup</a></li>
+								<li><a href="customizing.html">Customizing</a></li>
+								<li><a href="https://stagingcs9.mashery.com/pattern_library">Components</a></li>
+								<li><a href="https://stagingcs9.mashery.com">Live Demo</a></li>
+								<li><a href="https://github.com/mashery/sparrow">GitHub</a></li>
+							</ul>
+
+							<div class="docs-nav-section" data-toc data-gumshoe></div>
+						</nav>
+					</header>
+
+				<main class="grid-three-fourths padding-top sticky-body tabindex" id="main" tabindex="-1" data-toc-content><h1 id="sparrow">Sparrow</h1>
+<p>Sparrow is a flexible, mobile-friendly theme for the Mashery Portal.</p>
+<p>It looks great out-of-the-box, and includes features that make customization easy for non-technical users. If you&#39;re a developer, it includes a build system powered by Gulp and Sass.</p>
+<p><strong><a href="https://stagingcs9.mashery.com/">View the Live Demo Portal.</a></strong></p>
+<hr>
+
+
+<h2 id="the-sparrow-approach">The Sparrow Approach</h2>
+<p>Sparrow was built to be flexible and modular, with performance and accessibility in mind.</p>
+<h3 id="mobile-first">Mobile-First</h3>
+<p>Sparrow is built mobile-first. The base structure is a fully-fluid, single-column layout. It uses <code>@media (min-width: whatever)</code> to add a grid-based layout to bigger screens.</p>
+<p>Think of it as progressive enhancement for the layout.</p>
+<p>Sparrow also includes feature detection for things like SVG support. Just like the layout, those are served to browsers that support them, while fallback text is supplied to older and less capable browsers.</p>
+<h3 id="object-oriented-css">Object Oriented CSS</h3>
+<p>Sparrow takes an <a href="http://www.slideshare.net/stubbornella/object-oriented-css">OOCSS approach</a> to web development.</p>
+<p>Throughout the stylesheet, you&#39;ll see base styles and modifying styles. For example, <code>.btn</code> sets the default button styles and behavior, while <code>.btn-secondary</code> changes the color and <code>.btn-large</code> changes the size. A big button with secondary colors would look like this:</p>
+<button class="btn btn-secondary btn-large">A Big Button</button>
+
+<pre><code class="lang-markup">&lt;button class=&quot;btn btn-secondary btn-large&quot;&gt;A Big Button&lt;/button&gt;
+</code></pre>
+<p>Classes can be mixed, matched and reused throughout a project.</p>
+<hr>
+
+
+<h2 id="browser-compatibility">Browser Compatibility</h2>
+<p>Sparrow is optimized for modern browsers and IE 9+.</p>
+<h3 id="vendor-prefixing">Vendor Prefixing</h3>
+<p>Sparrow uses <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>, and is configured to only add prefixes if required by the last two versions of a browser. If a feature isn&#39;t working (for example, the grid does not work in Firefox 28 and lower), it may simply need a vendor prefix.</p>
+<p>For more details on when support for specific features were added to different browsers, consult <a href="http://caniuse.com/">Can I Use</a>.</p>
+					</section><!-- /.container -->
+
+					<footer class="padding-top padding-bottom">
+
+							<hr>
+
+							<p class="text-small text-muted">Copyright &copy; 2017, TIBCO Software Inc. All rights reserved. The code is available under a <a href="https://github.com/mashery/sparrow/blob/master/LICENSE.md">BSD-type license</a>.</p>
+
+					</footer>
+				</main>
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+
+		<!-- Javascript -->
+		<script src="assets/js/toc.js"></script>
+		<script src="assets/js/highlight-active-nav.js"></script>
+		<script src="assets/js/smooth-scroll.min.js"></script>
+		<script src="assets/js/gumshoe.min.js"></script>
+		<script src="assets/js/prism.js"></script>
+		<script>
+			tableOfContents.init({
+				heading: 'In This Section',
+				headingClass: 'h3',
+				navClass: 'list-unstyled',
+				linkClass: 'js-smooth-scroll',
+				callback: function () {
+					var links = document.querySelectorAll( '.js-smooth-scroll' );
+					for (var i = 0, len = links.length; i < len; i++) {
+						links[i].setAttribute( 'data-scroll', true );
+					}
+					smoothScroll.init();
+				}
+			});
+			gumshoe.init({
+				offset: 5
+			});
+			highlightActiveNav.init({
+				urlPrefix: '/kraken/'
+			});
+		</script>
+
+	</body>
+</html>

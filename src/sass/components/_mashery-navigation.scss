@@ -1,0 +1,46 @@
+/**
+ * @section Mashery Navigation
+ * Styling for the navigation sections
+ * Copyright (c) 2017. TIBCO Software Inc. All Rights Reserved.
+ */
+
+
+/**
+ * Hide "Signed-in as" text on small screens
+ */
+#nav-user .status {
+	@extend [hidden];
+
+	@media (min-width: $bp-medium) {
+		display: inline;
+		visibility: visible;
+	}
+}
+
+
+// The primary navigation
+#nav-1 {}
+
+// The primary navigation content
+#nav-1-content {}
+
+// The navigation search item
+#nav-search {}
+
+// The user navigation
+#nav-user {
+	@extend .link-plain;
+	// @extend .bg-primary;
+}
+
+// The user navigation content
+#nav-user-content {}
+
+// The footer navigation
+#nav-footer-content {
+	@extend .link-plain;
+
+	a {
+		font-weight: bold;
+	}
+}
