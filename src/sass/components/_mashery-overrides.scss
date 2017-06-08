@@ -45,18 +45,37 @@
 	}
 }
 
+// .no_sub .main {
+// 	@extend .grid-full;
+
+// 	.dom-full-width & {
+// 		@extend %dom-full-width;
+// 	}
+
+// 	.page-forum &,
+// 	.page-blog &,
+// 	.page-contact & {
+// 		@extend .grid-two-thirds;
+// 		@extend .float-center;
+// 	}
+// }
 .no_sub .main {
 	@extend .grid-full;
 
-	.dom-full-width & {
-		@extend %dom-full-width;
-	}
-
+	.page-page &,
 	.page-forum &,
 	.page-blog &,
 	.page-contact & {
 		@extend .grid-two-thirds;
 		@extend .float-center;
+	}
+
+	.dom-full-width & {
+		@extend %dom-full-width;
+	}
+
+	.dom-wide & {
+		@extend .grid-full;
 	}
 }
 
