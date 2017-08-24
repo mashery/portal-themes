@@ -1,0 +1,53 @@
+/**
+ * @section Mashery Navigation
+ * Styling for the navigation sections
+ * Copyright (c) 2017. TIBCO Software Inc. All Rights Reserved.
+ */
+
+
+// The primary navigation
+#nav-1 {}
+
+// The primary navigation content
+#nav-1-content {}
+
+// The navigation search item
+#nav-search {}
+
+// The user navigation
+#nav-user {
+	// @extend .link-plain;
+
+	/**
+	 * Hide the username on smaller screens
+	 */
+	.status {
+		@extend [hidden];
+		@extend .text-muted;
+
+		@media (min-width: $bp-medium) {
+			display: inline;
+			visibility: visible;
+		}
+	}
+
+	.sign-in a,
+	.register a,
+	.account a,
+	.dashboard a,
+	.sign-out a {
+		@extend .btn;
+	}
+
+	.register a,
+	.sign-out a {
+		@extend .btn-secondary;
+	}
+
+}
+
+// The user navigation content
+#nav-user-content {}
+
+// The footer navigation
+#nav-footer-content {}

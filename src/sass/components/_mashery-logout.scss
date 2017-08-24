@@ -1,0 +1,22 @@
+/**
+ * @section Mashery Logout
+ * Styling specific to the logged-out page.
+ * Copyright (c) 2017. TIBCO Software Inc. All Rights Reserved.
+ */
+
+
+// When additional specificity is needed.
+// Use with care and avoid whenever possible.
+.page-logout {
+
+	.main {
+		ul {
+			@extend .list-inline;
+		}
+
+		li a {
+			@extend .btn;
+		}
+	}
+
+}

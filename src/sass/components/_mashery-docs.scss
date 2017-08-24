@@ -1,0 +1,64 @@
+/**
+ * @section Mashery Docs
+ * Styling specific to documentation pages.
+ * Copyright (c) 2017. TIBCO Software Inc. All Rights Reserved.
+ */
+
+
+/**
+ * Sidebar
+ */
+#sub {
+
+	ul {
+		@extend .list-unstyled;
+		padding: 0 calc-em(16px);
+
+		li {
+			margin-bottom: calc-em(8px);
+		}
+
+		a {
+			@extend .link-plain;
+			color: $color-black;
+		}
+	}
+
+	/**
+	 * Active links
+	 */
+	li.js-active > a {
+		color: $color-gray-dark;
+		cursor: not-allowed;
+		pointer-events: none;
+		text-decoration: none;
+
+		&.collapse-toggle {
+			cursor: pointer;
+			pointer-events: auto;
+		}
+	}
+
+	/**
+	 * Collapsible docs
+	 */
+	ul.collapse.active {
+		margin-left: $spacing;
+	}
+
+}
+
+
+// When additional specificity is needed.
+// Use with care and avoid whenever possible.
+.page-docs {
+	#sub-inner {
+		background-color: $color-gray-light;
+		border: calc-em(1px) solid $color-gray-medium;
+
+		& > h2 {
+			border-bottom: calc-em(1px) solid $color-gray-medium;
+			padding: 1em calc-em(16px, 24px);
+		}
+	}
+}

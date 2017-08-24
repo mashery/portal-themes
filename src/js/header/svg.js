@@ -1,0 +1,19 @@
+/**
+ * detectSVG.js
+ * @description Adds .svg class to <html> element if SVGs are supported.
+ * @version 1.2.0
+ * @author Chris Ferdinandi
+ * @license MIT
+ */
+;(function (window, document, undefined) {
+
+	'use strict';
+
+	// SVG feature detection
+	var supports = !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect;
+
+	// If SVG is supported, add `.svg` class to <html> element
+	if ( !supports ) return;
+	document.documentElement.className += (document.documentElement.className ? ' ' : '') + 'svg';
+
+})(window, document);
