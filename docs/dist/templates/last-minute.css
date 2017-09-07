@@ -1,9 +1,16 @@
 /**
  * Logo Updates
  */
-#nav-1-content,
+.logo {
+	padding-top: 8px;
+}
+
+#nav-1-content {
+	margin-top: 9px;
+}
+
 #nav-menu-toggle {
-	margin-top: 5px;
+	margin-top: 11px;
 }
 
 @media (min-width: 60em) {

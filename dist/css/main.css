@@ -2508,26 +2508,31 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 }
 
 /* line 64, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+.text-xsmall {
+  font-size: 0.8125em;
+}
+
+/* line 68, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .text-large {
   font-size: 1.1875em;
   line-height: 1.4;
 }
 
 @media (min-width: 40em) {
-  /* line 64, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+  /* line 68, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
   .text-large {
     font-size: 1.3125em;
   }
 }
 
-/* line 73, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 77, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .text-hero {
   font-size: 2em;
   line-height: 1.4;
 }
 
 @media (min-width: 40em) {
-  /* line 73, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+  /* line 77, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
   .text-hero {
     font-size: 3em;
   }
@@ -2536,12 +2541,12 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Text colors
  */
-/* line 87, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 91, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .text-muted, .section-meta, .paging, #nav-user .status, ol.categories .category .no-topics, ol.categories .category .topic-count, ol.categories .category .comment-count, ol.categories .category .last-comment, ol.categories .category .last-active, ol.categories .category .last-topic, ol.topics .topic .moniker, ol.topics .topic .comment-count, ol.topics .topic .last-comment, ol.topics .topic .last-active, .page-forum ol.comments .edit-timestamp, .page-blog ol.comments .comment-meta, .page-wiki ol.comments .comment-meta, span.timezone-note {
   color: #858585;
 }
 
-/* line 91, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 95, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .text-white {
   color: #ffffff;
 }
@@ -2549,23 +2554,23 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Text alignment
  */
-/* line 100, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 104, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 104, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 108, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .text-right, .method .title .description, ol.categories .category .edit-category, ol.topics .topic .edit-topic {
   text-align: right;
 }
 
-/* line 108, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 112, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .text-left {
   text-align: left;
 }
 
 @media (min-width: 40em) {
-  /* line 113, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+  /* line 117, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
   .text-right-large {
     text-align: right;
   }
@@ -2574,12 +2579,12 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Floats
  */
-/* line 123, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 127, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .float-left, input[type="submit"], ol.categories .category .subject, ol.categories .category .topic-count, ol.categories .category .last-comment, ol.categories .category .last-active, ol.categories .category .last-topic, ol.topics .topic .subject, ol.topics .topic .last-comment, ol.topics .topic .last-active {
   float: left;
 }
 
-/* line 127, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 131, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .float-center, .page-page .no_sub .main,
 .page-forum .no_sub .main,
 .page-blog .no_sub .main,
@@ -2589,28 +2594,28 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
   margin-right: auto;
 }
 
-/* line 133, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 137, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .float-right, h1 .edit, .page-login h2.signin .edit, .section-menu .edit, .endpoint > .title .actions, .method .title .description {
   float: right;
 }
 
-/* line 137, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 141, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .float-middle-wrap {
   display: table;
 }
 
-/* line 141, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 145, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .float-middle {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 146, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 150, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .float-bottom-wrap {
   position: relative;
 }
 
-/* line 150, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 154, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .float-bottom {
   position: absolute;
   bottom: 0;
@@ -2620,52 +2625,52 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Margins
  */
-/* line 161, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 165, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .no-margin-top {
   margin-top: 0;
 }
 
-/* line 165, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 169, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .no-margin-bottom, .descr p {
   margin-bottom: 0;
 }
 
-/* line 169, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 173, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .margin-top {
   margin-top: 1.5625em;
 }
 
-/* line 173, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 177, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .margin-bottom, .paging, .method {
   margin-bottom: 1.5625em;
 }
 
-/* line 177, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 181, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .margin-bottom-small, .servicesIodocs, .page-login h2.signin {
   margin-bottom: 0.5em;
 }
 
-/* line 181, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 185, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .margin-bottom-large {
   margin-bottom: 2em;
 }
 
-/* line 185, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 189, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .margin-left {
   margin-left: 1.5625em;
 }
 
-/* line 189, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 193, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .margin-left-small {
   margin-left: 0.5em;
 }
 
-/* line 193, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 197, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .margin-right {
   margin-right: 1.5625em;
 }
 
-/* line 197, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 201, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .margin-right-small {
   margin-right: 0.5em;
 }
@@ -2673,62 +2678,62 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Padding
  */
-/* line 206, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 210, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .no-padding-top {
   padding-top: 0;
 }
 
-/* line 210, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 214, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .no-padding-bottom {
   padding-bottom: 0;
 }
 
-/* line 214, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 218, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .padding-top, .page-blog ol.comments .comment, .page-wiki ol.comments .comment {
   padding-top: 1.5625em;
 }
 
-/* line 218, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 222, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .padding-top-small, .page-login h2.signin {
   padding-top: 0.5em;
 }
 
-/* line 222, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 226, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .padding-top-large, .page-login .signin_member_mashery {
   padding-top: 2em;
 }
 
-/* line 226, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 230, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .padding-top-xlarge {
   padding-top: 3em;
 }
 
-/* line 230, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 234, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .padding-bottom {
   padding-bottom: 1.5625em;
 }
 
-/* line 234, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 238, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .padding-bottom-small {
   padding-bottom: 0.5em;
 }
 
-/* line 238, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 242, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .padding-bottom-large {
   padding-bottom: 2em;
 }
 
-/* line 242, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 246, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .padding-bottom-xlarge {
   padding-bottom: 3em;
 }
 
-/* line 246, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 250, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .padding-left {
   padding-left: 1.5625em;
 }
 
-/* line 250, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 254, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .padding-right {
   padding-right: 1.5625em;
 }
@@ -2741,7 +2746,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
  * @link https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css
  * @link http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 264, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 268, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .screen-reader, .svg .icon-fallback-text, .js-houdini .collapse {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2759,7 +2764,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
  * @link https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css
  * @link https://www.drupal.org/node/897638
  */
-/* line 281, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 285, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .screen-reader-focusable:active, .js-houdini .collapse.active,
 .screen-reader-focusable:focus {
   clip: auto;
@@ -2779,7 +2784,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
  * @affected IE 8/9/10
  * @link http://juicystudio.com/article/screen-readers-display-none.php
  */
-/* line 305, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 309, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 [hidden], template, .is-logged-in .hide-logged-in,
 .is-logged-out .hide-logged-out, #user-menu, .pun-nav, a.rss, .rss.link-block-styled, #nav-user .status, .dom-forum .breadcrumbs, .page-forum .section-menu ul, .search-input .search-button, #detailTables_container.loading #detailTables div {
   display: none;
@@ -2791,7 +2796,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
  * The space content is one way to avoid an Opera bug when the `contenteditable` attribute is included anywhere else in the document.
  * @link https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css
  */
-/* line 317, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 321, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .clearfix:before, .container:before, .page:before,
 .row:before, .content:before, .page-login .signin_member_mashery:before, form:before, .section-menu ul:before, .method .title:before, ol.categories .category ul:before, ol.topics .topic > ul:before, .page-wiki .section-tags:before, span.timezone-note:before, #quotaInfo:before, #detailTables_container:before,
 .clearfix:after,
@@ -2815,7 +2820,7 @@ span.timezone-note:after,
   display: table;
 }
 
-/* line 323, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 327, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
 .clearfix:after, .container:after, .page:after,
 .row:after, .content:after, .page-login .signin_member_mashery:after, form:after, .section-menu ul:after, .method .title:after, .method a.clear-results:after, .method .clear-results.link-block-styled:after, ol.categories .category ul:after, ol.topics .topic > ul:after, .page-wiki .section-tags:after, span.timezone-note:after, #quotaInfo:after, #detailTables_container:after {
   clear: both;

@@ -22,26 +22,26 @@ The Pattern Library is living documentation for your Portal theme. If you would 
 ### Colors
 
 <div class="clearfix">
-	<div class="float-left demo-color-box" style="background-color: #0088cc; color: white;">
-		#0088cc
+	<div class="float-left demo-color-box" style="background-color: #cc1c26; color: white;">
+		#cc1c26
 	</div>
-	<div class="float-left demo-color-box" style="background-color: #ffdd2f;">
-		#ffdd2f
+	<div class="float-left demo-color-box" style="background-color: #ff8638; color: white;">
+		#ff8638
 	</div>
-	<div class="float-left demo-color-box" style="background-color: #b4d253;">
-		#b4d253
+	<div class="float-left demo-color-box" style="background-color: #858585; color: white;">
+		#858585
 	</div>
-	<div class="float-left demo-color-box" style="background-color: #808080; color: white;">
-		#808080
+		<div class="float-left demo-color-box" style="background-color: #ababab;">
+		#ababab
 	</div>
-	<div class="float-left demo-color-box" style="background-color: #e5e5e5;">
-		#e5e5e5
+	<div class="float-left demo-color-box" style="background-color: #f1f1f1;">
+		#f1f1f1
 	</div>
 	<div class="float-left demo-color-box" style="background-color: #ffffff;">
 		#ffffff
 	</div>
-	<div class="float-left demo-color-box" style="background-color: #272727; color: white;">
-		#272727
+	<div class="float-left demo-color-box" style="background-color: #000000; color: white;">
+		#000000
 	</div>
 </div>
 
@@ -246,18 +246,18 @@ Flip the display order of a grid on bigger viewports by adding the `.grid-flip` 
 Create grids that vary in size based on screen width using the `.grid-dynamic` class.
 
 <div class="row">
-	<div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
-	<div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
-	<div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
-	<div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
-	<div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
-	<div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
-	<div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
-	<div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
-	<div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
-	<div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
-	<div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
-	<div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
+	<div class="grid-dynamic"><p><img src="https://unsplash.it//350/350"></p></div>
+	<div class="grid-dynamic"><p><img src="https://unsplash.it//350/350"></p></div>
+	<div class="grid-dynamic"><p><img src="https://unsplash.it//350/350"></p></div>
+	<div class="grid-dynamic"><p><img src="https://unsplash.it//350/350"></p></div>
+	<div class="grid-dynamic"><p><img src="https://unsplash.it//350/350"></p></div>
+	<div class="grid-dynamic"><p><img src="https://unsplash.it//350/350"></p></div>
+	<div class="grid-dynamic"><p><img src="https://unsplash.it//350/350"></p></div>
+	<div class="grid-dynamic"><p><img src="https://unsplash.it//350/350"></p></div>
+	<div class="grid-dynamic"><p><img src="https://unsplash.it//350/350"></p></div>
+	<div class="grid-dynamic"><p><img src="https://unsplash.it//350/350"></p></div>
+	<div class="grid-dynamic"><p><img src="https://unsplash.it//350/350"></p></div>
+	<div class="grid-dynamic"><p><img src="https://unsplash.it//350/350"></p></div>
 </div>
 
 ```markup
@@ -328,6 +328,7 @@ Your theme uses relative sizing (ems and % instead of pixels) for everything.
 Default text<br>
 <span class="text-muted">Muted text</span><br>
 <span class="text-small">Small text</span><br>
+<span class="text-xsmall">Extra small text</span><br>
 <span class="text-large">Large text</span><br>
 <span class="text-hero">Hero text</span><br>
 <a href="#">Hyperlinks</a><br>
@@ -338,6 +339,7 @@ Default text<br>
 Default text
 <span class="text-muted">Muted text</span>
 <span class="text-small">Small text</span>
+<span class="text-xsmall">Extra small text</span>
 <span class="text-large">Large text</span>
 <span class="text-hero">Hero text</span>
 <a href="#">Hyperlinks</a>
@@ -614,14 +616,12 @@ Add background colors with a handful of helper classes.
 
 <div class="bg-muted"><div class="container padding-left padding-right">.bg-muted</div></div>
 <div class="bg-primary"><div class="container padding-left padding-right">.bg-primary</div></div>
-<div class="bg-secondary"><div class="container padding-left padding-right">.bg-secondary</div></div>
-<div class="bg-tertiary margin-bottom"><div class="container padding-left padding-right">.bg-tertiary</div></div>
+<div class="bg-secondary margin-bottom"><div class="container padding-left padding-right">.bg-secondary</div></div>
 
 ```markup
 <div class="bg-muted">.bg-muted</div>
 <div class="bg-primary">.bg-primary</div>
 <div class="bg-secondary">.bg-secondary</div>
-<div class="bg-tertiary">.bg-tertiary</div>
 ```
 
 ### Hero Image Backgrounds
@@ -630,14 +630,14 @@ Use the `.bg-hero` class with one of the above background colors to create a bac
 
 You will need to specify a background image (using either the inline CSS feature in the Dashboard or by adding inline CSS to the element directly). You may also wish to add a minimum height (or heights at different breakpoints) depending on the image.
 
-<div class="bg-primary bg-hero margin-bottom" style="background-image: url('https://source.unsplash.com/random/740x320'); min-height: 15em;">
+<div class="bg-primary bg-hero margin-bottom" style="background-image: url('https://unsplash.it/740/320'); min-height: 15em;">
 	<div class="padding-top-large padding-bottom-large text-center">
 		<span class="text-large">This is a hero image with text.</span>
 	</div>
 </div>
 
 ```markup
-<div class="bg-primary bg-hero" style="background-image: url('https://source.unsplash.com/random/740x320'); min-height: 15em;">
+<div class="bg-primary bg-hero" style="background-image: url('https://unsplash.it/740/320'); min-height: 15em;">
 	<div class="padding-top-large padding-bottom-large text-center">
 		<span class="text-large">This is a hero image with text.</span>
 	</div>
@@ -653,36 +653,28 @@ Button styles can be applied `<a>`, `<button>`, and `<input type="submit">` elem
 
 <button class="btn">Button</button>
 <button class="btn btn-secondary">Button Secondary</button>
-<button class="btn btn-tertiary">Button Tertiary</button>
 <button class="btn btn-large">Button Large</button>
 
 <button class="btn btn-block">Button Block</button>
 <button class="btn btn-secondary btn-block">Button Block</button>
-<button class="btn btn-tertiary btn-block">Button Block</button>
 
 <button class="btn active">Active</button>
 <button class="btn btn-secondary active">Secondary Active</button>
-<button class="btn btn-tertiary active">Tertiary Active</button>
 <button class="btn disabled">Disabled</button>
 <button class="btn btn-secondary disabled">Secondary Disabled</button>
-<button class="btn btn-tertiary disabled">Tertiary Disabled</button>
 
 ```markup
 <button class="btn">Button</button>
 <button class="btn btn-secondary">Button Secondary</button>
-<button class="btn btn-tertiary">Button Tertiary</button>
 <button class="btn btn-large">Button Large</button>
 
 <button class="btn btn-block">Button Block</button>
 <button class="btn btn-secondary btn-block">Button Block</button>
-<button class="btn btn-tertiary btn-block">Button Block</button>
 
 <button class="btn active">Active</button>
 <button class="btn btn-secondary active">Secondary Active</button>
-<button class="btn btn-tertiary active">Tertiary Active</button>
 <button class="btn disabled">Disabled</button>
 <button class="btn btn-secondary disabled">Secondary Disabled</button>
-<button class="btn btn-tertiary disabled">Tertiary Disabled</button>
 ```
 
 <hr>
@@ -1217,19 +1209,19 @@ Add simple `.img-*` classes to any img element to add styling. You can combine c
 	<div class="grid-third">
 		<p style="text-align: center;">
 			<strong>Circle</strong><br>
-			<img class="img-circle" src="https://source.unsplash.com/random/200x200">
+			<img class="img-circle" src="https://unsplash.it/200/200">
 		</p>
 	</div>
 	<div class="grid-third">
 		<p style="text-align: center;">
 			<strong>Border</strong><br>
-			<img class="img-border" src="https://source.unsplash.com/random/200x200">
+			<img class="img-border" src="https://unsplash.it/200/200">
 		</p>
 	</div>
 	<div class="grid-third">
 		<p style="text-align: center;">
 			<strong>Photo</strong><br>
-			<img class="img-photo" src="https://source.unsplash.com/random/200x200">
+			<img class="img-photo" src="https://unsplash.it/200/200">
 		</p>
 	</div>
 </div>
