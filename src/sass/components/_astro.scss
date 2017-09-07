@@ -137,6 +137,13 @@
 	display: none;
 	visibility: hidden;
 
+	&,
+	&:active,
+	&:focus,
+	&:hover {
+		color: $color-white;
+	}
+
 	@media (max-width: (calc-em(calc-px($bp-large) - 1))) {
 		.js-astro .nav-collapse & {
 			display: block;

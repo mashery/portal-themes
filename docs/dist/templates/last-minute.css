@@ -1,1 +1,14 @@
-/* Copyright (c) 2017. TIBCO Software Inc. All Rights Reserved. */
+/**
+ * Logo Updates
+ */
+#nav-1-content,
+#nav-menu-toggle {
+	margin-top: 5px;
+}
+
+@media (min-width: 60em) {
+	#footer-logo {
+		border-right: 1px solid #ababab;
+		width: 122px;
+	}
+}
