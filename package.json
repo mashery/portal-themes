@@ -1,7 +1,7 @@
 {
   "name": "caesars",
   "version": "1.0.0",
-  "description": "Portal theme for Caesars",
+  "description": "Portal theme for Caesars.",
   "main": "./dist",
   "author": {
     "name": "Chris Ferdinandi"
