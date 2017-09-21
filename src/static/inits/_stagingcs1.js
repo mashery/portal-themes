@@ -431,42 +431,6 @@ var renderToC = function () {
 window.addEventListener('portalAfterRender', renderToC, false);
 window.addEventListener('portalAfterGitHubRender', renderToC, false);
 
-// BetterDocs.js
-var runBetterDocs = function () {
-	m$.loadJS('/files/betterDocs.min.beta.js', function () {
-		var docs = BetterDocs('.content', {
-			langs: {
-				bash: {
-					selector: 'bash',
-					title: 'Bash'
-				},
-				js: {
-					selector: 'javascript, js',
-					title: 'JavaScript',
-				},
-				ruby: {
-					selector: 'ruby',
-					title: 'Ruby'
-				},
-				python: {
-					selector: 'python',
-					title: 'Python'
-				}
-			},
-			langDefault: 'js',
-			wideLayout: true,
-			wideLayoutBg: true,
-			restrictToPages: 'docs-tests-better_docs'
-		});
-
-		// Self-Destruct
-		window.addEventListener('portalBeforeRenderAjax', function destroyBetterDocs () {
-			docs.destroy();
-			window.removeEventListener('portalBeforeRender', destroyBetterDocs, false);
-		}, false);
-	});
-};
-
 /**
  * Plugins and Components
  */
@@ -513,7 +477,38 @@ window.addEventListener('portalAfterRender', function () {
 		});
 	});
 
-	runBetterDocs();
+	m$.loadJS('/files/betterDocs.min.beta.js', function () {
+		var docs = BetterDocs('.content', {
+			langs: {
+				bash: {
+					selector: 'bash',
+					title: 'Bash'
+				},
+				js: {
+					selector: 'javascript, js',
+					title: 'JavaScript',
+				},
+				ruby: {
+					selector: 'ruby',
+					title: 'Ruby'
+				},
+				python: {
+					selector: 'python',
+					title: 'Python'
+				}
+			},
+			langDefault: 'js',
+			wideLayout: true,
+			wideLayoutBg: true,
+			restrictToPages: 'docs-tests-better_docs'
+		});
+
+		// Self-Destruct
+		window.addEventListener('portalBeforeRenderAjax', function destroyBetterDocs () {
+			docs.destroy();
+			window.removeEventListener('portalBeforeRender', destroyBetterDocs, false);
+		}, false);
+	});
 
 	// conditional-content.css
 	// Add logged-in/logged-out class
@@ -535,8 +530,6 @@ window.addEventListener('portalAfterGitHubRender', function () {
 			players: ['www.youtube.com', 'player.vimeo.com'] // players to support
 		});
 	});
-
-	runBetterDocs();
 }, false);
 
 
