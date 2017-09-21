@@ -1,5 +1,5 @@
 /*!
- * biogen v1.0.0: Portal theme for Biogen
+ * biogen v1.1.0: Portal theme for Biogen
  * Copyright (c) 2017 TIBCO Software Inc. All Rights Reserved.
  * Built on the Sparrow Boilerplate v9.3.0
  * BSD-type License
@@ -1250,10 +1250,17 @@ input[disabled][type="submit"],
   padding: 0.6875em 0.9375em;
 }
 
+/* line 114, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+.btn-xlarge {
+  font-size: 1.2em;
+  line-height: normal;
+  padding: 1em 1.375em;
+}
+
 /**
  * Block-level buttons
  */
-/* line 118, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+/* line 124, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
 .btn-block,
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
@@ -1268,7 +1275,7 @@ input[type="button"].btn-block {
 /**
  * General styles
  */
-/* line 133, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+/* line 139, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
 .btn, button, input[type="submit"], .page-forum .create-new, .page-apps .section-menu .add-app.action, .page-apps .key-actions.actions ul a, .page-apps .key-actions.actions ul .link-block-styled, .page-apps .section-body table ul a, .page-apps .section-body table ul .link-block-styled, .page-apps .section-body .action.new-key, .page-apps .application-actions.actions ul .edit.action,
 .page-apps .application-actions.actions ul .delete-app.action, #detailTables_multicontainer .nav a, #detailTables_multicontainer .nav .link-block-styled, .page-logout .main li a, .page-logout .main li .link-block-styled,
 button,
@@ -1289,7 +1296,7 @@ input[type="submit"] {
 /**
  * Remove right margin on last element and inputs
  */
-/* line 155, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+/* line 161, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
 .btn:last-child, button:last-child, input[type="submit"]:last-child, .page-forum .create-new:last-child, .page-apps .section-menu .add-app.action:last-child, .page-apps .key-actions.actions ul a:last-child, .page-apps .key-actions.actions ul .link-block-styled:last-child, .page-apps .section-body table ul a:last-child, .page-apps .section-body table ul .link-block-styled:last-child, .page-apps .section-body .action.new-key:last-child, .page-apps .application-actions.actions ul .edit.action:last-child,
 .page-apps .application-actions.actions ul .delete-app.action:last-child, #detailTables_multicontainer .nav a:last-child, #detailTables_multicontainer .nav .link-block-styled:last-child, .page-logout .main li a:last-child, .page-logout .main li .link-block-styled:last-child,
 input.btn,

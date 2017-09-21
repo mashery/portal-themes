@@ -1,5 +1,5 @@
 /*!
- * biogen v1.0.0: Portal theme for Biogen
+ * biogen v1.1.0: Portal theme for Biogen
  * Copyright (c) 2017 TIBCO Software Inc. All Rights Reserved.
  * Built on the Sparrow Boilerplate v9.3.0
  * BSD-type License
