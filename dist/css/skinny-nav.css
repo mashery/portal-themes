@@ -1,4 +1,4 @@
-/*! blackbeard vbeta | (c) 2017 Chris Ferdinandi | LicenseRef-All Rights Reserved License | http://github.com/mashery/blackbeard */
+/*! portal-themes vbeta | (c) 2017 TIBCO and Chris Ferdinandi | LicenseRef-All Rights Reserved License | http://github.com/mashery/portal-themes */
 /**
  * Contain floats
  * The space content is one way to avoid an Opera bug when the `contenteditable` attribute is included anywhere else in the document%
@@ -1672,82 +1672,6 @@ td {
   .token.entity {
     cursor: help;
   }
-}
-
-/**
- * @section Placeholders
- * Styling for placeholder elements.
- */
-@-webkit-keyframes fadeColor {
-  0% {
-    background-color: lightgray;
-  }
-  50% {
-    background-color: #e5e5e5;
-  }
-  100% {
-    background-color: lightgray;
-  }
-}
-@keyframes fadeColor {
-  0% {
-    background-color: lightgray;
-  }
-  50% {
-    background-color: #e5e5e5;
-  }
-  100% {
-    background-color: lightgray;
-  }
-}
-
-/* line 23, src/sass/components/_placeholders.scss */
-.loading .placeholder {
-  -webkit-animation: fadeColor 1.5s ease-in infinite;
-          animation: fadeColor 1.5s ease-in infinite;
-  background-color: #e5e5e5;
-}
-
-/* line 28, src/sass/components/_placeholders.scss */
-.loading .placeholder-hero {
-  height: 20em;
-}
-
-/* line 32, src/sass/components/_placeholders.scss */
-.loading .placeholder-heading {
-  height: 3em;
-  width: 55%;
-}
-
-/* line 37, src/sass/components/_placeholders.scss */
-.loading .placeholder-sentence {
-  height: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-/* line 42, src/sass/components/_placeholders.scss */
-.loading .placeholder-sentence-last {
-  width: 85%;
-}
-
-/* line 46, src/sass/components/_placeholders.scss */
-.loading .placeholder-paragraph {
-  height: 8em;
-  margin-top: 1.5625em;
-}
-
-/* line 51, src/sass/components/_placeholders.scss */
-.loading .placeholder-btn {
-  height: 3em;
-  width: 8em;
-}
-
-/* line 57, src/sass/components/_placeholders.scss */
-.loading .placeholder-hero,
-.loading .placeholder-heading,
-.loading .placeholder-paragraph,
-.loading .placeholder-btn {
-  margin-bottom: 1.5625em;
 }
 
 /**

@@ -1,4 +1,11 @@
-/*! blackbeard vbeta | (c) 2017 Chris Ferdinandi | LicenseRef-All Rights Reserved License | http://github.com/mashery/blackbeard */
+/*! portal-themes vbeta | (c) 2017 TIBCO and Chris Ferdinandi | LicenseRef-All Rights Reserved License | http://github.com/mashery/portal-themes */
+/*!
+ * githubDocs.js v1.0.1
+ * Load documentation from GitHub
+ * (c) 2017 TIBCO Software Inc.
+ * Written by Chris Ferdinandi
+ * All Rights Reserved
+ */
 var githubDocs = function (options) {
 
 	'use strict';
@@ -22,7 +29,7 @@ var githubDocs = function (options) {
 		root: '',
 		runScripts: false,
 		loading: '<p>Loading...</p>',
-		failMessage: '<p>Unable to load content. Visit <a target="_blank" href="https://github.com/mashery/blackbeard/tree/master/docs/' + mashery.globals.github + '">https://github.com/mashery/blackbeard/tree/master/docs/' + mashery.globals.github + '</a> to view the documentation.</p>'
+		failMessage: '<p>Unable to load content.</p>'
 	};
 	var settings = m$.extend(defaults, options || {});
 	if (!settings.user || !settings.repo) return;

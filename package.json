@@ -1,16 +1,17 @@
 {
-	"name": "blackbeard",
-	"version": "0.1.0",
+	"name": "portal-themes",
+	"version": "beta",
 	"description": "Future portal layout",
 	"main": "./dist/js/main.js",
 	"author": {
+		"owner": "TIBCO",
 		"name": "Chris Ferdinandi",
 		"url": "http://gomakethings.com"
 	},
 	"license": "LicenseRef-All Rights Reserved",
 	"repository": {
 		"type": "git",
-		"url": "http://github.com/mashery/blackbeard"
+		"url": "http://github.com/mashery/portal-themes"
 	},
 	"devDependencies": {
 		"gulp": "^3.9.1",

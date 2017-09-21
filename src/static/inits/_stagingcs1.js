@@ -431,6 +431,42 @@ var renderToC = function () {
 window.addEventListener('portalAfterRender', renderToC, false);
 window.addEventListener('portalAfterGitHubRender', renderToC, false);
 
+// BetterDocs.js
+var runBetterDocs = function () {
+	m$.loadJS('/files/betterDocs.min.beta.js', function () {
+		var docs = BetterDocs('.content', {
+			langs: {
+				bash: {
+					selector: 'bash',
+					title: 'Bash'
+				},
+				js: {
+					selector: 'javascript, js',
+					title: 'JavaScript',
+				},
+				ruby: {
+					selector: 'ruby',
+					title: 'Ruby'
+				},
+				python: {
+					selector: 'python',
+					title: 'Python'
+				}
+			},
+			langDefault: 'js',
+			wideLayout: true,
+			wideLayoutBg: true,
+			restrictToPages: 'docs-tests-better_docs'
+		});
+
+		// Self-Destruct
+		window.addEventListener('portalBeforeRenderAjax', function destroyBetterDocs () {
+			docs.destroy();
+			window.removeEventListener('portalBeforeRender', destroyBetterDocs, false);
+		}, false);
+	});
+};
+
 /**
  * Plugins and Components
  */
@@ -471,44 +507,13 @@ window.addEventListener('portalAfterRender', function () {
 	m$.loadJS('https://stagingcs1.mashery.com/files/githubDocs.min.beta.js', function () {
 		githubDocs({
 			user: 'mashery',
-			repo: 'blackbeard',
-			root: 'docs/' // The root directory for all of my documentation
+			repo: 'portal-themes',
+			root: 'docs/', // The root directory for all of my documentation
+			failMessage: '<p>Unable to load content. Visit <a target="_blank" href="https://github.com/mashery/portal-themes/tree/master/docs/' + mashery.globals.github + '">https://github.com/mashery/portal-themes/tree/master/docs/' + mashery.globals.github + '</a> to view the documentation.</p>'
 		});
 	});
 
-	// BetterDocs.js
-	m$.loadJS('/files/betterDocs.min.beta.js', function () {
-		var docs = BetterDocs('.content', {
-			langs: {
-				bash: {
-					selector: 'bash',
-					title: 'Bash'
-				},
-				js: {
-					selector: 'javascript, js',
-					title: 'JavaScript',
-				},
-				ruby: {
-					selector: 'ruby',
-					title: 'Ruby'
-				},
-				python: {
-					selector: 'python',
-					title: 'Python'
-				}
-			},
-			langDefault: 'js',
-			wideLayout: true,
-			wideLayoutBg: true,
-			restrictToPages: 'docs-tests-better_docs'
-		});
-
-		// Self-Destruct
-		window.addEventListener('portalBeforeRenderAjax', function destroyBetterDocs () {
-			docs.destroy();
-			window.removeEventListener('portalBeforeRender', destroyBetterDocs, false);
-		}, false);
-	});
+	runBetterDocs();
 
 	// conditional-content.css
 	// Add logged-in/logged-out class
@@ -530,6 +535,8 @@ window.addEventListener('portalAfterGitHubRender', function () {
 			players: ['www.youtube.com', 'player.vimeo.com'] // players to support
 		});
 	});
+
+	runBetterDocs();
 }, false);
 
 

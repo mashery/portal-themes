@@ -1,5 +1,5 @@
 /*!
- * BetterDocs.js v1.0.0
+ * BetterDocs.js v1.1.0
  * Create better static documentation.
  * (c) 2017 TIBCO Software Inc.
  * Written by Chris Ferdinandi
@@ -266,7 +266,7 @@
 
 		};
 
-		var toggleLang = function (active) {
+		betterDocs.toggleLang = function (active) {
 			var currentLang = document.querySelectorAll('[class*="lang-"].active, [class*="language-"].active, ' + settings.langsNav + ' a.active');
 
 			var classes = settings.langs[active].selector.split(',');
@@ -291,7 +291,7 @@
 			var toggle = event.target.closest(settings.langsNav + ' a');
 			if (!toggle) return;
 			event.preventDefault();
-			toggleLang(toggle.getAttribute('data-lang'));
+			betterDocs.toggleLang(toggle.getAttribute('data-lang'));
 		};
 
 		betterDocs.destroy = function () {
@@ -371,7 +371,7 @@
 
 			// Set a default language
 			if (settings.langDefault) {
-				toggleLang(settings.langDefault);
+				betterDocs.toggleLang(settings.langDefault);
 			}
 
 		};

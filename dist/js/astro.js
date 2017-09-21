@@ -1,4 +1,4 @@
-/*! blackbeard vbeta | (c) 2017 Chris Ferdinandi | LicenseRef-All Rights Reserved License | http://github.com/mashery/blackbeard */
+/*! portal-themes vbeta | (c) 2017 TIBCO and Chris Ferdinandi | LicenseRef-All Rights Reserved License | http://github.com/mashery/portal-themes */
 /*!
  * Astro v10.2.0: Mobile-first navigation patterns
  * (c) 2016 Chris Ferdinandi

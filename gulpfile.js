@@ -97,22 +97,23 @@ var paths = {
  * Template for banner to add to file headers
  */
 
-var banner = {
-	full :
-		'/*!\n' +
-		' * <%= package.name %> v<%= package.version %>: <%= package.description %>\n' +
-		' * (c) ' + new Date().getFullYear() + ' <%= package.author.name %>\n' +
-		' * <%= package.license %> License\n' +
-		' * <%= package.repository.url %>\n' +
-		' */\n\n',
-	min :
-		'/*!' +
-		' <%= package.name %> v<%= package.version %>' +
-		' | (c) ' + new Date().getFullYear() + ' <%= package.author.name %>' +
-		' | <%= package.license %> License' +
-		' | <%= package.repository.url %>' +
-		' */\n'
-};
+ var banner = {
+ 	full :
+ 		'/*!\n' +
+ 		' * <%= package.name %> v<%= package.version %>\n' +
+ 		' * <%= package.description %>\n' +
+ 		' * (c) ' + new Date().getFullYear() + ' <%= package.author.owner %> and <%= package.author.name %>\n' +
+ 		' * <%= package.license %> License\n' +
+ 		' * <%= package.repository.url %>\n' +
+ 		' */\n\n',
+ 	min :
+ 		'/*!' +
+ 		' <%= package.name %> v<%= package.version %>' +
+ 		' | (c) ' + new Date().getFullYear() + ' <%= package.author.owner %> and <%= package.author.name %>' +
+ 		' | <%= package.license %> License' +
+ 		' | <%= package.repository.url %>' +
+ 		' */\n'
+ };
 
 
 /**
