@@ -1,0 +1,3 @@
+var mashery = {
+	globals: {}
+};
