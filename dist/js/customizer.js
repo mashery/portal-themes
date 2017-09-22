@@ -10,7 +10,7 @@ var customizer = function () {
 	// Variables
 	//
 
-	var baseURL = 'https://api.github.com/repos/mashery/blackbeard/contents/dist/';
+	var baseURL = 'https://api.github.com/repos/mashery/portal-themes/contents/dist/';
 	var btnJS = document.querySelector('#download-custom-js');
 	var btnCSS = document.querySelector('#download-custom-css');
 	var size = document.querySelector('#download-size');

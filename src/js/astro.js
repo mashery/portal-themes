@@ -130,10 +130,12 @@
 
 		// Selectors and variables
 		var settings = extend( settings || defaults, options || {} );  // Merge user options with defaults
-		var nav = document.querySelector(navID);
+		var nav = document.querySelectorAll(navID);
 
 		toggle.classList.toggle( settings.toggleActiveClass ); // Toggle the '.active' class on the toggle element
-		nav.classList.toggle( settings.navActiveClass ); // Toggle the '.active' class on the menu
+		for (var i = nav.length - 1; i >= 0; i--) {
+			nav[i].classList.toggle( settings.navActiveClass ); // Toggle the '.active' class on the menu
+		}
 		settings.callback( toggle, navID ); // Run callbacks after toggling nav
 
 	};

@@ -44,7 +44,7 @@ Astro includes smart defaults and works right out of the box. But if you want to
 
 You can pass options and callbacks into Astro through the `init()` function:
 
-```javascript
+```js
 astro.init({
 	selector: '[data-nav-toggle]', // Navigation toggle selector
 	toggleActiveClass: 'active', // Class added to active dropdown toggles on small screens
