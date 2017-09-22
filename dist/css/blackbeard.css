@@ -1523,18 +1523,26 @@ td {
  * Navigation Menu Container
  */
 @media (max-width: 60em) {
-  /* line 54, src/sass/components/_nav-blackbeard.scss */
-  .js-astro .nav-collapse .nav-menu {
+  /* line 52, src/sass/components/_nav-blackbeard.scss */
+  .js-astro .nav-collapse {
     display: none;
-    margin-top: 0.5em;
     width: 100%;
   }
-  /* line 60, src/sass/components/_nav-blackbeard.scss */
-  .js-astro .nav-collapse .nav-menu.active {
+  /* line 57, src/sass/components/_nav-blackbeard.scss */
+  .js-astro .nav-collapse.active {
     display: block;
   }
-  /* line 64, src/sass/components/_nav-blackbeard.scss */
-  .js-astro .nav-collapse .nav-menu li {
+  /* line 61, src/sass/components/_nav-blackbeard.scss */
+  .js-astro .nav-collapse li {
+    display: block;
+    width: 100%;
+  }
+  /* line 69, src/sass/components/_nav-blackbeard.scss */
+  .js-astro .nav-collapse.navmenu {
+    margin-top: 0.5em;
+  }
+  /* line 72, src/sass/components/_nav-blackbeard.scss */
+  .js-astro .nav-collapse.navmenu li {
     display: block;
     width: 100%;
   }
@@ -1546,14 +1554,14 @@ td {
 /**
  * Navigation Toggle
  */
-/* line 109, src/sass/components/_nav-blackbeard.scss */
+/* line 117, src/sass/components/_nav-blackbeard.scss */
 .nav-toggle {
   display: none;
   visibility: hidden;
 }
 
 @media (max-width: 60em) {
-  /* line 114, src/sass/components/_nav-blackbeard.scss */
+  /* line 122, src/sass/components/_nav-blackbeard.scss */
   .js-astro .nav-collapse .nav-toggle {
     display: block;
     float: right;
@@ -1564,14 +1572,14 @@ td {
 /**
  * Clearfix
  */
-/* line 127, src/sass/components/_nav-blackbeard.scss */
+/* line 135, src/sass/components/_nav-blackbeard.scss */
 .nav-wrap:before,
 .nav-wrap:after {
   display: table;
   content: "";
 }
 
-/* line 133, src/sass/components/_nav-blackbeard.scss */
+/* line 141, src/sass/components/_nav-blackbeard.scss */
 .nav-wrap:after {
   clear: both;
 }

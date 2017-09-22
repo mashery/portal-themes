@@ -49,18 +49,18 @@
 /**
  * Navigation Menu Container
  */
-.nav-menu {
+@media (max-width: $bp-large) {
+	.js-astro .nav-collapse {
+		// box-sizing: border-box;
+		display: none;
+		width: 100%;
 
-	@media (max-width: $bp-large) {
-		.js-astro .nav-collapse & {
-			// box-sizing: border-box;
-			display: none;
+		&.active {
+			display: block;
+		}
+
+		&.navmenu {
 			margin-top: calc-em(8px);
-			width: 100%;
-
-			&.active {
-				display: block;
-			}
 
 			li {
 				display: block;

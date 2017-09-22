@@ -1524,18 +1524,21 @@ td {
  * Navigation Menu Container
  */
 @media (max-width: 60em) {
-  /* line 55, src/sass/components/_nav-sparrow.scss */
-  .js-astro .nav-collapse .nav-menu {
+  /* line 53, src/sass/components/_nav-sparrow.scss */
+  .js-astro .nav-collapse {
     display: none;
-    margin-top: 0.5em;
     width: 100%;
   }
-  /* line 61, src/sass/components/_nav-sparrow.scss */
-  .js-astro .nav-collapse .nav-menu.active {
+  /* line 58, src/sass/components/_nav-sparrow.scss */
+  .js-astro .nav-collapse.active {
     display: block;
   }
+  /* line 62, src/sass/components/_nav-sparrow.scss */
+  .js-astro .nav-collapse.navmenu {
+    margin-top: 0.5em;
+  }
   /* line 65, src/sass/components/_nav-sparrow.scss */
-  .js-astro .nav-collapse .nav-menu li {
+  .js-astro .nav-collapse.navmenu li {
     display: block;
     width: 100%;
     padding-top: 0.25em;

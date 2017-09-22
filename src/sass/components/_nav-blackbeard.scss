@@ -48,18 +48,26 @@
 /**
  * Navigation Menu Container
  */
-.nav-menu {
+@media (max-width: $bp-large) {
+	.js-astro .nav-collapse {
+		// box-sizing: border-box;
+		display: none;
+		width: 100%;
 
-	@media (max-width: $bp-large) {
-		.js-astro .nav-collapse & {
-			// box-sizing: border-box;
-			display: none;
-			margin-top: calc-em(8px);
+		&.active {
+			display: block;
+		}
+
+		li {
+			display: block;
 			width: 100%;
+			// padding-top: calc-em(4px);
+			// padding-bottom: calc-em(4px);
+			// box-sizing: border-box;
+		}
 
-			&.active {
-				display: block;
-			}
+		&.navmenu {
+			margin-top: calc-em(8px);
 
 			li {
 				display: block;
