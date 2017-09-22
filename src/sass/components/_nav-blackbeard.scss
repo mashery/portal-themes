@@ -119,7 +119,7 @@
 	visibility: hidden;
 
 	@media (max-width: $bp-large) {
-		.js-astro .nav-collapse & {
+		.js-astro & {
 			display: block;
 			float: right;
 			visibility: visible;

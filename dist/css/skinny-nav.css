@@ -1478,7 +1478,7 @@ td {
 
 @media (max-width: 60em) {
   /* line 8, src/sass/components/_nav-skinny-nav.scss */
-  .js-astro .nav-wrap.nav-collapse {
+  .js-astro .nav-wrap {
     text-align: left;
   }
 }
@@ -1510,7 +1510,7 @@ td {
 
 @media (min-width: 60em) {
   /* line 36, src/sass/components/_nav-skinny-nav.scss */
-  .js-astro .nav-collapse .logo {
+  .js-astro .logo {
     float: left;
   }
 }
@@ -1577,7 +1577,7 @@ td {
 
 @media (max-width: 60em) {
   /* line 109, src/sass/components/_nav-skinny-nav.scss */
-  .js-astro .nav-collapse .nav-toggle {
+  .js-astro .nav-toggle {
     display: block;
     float: right;
     visibility: visible;

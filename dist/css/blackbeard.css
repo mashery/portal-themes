@@ -1562,7 +1562,7 @@ td {
 
 @media (max-width: 60em) {
   /* line 122, src/sass/components/_nav-blackbeard.scss */
-  .js-astro .nav-collapse .nav-toggle {
+  .js-astro .nav-toggle {
     display: block;
     float: right;
     visibility: visible;
