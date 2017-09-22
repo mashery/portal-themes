@@ -148,6 +148,7 @@
 			}));
 		}));
 
+		css.id = 'better-docs-lang-styles';
 		css.innerHTML =
 			selectors.join(',') + '{display:none;visibility:hidden;}' +
 			selectors.join('.active,') + '.active{display:block;visibility:visible;}';
@@ -310,6 +311,12 @@
 			if (content) {
 				content.classList.remove(settings.initClass + settings.contentClassSuffix);
 				content.classList.remove(settings.wideLayoutClass + settings.contentClassSuffix);
+			}
+
+			// Remove styles
+			var styles = document.querySelector('#better-docs-lang-styles');
+			if (styles) {
+				styles.remove();
 			}
 
 			// Reset variables
