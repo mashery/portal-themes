@@ -1533,14 +1533,13 @@ td {
   .js-astro .nav-collapse.active {
     display: block;
   }
-  /* line 62, src/sass/components/_nav-sparrow.scss */
-  .js-astro .nav-collapse.navmenu {
+  /* line 63, src/sass/components/_nav-sparrow.scss */
+  .js-astro .nav-collapse.nav-menu {
     margin-top: 0.5em;
   }
-  /* line 65, src/sass/components/_nav-sparrow.scss */
-  .js-astro .nav-collapse.navmenu li {
+  /* line 66, src/sass/components/_nav-sparrow.scss */
+  .js-astro .nav-collapse.nav-menu li {
     display: block;
-    width: 100%;
     padding-top: 0.25em;
     padding-bottom: 0.25em;
   }

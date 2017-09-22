@@ -58,24 +58,17 @@
 			display: block;
 		}
 
+	}
+
+	.js-astro .nav-collapse.nav-menu {
+		margin-top: calc-em(8px);
+
 		li {
 			display: block;
-			width: 100%;
+			// width: 100%;
 			// padding-top: calc-em(4px);
 			// padding-bottom: calc-em(4px);
 			// box-sizing: border-box;
-		}
-
-		&.navmenu {
-			margin-top: calc-em(8px);
-
-			li {
-				display: block;
-				width: 100%;
-				// padding-top: calc-em(4px);
-				// padding-bottom: calc-em(4px);
-				// box-sizing: border-box;
-			}
 		}
 	}
 }
