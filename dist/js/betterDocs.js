@@ -382,7 +382,7 @@
 				betterDocs.toggleLang(settings.langDefault);
 
 				window.setTimeout((function () {
-					betterDocs.toggleLang(settings.langDefault)
+					betterDocs.toggleLang(settings.langDefault);
 				}), 300);
 			}
 
