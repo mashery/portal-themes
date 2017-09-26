@@ -1,6 +1,6 @@
 // Custom logo
 portalReady(function () {
-	loadCustomLogo('<img class="logo" src="https://developer.biogen.com//files/logo.svg" alt="Biogen">');
+	loadCustomLogo('<img class="logo" src="https://developer.biogen.com/files/logo.svg" alt="Biogen">');
 });
 
 // Replace search
@@ -13,6 +13,7 @@ portalReady(function () {
 // Run script initializations when the Portal is ready
 portalReady(function () {
 	astro.init();
+	// modifySSOSignin(); // SSO Customizations
 	fluidvids.init({
 		selector: ['iframe', 'object'], // runs querySelectorAll()
 		players: ['www.youtube.com', 'player.vimeo.com'] // players to support
