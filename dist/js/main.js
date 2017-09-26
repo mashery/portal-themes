@@ -1,5 +1,5 @@
 /*!
- * caesars v1.0.0: Portal theme for Caesars
+ * caesars v1.0.0: Portal theme for Caesars.
  * Copyright (c) 2017 TIBCO Software Inc. All Rights Reserved.
  * Built on the Sparrow Boilerplate v9.5.0
  * BSD-type License
@@ -5937,7 +5937,7 @@ Prism.languages.scss['atrule'].inside.rest = Prism.util.clone(Prism.languages.sc
 		method.style.display = 'block';
 		methodParent.id = 'js-method-scrollto';
 		setTimeout((function() {
-			smoothScroll.animateScroll( '#js-method-scrollto', null, { updateURL: false } );
+			window.location.hash = 'js-method-scrollto';
 		}), 264);
 	};
 
