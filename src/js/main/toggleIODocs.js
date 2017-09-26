@@ -112,7 +112,7 @@
 		methodParent.id = 'js-method-scrollto';
 		setTimeout(function() {
 			window.location.hash = 'js-method-scrollto';
-		}, 264);
+		}, 600);
 	};
 
 	/**
