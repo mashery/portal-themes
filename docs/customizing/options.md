@@ -68,22 +68,6 @@ portalOptions.faviconURL = '/files/favicon.ico';
 portalOptions.faviconSizes = '16x16 32x32';
 ```
 
-### Load Files
-The files to load when the Portal renders. Useful when loading more than one CSS or JavaScript file.
-
-*__Note:__ These are loaded asynchronously without any dependency managements. If you're loading multiple files and one is dependant on the other, please use the `m$.loadCSS()` and `m$.loadJS()` helper methods [documented under the JavaScript API](/docs/read/customizing/API).*
-
-```js
-// CSS (loaded in header)
-portalOptions.loadCSS = [];
-
-// JS loaded before render
-portalOptions.loadJSHeader = [];
-
-// JS loaded after render
-portalOptions.loadJSFooter = [];
-```
-
 ### Logo
 Add a custom logo. Accepts any markup as a string (`<img src>`, `<svg>`, etc.).
 
