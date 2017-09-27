@@ -8,33 +8,26 @@ As a best practice, you should display a system font by default and switch over 
 
 ## Using `fontFaceObserver.js`
 
-Add this in Control Center under `Manage > Portal > Portal Settings` under one of the inline JavaScript sections. Change the font file and font name to whatever typeface you're using.
+First, upload to your Portal via the File Manager under `Manage > Content`.
+
+Then, add this in Control Center under `Manage > Portal > Portal Settings` under one of the inline JavaScript sections. Change the font file and font name to whatever typeface you're using.
 
 ```js
-// Load the font file as normal
-portalOptions.loadCSS = [
-	'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700',
-	// Any other CSS files you have
-];
-
-window.addEventListener('portalBeforeInit', function () {
-	// If the font is cached, automatically apply it
-	// Otherwise, wait for it to load
-	if (sessionStorage.getItem('portalFontsLoaded')) {
-		document.documentElement.classList.add('fonts-loaded');
-	} else {
-		m$.loadJS('/files/fontfaceobserver.js', function () {
-			var font = new FontFaceObserver('Source Sans Pro');
-			font.load().then(function () {
-				sessionStorage.addItem('portalFontsLoaded')
-				document.documentElement.classList.add('fonts-loaded');
-			});
+/**
+ * Load custom typeface
+ */
+window.addEventListener('portalAfterInit', function () {
+	m$.loadJS('/files/fontfaceobserver.js', function () {
+		m$.loadCSS('path/to/you/fonts.css');
+		var font = new FontFaceObserver('Your Typeface Name');
+		font.load().then(function () {
+			document.documentElement.classList.add('fonts-loaded');
 		});
-	}
+	});
 }, false);
 ```
 
-Then, in your CSS file, make the font that you use conditional on the `.fonts-loaded` class.
+Finally, in your CSS file, make the font that you use conditional on the `.fonts-loaded` class.
 
 ```css
 body {
