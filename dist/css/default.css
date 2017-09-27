@@ -5,19 +5,20 @@
  */
 /* line 108, src/sass/_config.scss */
 .container:before,
-.row:before, .method .title:before,
+.row:before, .method .title:before, .clearfix:before,
 .container:after,
 .row:after,
 .method .title:after,
 .method a.clear-results:after,
-.method .clear-results.link-block-styled:after {
+.method .clear-results.link-block-styled:after,
+.clearfix:after {
   display: table;
   content: " ";
 }
 
 /* line 114, src/sass/_config.scss */
 .container:after,
-.row:after, .method .title:after, .method a.clear-results:after, .method .clear-results.link-block-styled:after {
+.row:after, .method .title:after, .method a.clear-results:after, .method .clear-results.link-block-styled:after, .clearfix:after {
   clear: both;
 }
 
@@ -2110,4 +2111,275 @@ pre.error {
   visibility: visible;
   width: 220px;
   z-index: 98;
+}
+
+/*! SPLIT: Overrides */
+/**
+ * @section Overrides
+ * Nudge and tweak alignment, spacing, and visibility.
+ */
+/**
+ * Backgrounds
+ */
+/* line 12, src/sass/components/_overrides.scss */
+.bg-dark, .bg-primary {
+  background-color: #272727;
+  color: #ffffff;
+}
+
+/* line 16, src/sass/components/_overrides.scss */
+.bg-dark a, .bg-primary a, .bg-dark .link-block-styled, .bg-primary .link-block-styled {
+  color: #e5e5e5;
+}
+
+/* line 19, src/sass/components/_overrides.scss */
+.bg-dark a:hover, .bg-primary a:hover, .bg-dark .link-block-styled:hover, .bg-primary .link-block-styled:hover, .bg-dark .link-block:hover .link-block-styled, .link-block:hover .bg-dark .link-block-styled, .bg-primary .link-block:hover .link-block-styled, .link-block:hover .bg-primary .link-block-styled, .bg-dark a:active, .bg-primary a:active, .bg-dark .link-block-styled:active, .bg-primary .link-block-styled:active {
+  color: #ffffff;
+}
+
+/* line 26, src/sass/components/_overrides.scss */
+.bg-muted {
+  background-color: #f7f7f7;
+}
+
+/* line 30, src/sass/components/_overrides.scss */
+.bg-white {
+  background-color: #ffffff;
+}
+
+/* line 38, src/sass/components/_overrides.scss */
+.bg-primary {
+  background-color: #0088cc;
+}
+
+/* line 43, src/sass/components/_overrides.scss */
+.bg-hero {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+/**
+ * Text sizes
+ */
+/* line 54, src/sass/components/_overrides.scss */
+.text-small {
+  font-size: 0.9375em;
+}
+
+/* line 58, src/sass/components/_overrides.scss */
+.text-large {
+  font-size: 1.1875em;
+  line-height: 1.4;
+}
+
+@media (min-width: 40em) {
+  /* line 58, src/sass/components/_overrides.scss */
+  .text-large {
+    font-size: 1.3125em;
+  }
+}
+
+/* line 67, src/sass/components/_overrides.scss */
+.text-hero {
+  font-size: 2em;
+  line-height: 1.4;
+}
+
+@media (min-width: 40em) {
+  /* line 67, src/sass/components/_overrides.scss */
+  .text-hero {
+    font-size: 3em;
+  }
+}
+
+/**
+ * Text colors
+ */
+/* line 81, src/sass/components/_overrides.scss */
+.text-muted {
+  color: #808080;
+}
+
+/**
+ * Text decoration
+ */
+/* line 90, src/sass/components/_overrides.scss */
+.text-no-bold {
+  font-weight: normal;
+}
+
+/* line 94, src/sass/components/_overrides.scss */
+.text-no-italic {
+  font-style: normal;
+}
+
+/**
+ * Text alignment
+ */
+/* line 103, src/sass/components/_overrides.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 107, src/sass/components/_overrides.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 111, src/sass/components/_overrides.scss */
+.text-left {
+  text-align: left;
+}
+
+@media (min-width: 60em) {
+  /* line 116, src/sass/components/_overrides.scss */
+  .text-right-large {
+    text-align: right;
+  }
+}
+
+/**
+ * Floats
+ */
+/* line 126, src/sass/components/_overrides.scss */
+.float-left {
+  float: left;
+}
+
+/* line 130, src/sass/components/_overrides.scss */
+.float-center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 136, src/sass/components/_overrides.scss */
+.float-right {
+  float: right;
+}
+
+/**
+ * Margins
+ */
+/* line 145, src/sass/components/_overrides.scss */
+.no-margin-top {
+  margin-top: 0;
+}
+
+/* line 149, src/sass/components/_overrides.scss */
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+/* line 153, src/sass/components/_overrides.scss */
+.margin-top {
+  margin-top: 1.5625em;
+}
+
+/* line 157, src/sass/components/_overrides.scss */
+.margin-bottom {
+  margin-bottom: 1.5625em;
+}
+
+/* line 161, src/sass/components/_overrides.scss */
+.margin-bottom-small {
+  margin-bottom: 0.5em;
+}
+
+/* line 165, src/sass/components/_overrides.scss */
+.margin-bottom-large {
+  margin-bottom: 2em;
+}
+
+/**
+ * Padding
+ */
+/* line 174, src/sass/components/_overrides.scss */
+.no-padding-top {
+  padding-top: 0;
+}
+
+/* line 178, src/sass/components/_overrides.scss */
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+/* line 182, src/sass/components/_overrides.scss */
+.padding-top {
+  padding-top: 1.5625em;
+}
+
+/* line 186, src/sass/components/_overrides.scss */
+.padding-top-small {
+  padding-top: 0.5em;
+}
+
+/* line 190, src/sass/components/_overrides.scss */
+.padding-top-large {
+  padding-top: 2em;
+}
+
+/* line 194, src/sass/components/_overrides.scss */
+.padding-bottom {
+  padding-bottom: 1.5625em;
+}
+
+/* line 198, src/sass/components/_overrides.scss */
+.padding-bottom-small {
+  padding-bottom: 0.5em;
+}
+
+/* line 202, src/sass/components/_overrides.scss */
+.padding-bottom-large {
+  padding-bottom: 2em;
+}
+
+/**
+ * Visibility
+ */
+/**
+ * Visually hide an element, but leave it available for screen readers
+ * @link https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css
+ * @link http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+/* line 216, src/sass/components/_overrides.scss */
+.screen-reader {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/**
+ * Extends the .screen-reader class to allow the element to be focusable when navigated to via the keyboard
+ * @link https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css
+ * @link https://www.drupal.org/node/897638
+ */
+/* line 233, src/sass/components/_overrides.scss */
+.screen-reader-focusable:active,
+.screen-reader-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: normal;
+  width: auto;
+}
+
+/**
+ * @workaround
+ * @affected IE 8/9/10
+ * @link http://juicystudio.com/article/screen-readers-display-none.php
+ */
+/* line 249, src/sass/components/_overrides.scss */
+[hidden] {
+  display: none;
+  visibility: hidden;
 }

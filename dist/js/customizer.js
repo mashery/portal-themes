@@ -265,28 +265,6 @@ var customizer = function () {
 			// Update the download button
 			createDownload(btnCSS, styles);
 
-		} else {
-
-			atomic.ajax({
-				url: baseURL + 'css/overrides' + minified + '.css'
-			}).success((function (data) {
-
-				// Create scripts
-				cache[baseURL + 'css/overrides' + minified + '.css'] = {
-					styles: atob(data.content),
-					size: data.size
-				};
-				styles += cache[baseURL + 'css/overrides' + minified + '.css'].styles;
-				stylesSize += cache[baseURL + 'css/overrides' + minified + '.css'].size;
-				sessionStorage.setItem('portalCustomizerCache', JSON.stringify(cache));
-
-				// Update the download button
-				createDownload(btnCSS, styles);
-
-			})).error((function (data) {
-				// @todo
-			}));
-
 		}
 	};
 
@@ -415,10 +393,16 @@ var customizer = function () {
 				url: baseURL + 'css/' + layout + minified + '.css'
 			}).success((function (data) {
 
+				var styles = atob(data.content).split('/*! SPLIT: Overrides */');
+
 				// Create styles
 				cache[baseURL + 'css/' + layout + minified + '.css'] = {
-					styles: atob(data.content),
+					styles: styles[0].trim(),
 					size: data.size
+				};
+				cache[baseURL + 'css/overrides' + minified + '.css'] = {
+					styles: styles[1].trim(),
+					size: 0
 				};
 				styles = cache[baseURL + 'css/' + layout + minified + '.css'].styles;
 				stylesSize += cache[baseURL + 'css/' + layout + minified + '.css'].size;
