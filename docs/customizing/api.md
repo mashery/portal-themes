@@ -46,6 +46,8 @@ Load a CSS file asynchronously. Adapted from [loadCSS() by Filament Group](https
 
 Pass in the URL to the CSS file as an argument. If you want to load it before a specific file in the DOM for cascading purposes, or have a specific media type, you can optionally pass those in as arguments.
 
+*__Note:__ Because this file loads asynchronously, the browser may not load it for several seconds, results in a flash of unstyled content until it does. You may prefer to [load your stylesheets synchronously instead](/docs/extras/Loading_Additional_Stylesheets).*
+
 ```js
 /**
  * @param {String} href    The URL for your CSS file
