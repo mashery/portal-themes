@@ -132,18 +132,20 @@ Must be a valid CSS color attribute (examples: `#000`, `rgb(0, 0, 0)`, `rgba(0, 
 
 ### 4a. First, add the core Blackbeard files to your site.
 
-Use this staging site as a faux CDN. These files will be moving to core after the beta test, and this step will go away.
+To ensure that you always have the latest version of Blackbeard, load it from the CDN.
+
+*__Note:__ These files will be auto-loaded via the core after the beta test, and this step will go away.*
 
 **Header JS File**
 
 ```
-https://stagingcs1.mashery.com/files/placeholders.min.beta.js
+https://s3.amazonaws.com/developer.mashery/js/placeholders.min.beta.js
 ```
 
 **Body JS File**
 
 ```
-https://stagingcs1.mashery.com/files/app.min.beta.js
+https://s3.amazonaws.com/developer.mashery/js/app.min.beta.js
 ```
 
 **Body JS Inline**
@@ -162,6 +164,6 @@ Upload your CSS file via the File Manager in Control Center. Then go to `Manage 
 
 ### 4c. Finally, load and initialize your JavaScript.
 
-Copy-and-paste the following code into one of the `Inline JavaScript` sections under `Manage > Portal > Portal Settings` in control center.
+Copy-and-paste the following code into one of the `Inline JavaScript` sections under `Manage > Portal > Portal Settings` in control center. If you have a JavaScript file, upload it via the File Manager in Control Center.
 
 <pre class="lang-javascript"><code id="download-init">// No initialization needed...</code></pre>

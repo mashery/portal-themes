@@ -1,4 +1,3 @@
-/*! portal-themes vbeta | (c) 2017 TIBCO and Chris Ferdinandi | LicenseRef-All Rights Reserved License | http://github.com/mashery/portal-themes */
 /*!
  * BetterDocs.js v1.1.0
  * Create better static documentation.

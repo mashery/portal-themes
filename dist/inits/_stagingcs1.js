@@ -97,7 +97,7 @@ var generateGettingStartedNav = function () {
 	var list = document.querySelector('#getting-started-list');
 	document.querySelectorAll('#nav-docs > li').forEach(function (item) {
 		if (item.classList.contains('current-page')) return;
-		if (item.innerText.trim() === 'Tests') return;
+		if (item.textContent.trim() === 'Tests') return;
 		var newItem = item.cloneNode(true);
 		list.append(newItem);
 	});
@@ -412,7 +412,7 @@ var renderToC = function () {
 				list += closeSubItem(heading, difference);
 			}
 
-			list += close + '<li><a href="#' + heading.id + '">' + heading.innerText + '</a>';
+			list += close + '<li><a href="#' + heading.id + '">' + heading.textContent + '</a>';
 
 			// Update last position
 			last = current;
@@ -458,7 +458,7 @@ window.addEventListener('portalAfterRender', function () {
 
 	// Smooth Scroll
 	m$.loadJS('https://stagingcs1.mashery.com/files/smooth-scroll.min.beta.js', function () {
-		var scroll = new SmoothScroll('a[href*="#"]', {
+		var scroll = new SmoothScroll('.category-page a[href*="#"], .category-docs a[href*="#"], .category-docs a[href*="#"], .category-blogall a[href*="#"], .category-blogsingle a[href*="#"]', {
 			ignore: '.js-scroll-ignore'
 		});
 		window.addEventListener('portalBeforeRenderAjax', function removeSmoothScroll () {

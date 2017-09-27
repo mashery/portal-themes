@@ -127,7 +127,7 @@ gulp.task('build:scripts', ['clean:dist'], function() {
 	var fileVersion = settings.cacheBust ? '.' + package.version : '';
 
 	var jsTasks = lazypipe()
-		.pipe(header, banner.min, { package : package })
+		// .pipe(header, banner.min, { package : package })
 		.pipe(optimizejs)
 		.pipe(gulp.dest, paths.scripts.output)
 		.pipe(rename, { suffix: '.min' + fileVersion })
@@ -167,7 +167,7 @@ gulp.task('build:styles', ['clean:dist'], function() {
 			cascade: true,
 			remove: true
 		}))
-		.pipe(header(banner.min, { package : package }))
+		// .pipe(header(banner.min, { package : package }))
 		.pipe(gulp.dest(paths.styles.output))
 		.pipe(rename({ suffix: '.min' + fileVersion }))
 		.pipe(minify())

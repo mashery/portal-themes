@@ -1,4 +1,3 @@
-/*! portal-themes vbeta | (c) 2017 TIBCO and Chris Ferdinandi | LicenseRef-All Rights Reserved License | http://github.com/mashery/portal-themes */
 /*! fluidvids.js v2.4.1 | (c) 2014 @toddmotto | https://github.com/toddmotto/fluidvids */
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {

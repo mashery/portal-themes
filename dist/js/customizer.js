@@ -1,4 +1,3 @@
-/*! portal-themes vbeta | (c) 2017 TIBCO and Chris Ferdinandi | LicenseRef-All Rights Reserved License | http://github.com/mashery/portal-themes */
 /**
  * Customize Blackbeard Downloads
  */
@@ -38,7 +37,9 @@ var customizer = function () {
 			code +=
 				'\n\n' +
 				"window.addEventListener('portalAfterRender', function () {" + '\n' +
-					events +
+					'\t' + 'm$.loadJS(\'/files/' + layout + minified + '.js\', function () {' + '\n' +
+						events +
+					'\t' + '});' + '\n' +
 				'}, false)';
 		}
 
@@ -116,7 +117,7 @@ var customizer = function () {
 				if (cache[baseURL + 'events/' + pluginName + '.js']) {
 
 					// Create inits
-					events += '\t' + cache[baseURL + 'events/' + pluginName + '.js'].replace(new RegExp('\n', 'g'), '\n\t') + '\n';
+					events += '\t\t' + cache[baseURL + 'events/' + pluginName + '.js'].replace(new RegExp('\n', 'g'), '\n\t\t') + '\n';
 
 					// Render initialization code
 					createInits();
@@ -130,7 +131,7 @@ var customizer = function () {
 
 						// Create inits
 						cache[baseURL + 'events/' + pluginName + '.js'] = atob(data.content);
-						events += '\t' + cache[baseURL + 'events/' + pluginName + '.js'].replace(new RegExp('\n', 'g'), '\n\t') + '\n';
+						events += '\t\t' + cache[baseURL + 'events/' + pluginName + '.js'].replace(new RegExp('\n', 'g'), '\n\t\t') + '\n';
 						sessionStorage.setItem('portalCustomizerCache', JSON.stringify(cache));
 
 						// Render initialization code

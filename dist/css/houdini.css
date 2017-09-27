@@ -1,4 +1,3 @@
-/*! portal-themes vbeta | (c) 2017 TIBCO and Chris Ferdinandi | LicenseRef-All Rights Reserved License | http://github.com/mashery/portal-themes */
 /*!
  * Houdini v9.4.0: A simple collapse-and-expand script
  * (c) 2017 Chris Ferdinandi

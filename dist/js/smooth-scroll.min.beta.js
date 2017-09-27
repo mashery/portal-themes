@@ -1,4 +1,3 @@
-/*! portal-themes vbeta | (c) 2017 TIBCO and Chris Ferdinandi | LicenseRef-All Rights Reserved License | http://github.com/mashery/portal-themes */
 /*!
  * smooth-scroll v12.1.5: Animate scrolling to anchor links
  * (c) 2017 Chris Ferdinandi
