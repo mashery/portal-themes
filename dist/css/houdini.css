@@ -1,25 +1,15 @@
-/*!
- * Houdini v9.4.0: A simple collapse-and-expand script
- * (c) 2017 Chris Ferdinandi
- * MIT License
- * http://github.com/cferdinandi/houdini
- */
-/**
- * Contain floats
- * The space content is one way to avoid an Opera bug when the `contenteditable` attribute is included anywhere else in the document%
- * @link https://github%com/h5bp/html5-boilerplate/blob/master/dist/css/main%css
- */
+/*! Houdini v9.4.0 | (c) 2017 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/houdini */
 /**
  * Show/hide text
  */
-/* line 14, src/sass/houdini.scss */
+/* line 6, src/sass/components/_houdini.scss */
 .js-houdini .active > .collapse-text-show,
 .collapse-text-hide {
   display: none;
   visibility: hidden;
 }
 
-/* line 20, src/sass/houdini.scss */
+/* line 12, src/sass/components/_houdini.scss */
 .js-houdini .active > .collapse-text-hide {
   display: inline-block;
   visibility: visible;
@@ -28,7 +18,7 @@
 /**
  * The content
  */
-/* line 29, src/sass/houdini.scss */
+/* line 21, src/sass/components/_houdini.scss */
 .js-houdini .collapse {
   border: 0;
   clip: rect(0 0 0 0);
@@ -40,7 +30,7 @@
   width: 1px;
 }
 
-/* line 39, src/sass/houdini.scss */
+/* line 31, src/sass/components/_houdini.scss */
 .js-houdini .collapse.active {
   clip: auto;
   height: auto;
@@ -50,7 +40,7 @@
   width: auto;
 }
 
-/* line 48, src/sass/houdini.scss */
+/* line 40, src/sass/components/_houdini.scss */
 .js-houdini .collapse:focus {
   outline: none;
 }

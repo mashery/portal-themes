@@ -2,9 +2,9 @@
  * @section Conditional Content
  * Show different content to logged-in and logged-out users.
  */
-/* line 6, src/sass/components/_conditional-content.scss */
+
 .is-logged-in .hide-logged-in,
 .is-logged-out .hide-logged-out {
-  display: none;
-  visibility: hidden;
+	display: none;
+	visibility: hidden;
 }
