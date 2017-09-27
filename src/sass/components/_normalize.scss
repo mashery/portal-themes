@@ -171,6 +171,6 @@ figure {
  * @link https://code.google.com/p/chromium/issues/detail?id=37721
  */
 .tabindex:focus,
-[tabindex="-1"] {
+[tabindex="-1"]:focus {
     outline: none;
 }

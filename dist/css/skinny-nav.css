@@ -230,7 +230,7 @@ figure {
  */
 /* line 173, src/sass/components/_normalize.scss */
 .tabindex:focus,
-[tabindex="-1"] {
+[tabindex="-1"]:focus {
   outline: none;
 }
 
