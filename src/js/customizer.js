@@ -400,10 +400,12 @@ var customizer = function () {
 					styles: styles[0].trim(),
 					size: data.size
 				};
-				cache[baseURL + 'css/overrides' + minified + '.css'] = {
-					styles: styles[1].trim(),
-					size: 0
-				};
+				if (styles[1]) {
+					cache[baseURL + 'css/overrides' + minified + '.css'] = {
+						styles: styles[1].trim(),
+						size: 0
+					};
+				}
 				styles = cache[baseURL + 'css/' + layout + minified + '.css'].styles;
 				stylesSize += cache[baseURL + 'css/' + layout + minified + '.css'].size;
 				sessionStorage.setItem('portalCustomizerCache', JSON.stringify(cache));
