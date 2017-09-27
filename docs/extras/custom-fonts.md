@@ -8,7 +8,7 @@ As a best practice, you should display a system font by default and switch over 
 
 ## Using `fontFaceObserver.js`
 
-First, upload to your Portal via the File Manager under `Manage > Content`.
+First, upload [fontFaceObserver.js](https://github.com/bramstein/fontfaceobserver) to your Portal via the File Manager under `Manage > Content`.
 
 Then, add this in Control Center under `Manage > Portal > Portal Settings` under one of the inline JavaScript sections. Change the font file and font name to whatever typeface you're using.
 
