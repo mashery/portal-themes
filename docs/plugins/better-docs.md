@@ -20,11 +20,12 @@ Code examples should be placed *above* the descriptive text for proper alignment
 
 **Markdown**
 
-	This example API documentation page was created with Better Docs. Feel free to edit it and use it as a base for your own API's documentation.
+```markdown
+This example API documentation page was created with Better Docs. Feel free to edit it and use it as a base for your own API's documentation.
 
-	## Authentication
+## Authentication
 
-	> To authorize, use this code:
+> To authorize, use this code:
 
 	```bash
 	# With shell, you can just pass the correct header with each request
@@ -51,7 +52,8 @@ Code examples should be placed *above* the descriptive text for proper alignment
 	let api = kittn.authorize('meowmeowmeow');
 	```
 
-	>Make sure to replace meowmeowmeow with your API key.
+> Make sure to replace meowmeowmeow with your API key.
+```
 
 **HTML**
 
