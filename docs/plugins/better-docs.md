@@ -133,6 +133,8 @@ window.addEventListener('portalAfterRender', function (event) {
 }, false);
 ```
 
+*__Note:__ Any language you don't specify in your options will always be visible.*
+
 ### 4. Add a self-destruct
 
 To prevent Better Docs styles from impacting other documentation pages, you'll need to destroy your initialization on other pages. Add a self-destruction listener to your `portalAfterRender` event.

@@ -500,7 +500,7 @@ window.addEventListener('portalAfterRender', function () {
 			langDefault: 'js',
 			wideLayout: true,
 			wideLayoutBg: true,
-			restrictToPages: 'docs-tests-better_docs'
+			restrictToPages: 'docs-plugins-better_docs-demo'
 		});
 
 		// Self-Destruct
