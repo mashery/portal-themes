@@ -498,8 +498,6 @@ window.addEventListener('portalAfterRender', function () {
 				}
 			},
 			langDefault: 'js',
-			wideLayout: true,
-			wideLayoutBg: true,
 			restrictToPages: 'docs-plugins-better_docs-demo'
 		});
 

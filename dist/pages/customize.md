@@ -83,6 +83,10 @@ Pick your layout, and add plugins and components. In a future version, you'll al
 			<input type="checkbox" class="has-js has-events" name="plugins" value="smooth-scroll">
 			<a target="_blank" href="/docs/plugins/Smooth_Scroll">Smooth Scroll</a>
 		</label>
+		<label>
+			<input type="checkbox" class="has-js has-css has-events" name="plugins" value="betterDocs">
+			<a target="_blank" href="/docs/read/plugins/Better_Docs">Better Docs</a>
+		</label>
 	</div>
 </div>
 
