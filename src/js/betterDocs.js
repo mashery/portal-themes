@@ -51,7 +51,7 @@
 		langsNav: '.better-docs-nav',
 
 		// Styles
-		wideLayout: false,
+		wideLayout: true,
 		wideLayoutBg: true,
 		initClass: 'better-docs',
 		wideLayoutClass: 'better-docs-wide',
@@ -334,9 +334,6 @@
 
 			// feature test
 			if (!supports) return;
-
-			// Destroy any existing initializations
-			betterDocs.destroy();
 
 			// Merge defaults with user options
 			settings = extend(defaults, options || {});
