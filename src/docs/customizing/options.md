@@ -54,6 +54,13 @@ Class for links that point to the current page. This is applied to links in the 
 portalOptions.currentPageClass = 'current-page';
 ```
 
+### Blog Excerpt Length
+How long the excerpts on the "All Blog Posts" pages should be.
+
+```js
+portalOptions.excerptLength = 250;
+```
+
 ### Favicon
 Add a favicon/tab icon for your Portal.
 

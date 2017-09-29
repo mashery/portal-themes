@@ -416,18 +416,57 @@ portalOptions.templates.appRegisterSuccess =
 ```
 
 
-<!-- ### Blog: All Posts
+### Blog: All Posts
 The page where all blog posts are listed.
-@todo Create this layout
 
-blogAll: '<div class="main container" id="main"><p>Blog content needs to get created.</p></div>', -->
+```js
+portalOptions.templates.blogAll = function () {
+	var template = '<h1>{{content.blogTitle}}</h1>';
+	var excerpt = document.createElement('div');
+	window.mashery.content.main.forEach(function (post) {
+		excerpt.innerHTML = m$.convertMarkdown(post.content);
+		template +=
+			'<h2 class="margin-bottom-small">' +
+				'<a href="' + post.url + '">' + post.title + '</a>' +
+			'</h2>' +
+			'<p class="text-muted margin-bottom-small">' +
+				'By ' + post.author + ' on <time datetime="' + post.published + '" pubdate>' + post.published + '</time>' +
+			'</p>' +
+			'<div class="content">' +
+				excerpt.textContent.slice(0, parseInt(settings.excerptLength, 10)) + '...' +
+				'<p><a href="' + post.url + '">' + settings.labels.blogAll.readMore + '<span class="screen-reader">' + post.title + '</span></a></p>' +
+			'</div>';
+	});
+	if (window.mashery.content.secondary.pagination) {
+		template += window.mashery.content.secondary.pagination;
+	}
+
+	return '<div class="main container container-small" id="main">' + template + '</div>';
+};
+```
 
 
-<!-- Blog: Single Post
+### Blog: Single Post
 The layout for individual blog posts.
-@todo Create this layout
 
-blogSingle: '<div class="main container" id="main"><p>Blog content needs to get created.</p></div>', -->
+```js
+portalOptions.templates.blogSingle = function () {
+	var template =
+		'<h1 class="margin-bottom-small">' + window.mashery.content.main.title + '</h1>' +
+		'<p class="text-muted">' +
+			'By ' + window.mashery.content.main.author + ' on <time datetime="' + window.mashery.content.main.published + '" pubdate>' + window.mashery.content.main.published + '</time>' +
+		'</p>' +
+		'<div class="content">' +
+			m$.convertMarkdown(window.mashery.content.main.content) +
+		'</div>';
+
+	if (window.mashery.content.main.edit) {
+		template += '<p><a href="' + window.mashery.content.main.edit + '">Edit Post</a></p>';
+	}
+
+	return '<div class="main container container-small" id="main">' + template + '</div>';
+};
+```
 
 
 ### Contact

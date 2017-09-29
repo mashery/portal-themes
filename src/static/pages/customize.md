@@ -143,13 +143,13 @@ To ensure that you always have the latest version of Blackbeard, load it from th
 **Header JS File**
 
 ```
-https://s3.amazonaws.com/developer.mashery/js/placeholders.min.beta.js
+https://dinw9xheo7f2n.cloudfront.net/js/placeholders.min.beta.js
 ```
 
 **Body JS File**
 
 ```
-https://s3.amazonaws.com/developer.mashery/js/app.min.beta.js
+https://dinw9xheo7f2n.cloudfront.net/js/app.min.beta.js
 ```
 
 **Body JS Inline**

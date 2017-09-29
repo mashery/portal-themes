@@ -194,6 +194,16 @@ portalOptions.labels.appRegisterSuccess: {
 };
 ```
 
+### Blog: All Posts
+The page displaying all of your blog posts.
+
+```js
+portalOptions.labels.blogAll: {
+	blogTitle: 'The {{mashery.area}} Developer Blog', // The title of the blog area
+	readMore: 'Read more' // The "read more" link for excerpts
+}
+```
+
 ### Contact
 The contact form page.
 
