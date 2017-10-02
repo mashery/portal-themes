@@ -30,7 +30,7 @@ portalOptions.templates.primaryNav = function () {
 
 **Code Overflow**
 
-<pre class="lang-js"><code>// Update the primary navigation
+<pre class="lang-js" style="white-space: pre; word-break: normal;"><code>// Update the primary navigation
 portalOptions.templates.primaryNav = function () {
 	var template =
 		'&lt;div class="nav-primary nav-wrap nav-collapse" id="nav-primary"&gt;' +
