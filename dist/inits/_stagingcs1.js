@@ -512,7 +512,9 @@ window.addEventListener('portalAfterRender', function () {
 	// Latest Blog Posts
 	window.addEventListener('portalAfterGitHubRender', function () {
 		m$.loadJS('/files/latestBlogPosts.min.beta.js', function () {
-			latestBlogPosts();
+			latestBlogPosts({
+				selector: '#latest-blog-posts-container'
+			});
 		});
 	});
 
