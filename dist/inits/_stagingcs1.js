@@ -477,6 +477,7 @@ window.addEventListener('portalAfterRender', function () {
 		});
 	});
 
+	// BetterDocs.js
 	m$.loadJS('/files/betterDocs.min.beta.js', function () {
 		var docs = new BetterDocs('.content', {
 			langs: {
@@ -506,6 +507,11 @@ window.addEventListener('portalAfterRender', function () {
 			docs.destroy();
 			window.removeEventListener('portalBeforeRender', destroyBetterDocs, false);
 		}, false);
+	});
+
+	// Latest Blog Posts
+	m$.loadJS('/files/latestBlogPosts.min.beta.js', function () {
+		console.log('loaded');
 	});
 
 	// conditional-content.css

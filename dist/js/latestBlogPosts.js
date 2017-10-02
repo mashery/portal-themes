@@ -1,4 +1,4 @@
-var getLatestBlogPosts = function (options) {
+var latestBlogPosts = function (options) {
 
 	var defaults = {
 		selector: '#latest-blog-posts',
