@@ -21,6 +21,10 @@ label {
 	padding: 0;
 }
 
+label.require:after {
+	content: " *";
+}
+
 /**
  * 1. Correct color not being inherited.
  *    Known issue: affects color of disabled elements.
