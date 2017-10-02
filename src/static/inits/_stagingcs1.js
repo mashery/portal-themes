@@ -510,8 +510,10 @@ window.addEventListener('portalAfterRender', function () {
 	});
 
 	// Latest Blog Posts
-	m$.loadJS('/files/latestBlogPosts.min.beta.js', function () {
-		console.log('loaded');
+	window.addEventListener('portalAfterGitHubRender', function () {
+		m$.loadJS('/files/latestBlogPosts.min.beta.js', function () {
+			latestBlogPosts();
+		});
 	});
 
 	// conditional-content.css

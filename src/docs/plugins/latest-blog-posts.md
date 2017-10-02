@@ -11,7 +11,11 @@ Add a list of the latest blog posts to any page on your Portal.
 
 **Latest Posts**
 
-<div id="latest-blog-posts"></div>
+<div id="latest-blog-posts">
+	<div class="placeholder placeholder-sentence"></div>
+	<div class="placeholder placeholder-sentence"></div>
+	<div class="placeholder placeholder-sentence"></div>
+</div>
 
 
 ## Getting Started
