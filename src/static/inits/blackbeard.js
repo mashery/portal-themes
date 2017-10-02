@@ -7,7 +7,7 @@ portalOptions.templates.primaryNav = function () {
 		'<div class="nav-primary nav-wrap" id="nav-primary">' +
 			'<div class="container padding-top-small padding-bottom-small">' +
 				'<a id="logo" class="logo margin-bottom" href="/">{{content.logo}}</a>' +
-				'<a role="button" class="nav-toggle js-scroll-ignore" id="nav-primary-toggle" data-nav-toggle=".nav-collapse" href="#">{{content.menuToggle}}</a>' +
+				'<a role="button" class="nav-toggle" id="nav-primary-toggle" data-nav-toggle=".nav-collapse" href="#">{{content.menuToggle}}</a>' +
 				'<div class="nav-menu nav-collapse" id="nav-primary-menu">' +
 					'<ul class="nav" id="nav-primary-list">' +
 						'{{content.navItemsPrimary}}' +

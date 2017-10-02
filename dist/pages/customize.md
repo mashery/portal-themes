@@ -69,12 +69,12 @@ Pick your layout, and add plugins and components. In a future version, you'll al
 			<input type="checkbox" class="has-css" name="plugins" value="images">
 			<a target="_blank" href="/docs/plugins/Images_Styles">Image Styles</a> <em class="text-no-bold text-muted">(round, border, photograph)</em>
 		</label>
-	</div>
-	<div class="grid-half">
 		<label>
 			<input type="checkbox" class="has-css has-events" name="plugins" value="conditional-content">
 			<a target="_blank" href="/docs/plugins/Conditional_Content">Conditional Content</a> <em class="text-no-bold text-muted">(logged-in/logged-out)</em>
 		</label>
+	</div>
+	<div class="grid-half">
 		<label>
 			<input type="checkbox" class="has-css has-js has-events" name="plugins" value="houdini">
 			<a target="_blank" href="/docs/plugins/ExpandandCollapse_Accordions">Expand-and-Collapse/Accordions</a>
@@ -86,6 +86,10 @@ Pick your layout, and add plugins and components. In a future version, you'll al
 		<label>
 			<input type="checkbox" class="has-js has-css has-events" name="plugins" value="betterDocs">
 			<a target="_blank" href="/docs/read/plugins/Better_Docs">Better Docs</a>
+		</label>
+		<label>
+			<input type="checkbox" class="has-css" name="plugins" value="code-overflow">
+			<a target="_blank" href="/docs/read/plugins/code_overflow">Code Overflow</a>
 		</label>
 	</div>
 </div>

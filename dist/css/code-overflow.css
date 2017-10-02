@@ -1,0 +1,9 @@
+/**
+ * @section Code Overflow
+ * Adds horizontal overflow to pre elements
+ */
+/* line 6, src/sass/components/_code-overflow.scss */
+pre {
+  white-space: pre;
+  word-break: normal;
+}
