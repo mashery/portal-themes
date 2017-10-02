@@ -92,7 +92,7 @@ Pick your layout, and add plugins and components. In a future version, you'll al
 			<a target="_blank" href="/docs/read/plugins/code_overflow">Code Overflow</a>
 		</label>
 		<label>
-			<input type="checkbox" class="has-js" name="plugins" value="latestBlogPosts">
+			<input type="checkbox" class="has-js has-events" name="plugins" value="latestBlogPosts">
 			<a target="_blank" href="/docs/read/plugins/latest_blog_posts">Latest Blog Posts</a>
 		</label>
 	</div>
