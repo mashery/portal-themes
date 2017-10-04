@@ -393,20 +393,20 @@ var customizer = function () {
 				url: baseURL + 'css/' + layout + minified + '.css'
 			}).success(function (data) {
 
-				var styles = atob(data.content).split('/*! SPLIT: Overrides */');
+				var stylesheets = atob(data.content).split('/*! SPLIT: Overrides */');
 
 				// Create styles
 				cache[baseURL + 'css/' + layout + minified + '.css'] = {
-					styles: styles[0].trim(),
+					styles: stylesheets[0].trim(),
 					size: data.size
 				};
 				if (styles[1]) {
 					cache[baseURL + 'css/overrides' + minified + '.css'] = {
-						styles: styles[1].trim(),
+						styles: stylesheets[1].trim(),
 						size: 0
 					};
 				}
-				styles = cache[baseURL + 'css/' + layout + minified + '.css'].styles;
+				styles += cache[baseURL + 'css/' + layout + minified + '.css'].styles;
 				stylesSize += cache[baseURL + 'css/' + layout + minified + '.css'].size;
 				sessionStorage.setItem('portalCustomizerCache', JSON.stringify(cache));
 

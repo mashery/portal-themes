@@ -1,22 +1,3 @@
-/* line 106, src/sass/_config.scss */
-.container:before,
-.row:before, .method .title:before, .clearfix:before,
-.container:after,
-.row:after,
-.method .title:after,
-.method a.clear-results:after,
-.method .clear-results.link-block-styled:after,
-.clearfix:after {
-  display: table;
-  content: " ";
-}
-
-/* line 112, src/sass/_config.scss */
-.container:after,
-.row:after, .method .title:after, .method a.clear-results:after, .method .clear-results.link-block-styled:after, .clearfix:after {
-  clear: both;
-}
-
 /**
  * @section Normalize.css
  * Normalize.css base with custom code.
@@ -2351,4 +2332,28 @@ pre.error {
 [hidden] {
   display: none;
   visibility: hidden;
+}
+
+/**
+ * Contain floats
+ * The space content is one way to avoid an Opera bug when the `contenteditable` attribute is included anywhere else in the document.
+ * @link https://github%com/h5bp/html5-boilerplate/blob/master/dist/css/main%css
+ */
+/* line 259, src/sass/components/_overrides.scss */
+.clearfix:before, .container:before,
+.row:before, .method .title:before,
+.clearfix:after,
+.container:after,
+.row:after,
+.method .title:after,
+.method a.clear-results:after,
+.method .clear-results.link-block-styled:after {
+  display: table;
+  content: " ";
+}
+
+/* line 265, src/sass/components/_overrides.scss */
+.clearfix:after, .container:after,
+.row:after, .method .title:after, .method a.clear-results:after, .method .clear-results.link-block-styled:after {
+  clear: both;
 }
