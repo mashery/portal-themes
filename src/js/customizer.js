@@ -16,7 +16,7 @@ var customizer = function () {
 	var initCode = document.querySelector('#download-init');
 	var savedCache = sessionStorage.getItem('portalCustomizerCache');
 	var cache = savedCache ? JSON.parse(savedCache) : {};
-	var minified, layout, plugins, scripts, styles, inits, events, scriptsSize, stylesSize, timerID;
+	var version, minified, layout, plugins, scripts, styles, inits, events, scriptsSize, stylesSize, timerID;
 
 
 	//
@@ -208,6 +208,23 @@ var customizer = function () {
 	};
 
 	/**
+	 * Create the file header
+	 * @param  {String} filetype The file extension
+	 * @return {String}          The header
+	 */
+	var createHeader = function (filetype) {
+		var header =
+			'/*! ' +
+				layout + minified + '.' + filetype + ' | ' +
+				'(c) ' + new Date().getFullYear() + ' TIBCO | ' +
+				'MIT License | ' +
+				'https://stagingcs1.mashery.com/docs/download ' +
+			'*/' +
+			'\n';
+		return header;
+	};
+
+	/**
 	 * Create the file download link
 	 * @param  {Node}   btn  The button to trigger the download
 	 * @param  {String} code The code to download
@@ -222,7 +239,7 @@ var customizer = function () {
 
 		// Update button
 		btn.classList.remove('disabled');
-		btn.href = 'data:application/octet-stream;charset=utf-8,' + encodeURIComponent(code);
+		btn.href = 'data:application/octet-stream;charset=utf-8,' + encodeURIComponent(createHeader((btn.id === 'download-custom-js' ? 'js' : 'css'))) + encodeURIComponent(code);
 		btn.innerHTML = 'Download ' + (btn.id === 'download-custom-js' ? 'JavaScript' : 'CSS');
 		btn.download = layout + minified + (btn.id === 'download-custom-js' ? '.js' : '.css');
 		displayDownloadSize();
@@ -400,7 +417,7 @@ var customizer = function () {
 					styles: stylesheets[0].trim(),
 					size: data.size
 				};
-				if (styles[1]) {
+				if (stylesheets[1]) {
 					cache[baseURL + 'css/overrides' + minified + '.css'] = {
 						styles: stylesheets[1].trim(),
 						size: 0

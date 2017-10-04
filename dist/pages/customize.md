@@ -160,6 +160,14 @@ https://dinw9xheo7f2n.cloudfront.net/js/placeholders.min.beta.js
 https://dinw9xheo7f2n.cloudfront.net/js/app.min.beta.js
 ```
 
+**Header JS Inline**
+
+This bootstraps in the polyfills needed to run Blackbeard across a variety of browsers. It takes advantage of a hack with the inline JS sections that let's us add additional content to the header.
+
+<pre class="lang-html"><code>&lt;/script&gt;
+&lt;script src="https://cdn.polyfill.io/v2/polyfill.min.js"&gt;
+&lt;script&gt;</code></pre>
+
 **Body JS Inline**
 
 ```js
