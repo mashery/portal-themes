@@ -1,0 +1,33 @@
+/**
+ * @section Mashery Register
+ * Styling specific to the registration page.
+ */
+
+
+/**
+ * Descriptive text on signup labels
+ */
+.descr {
+	font-weight: normal;
+	font-style: italic;
+
+	p {
+		@extend .no-margin-bottom;
+	}
+}
+
+// Sign-up button
+.process-register {}
+
+// When additional specificity is needed.
+// Use with care and avoid whenever possible.
+.page-member.register {
+
+	/**
+	 * Labels with descriptive text
+	 */
+	label.require {
+		line-height: 1;
+	}
+
+}

@@ -1,0 +1,129 @@
+/**
+ * @section Mashery Search
+ * Styling specific to the search results page.
+ */
+
+
+// Header Search Form
+.search-input {
+	margin-bottom: 0;
+
+	/**
+	 * Search input
+	 */
+	.search-box {
+		@extend .input-inline;
+		@extend .input-condensed;
+		// border-radius: calc-em(21px);
+		margin-bottom: 0;
+		// padding-left: calc-em(15px);
+		padding-right: calc-em(40px);
+		width: 95%;
+	}
+
+	/**
+	 * Search submit button
+	 */
+	.search-button {
+		@extend [hidden];
+
+		&,
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	.btn-search {
+		display: inline;
+		color: $color-gray-dark;
+		border: none;
+		background: none;
+		font-size: calc-em(15px);
+		margin-left: calc-em(-40px);
+		margin-bottom: 0;
+		padding: calc-em(8px) calc-em(11px);
+
+		.icon {
+			fill: $color-gray-dark;
+		}
+
+		&:hover {
+			color: darken( $color-gray-dark, 15% );
+
+			 .icon {
+				fill: darken( $color-gray-dark, 15% );
+			}
+		}
+	}
+
+}
+
+
+// Search Page Search Form
+.search-form {
+
+	/**
+	 * Remove default table styles from search form table
+	 */
+	td {
+		background: transparent;
+		border: none;
+		margin: 0;
+		padding: 0;
+
+		/**
+		 * Style search input width
+		 */
+		&:first-child {
+			width: 65%;
+
+			@media (min-width: $bp-small) {
+				width: 75%;
+			}
+
+			@media (min-width: $bp-medium) {
+				width: 85%;
+			}
+		}
+	}
+
+	/**
+	 * Search form input
+	 */
+	input[type="text"] {
+		// border-radius: calc-em(21px);
+		// padding-left: calc-em(15px);
+		padding-right: calc-em(15px);
+	}
+
+	/**
+	 * Search submit button
+	 */
+	input[type="submit"] {
+		margin-left: calc-em(4px); /* Add back left margin removed by table styling */
+	}
+
+}
+
+
+// When additional specificity is needed.
+// Use with care and avoid whenever possible.
+.page-search {
+
+	// Individual search result listings
+	.result {
+
+		// Result title
+		.title {
+			margin-bottom: 0;
+		}
+
+		// The result excerpt
+		.result-summary {}
+
+		// The result URL
+		.url {}
+
+	}
+
+}

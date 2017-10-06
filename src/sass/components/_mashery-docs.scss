@@ -1,0 +1,43 @@
+/**
+ * @section Mashery Docs
+ * Styling specific to documentation pages.
+ */
+
+
+/**
+ * Sidebar
+ */
+#sub {
+
+	ul a {
+		@extend .link-plain;
+	}
+
+	/**
+	 * Active links
+	 */
+	li.js-active > a {
+		color: $color-gray-dark;
+		cursor: not-allowed;
+		pointer-events: none;
+		text-decoration: none;
+
+		&.collapse-toggle {
+			cursor: pointer;
+			pointer-events: auto;
+		}
+	}
+
+	/**
+	 * Collapsible docs
+	 */
+	ul.collapse.active {
+		margin-left: $spacing;
+	}
+
+}
+
+
+// When additional specificity is needed.
+// Use with care and avoid whenever possible.
+.page-docs {}

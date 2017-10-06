@@ -1,0 +1,36 @@
+			</div>
+		</div>
+
+		<script>
+			// Create table of contents
+			;(function (window, document, undefined) {
+
+				'use strict';
+
+				// Feature detection
+				if ( !document.querySelector ) return;
+
+				// Variables
+				var subnav = document.querySelector( '#demo-subnav' );
+				var sections = document.querySelectorAll( 'h2' );
+				var subnavContent = '';
+
+				// Check that all variables exist
+				if ( !subnav || sections.length === 0 ) return;
+
+				// Loop through each section and create a link to it
+				for ( var i = 0, len = sections.length; i < len; i++  ) {
+
+					// Ignore sections without an id
+					var id = sections[i].id;
+					if ( !id ) continue;
+
+					// Create section navigation
+					subnavContent += '<li><a class="js-scroll link-plain" href="#' + id + '">' + sections[i].innerHTML + '</a></li>';
+
+				}
+
+				// Add subnav
+				subnav.innerHTML = '<h3>Contents</h3><ul>' + subnavContent + '</ul>';
+			})(window, document);
+		</script>

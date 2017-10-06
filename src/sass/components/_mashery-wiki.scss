@@ -1,0 +1,44 @@
+/**
+ * @section Mashery Wiki
+ * Styling specific to wiki pages.
+ */
+
+
+// When additional specificity is needed.
+// Use with care and avoid whenever possible.
+.page-wiki {
+
+	.section-tags {
+		@extend .clearfix;
+
+		h3 {
+			float: left;
+			font-size: 1em;
+			line-height: 1;
+			margin: 0;
+			margin-right: calc-em(8px);
+			padding: 0;
+		}
+
+		ul {
+			@extend .list-inline;
+			line-height: 1;
+			margin: 0;
+		}
+	}
+
+	ol.comments {
+		@extend .list-unstyled;
+
+		.comment {
+			@extend .padding-top;
+			border-top: calc-em(1px) solid $color-gray-light;
+		}
+
+		.comment-meta {
+			@extend .text-muted;
+			font-weight: bold;
+		}
+	}
+
+}

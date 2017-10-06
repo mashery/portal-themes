@@ -1,0 +1,61 @@
+/**
+ * @section Mashery Account
+ * Styling specific to the "My Account" page.
+ */
+
+
+// When additional specificity is needed.
+// Use with care and avoid whenever possible.
+.page-apps {
+	.section-menu {
+		&.navigation ul {
+			@extend .list-inline;
+			@extend .list-inline-divided;
+			@extend .link-plain;
+		}
+
+		.add-app.action {
+			@extend .btn;
+		}
+	}
+
+	.key-actions.actions ul {
+		@extend .list-inline;
+		@extend .link-plain;
+
+		a {
+			@extend .btn;
+		}
+	}
+
+	.section-body {
+		table ul {
+			@extend .list-inline;
+			@extend .link-plain;
+
+			a {
+				@extend .btn;
+			}
+		}
+
+		.action.new-key {
+			@extend .btn;
+		}
+	}
+
+	.application-actions.actions ul {
+		@extend .list-inline;
+
+		.edit.action,
+		.delete-app.action {
+
+			@extend .btn;
+		}
+	}
+
+	#application-edit ul {
+		@extend .list-unstyled;
+		@extend .link-plain;
+	}
+
+}

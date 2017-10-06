@@ -1,0 +1,43 @@
+					</section><!-- /.container -->
+
+					<footer class="padding-top padding-bottom">
+
+							<hr>
+
+							<p class="text-small text-muted">Copyright &copy; 2017, TIBCO Software Inc. All rights reserved. The code is available under the <a href="https://github.com/mashery/sparrow/blob/master/LICENSE.md">BSD license</a>.</p>
+
+					</footer>
+				</main>
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+
+		<!-- Javascript -->
+		<script src="assets/js/toc.js"></script>
+		<script src="assets/js/highlight-active-nav.js"></script>
+		<script src="assets/js/smooth-scroll.min.js"></script>
+		<script src="assets/js/gumshoe.min.js"></script>
+		<script src="assets/js/prism.js"></script>
+		<script>
+			tableOfContents.init({
+				heading: 'In This Section',
+				headingClass: 'h3',
+				navClass: 'list-unstyled',
+				linkClass: 'js-smooth-scroll',
+				callback: function () {
+					var links = document.querySelectorAll( '.js-smooth-scroll' );
+					for (var i = 0, len = links.length; i < len; i++) {
+						links[i].setAttribute( 'data-scroll', true );
+					}
+					smoothScroll.init();
+				}
+			});
+			gumshoe.init({
+				offset: 5
+			});
+			highlightActiveNav.init({
+				urlPrefix: '/kraken/'
+			});
+		</script>
+
+	</body>
+</html>

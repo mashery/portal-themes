@@ -1,0 +1,215 @@
+/**
+ * @section Mashery Key
+ * Styling specific to the "Key Activity" page.
+ */
+
+/**
+ * The graphs and charts
+ */
+div.reports {
+
+	div.report {
+		margin-bottom: $spacing
+	}
+
+	div.chart {
+		margin-bottom: calc-em(11px);
+	}
+
+}
+
+/**
+ * Usage progress bar
+ */
+#quota {
+	margin-bottom: calc-em(8px);
+	height: $spacing;
+	border: calc-em(1px) solid $color-gray-light;
+	background-color: $color-white;
+
+	@media (min-width: $bp-medium) {
+		float: left;
+		width: 50%;
+	}
+
+	div {
+		background-color: $color-alert;
+		height: $spacing;
+
+		&.warning {
+			background-color: $color-warning;
+		}
+
+		&.full {
+			background-color: $color-danger;
+		}
+	}
+}
+
+/**
+ * Usage text
+ */
+.quotaUsage {
+	@media (min-width: $bp-medium) {
+		margin-left: calc-em(21px);
+	}
+}
+
+
+/**
+ * Timezone info
+ */
+span.timezone-note {
+	@extend .text-muted;
+	@extend .clearfix;
+	display: block;
+	font-style: italic;
+	margin-bottom: calc-em(8px);
+}
+
+
+/**
+ * Quota Info
+ */
+
+#quotaInfo {
+	@extend .clearfix;
+	display: block;
+	margin-bottom: calc-em(8px);
+	overflow: hidden;
+	width: 100%;
+}
+
+#remainingCallsMessage,
+#limitReachedMessage,
+#nextPeriodMessage {
+	display: none;
+	float: left
+}
+
+#nextPeriodMessage {
+	padding-left: calc-em(8px);
+}
+
+#limitReachedMessage {
+	color: $color-danger;
+}
+
+
+/**
+ * Details Tables
+ */
+
+#detailTables_container {
+	@extend .clearfix;
+
+	&.loading {
+		background: none;
+
+		#detailTables {
+			animation: load6 1.7s infinite ease;
+			border-radius: 50%;
+			font-size: 3em;
+			height: 1em;
+			overflow: hidden;
+			margin: calc-em(8px) auto;
+			position: relative;
+			text-indent: -9999em;
+			transform: translateZ(0);
+			width: 1em;
+
+			div {
+				@extend [hidden];
+			}
+		}
+	}
+}
+
+@keyframes load6 {
+	0% {
+		transform: rotate(0deg);
+		box-shadow: 0 -0.83em 0 -0.4em $color-gray-dark, 0 -0.83em 0 -0.42em $color-gray-dark, 0 -0.83em 0 -0.44em $color-gray-dark, 0 -0.83em 0 -0.46em $color-gray-dark, 0 -0.83em 0 -0.477em $color-gray-dark;
+	}
+	5%,
+	95% {
+		box-shadow: 0 -0.83em 0 -0.4em $color-gray-dark, 0 -0.83em 0 -0.42em $color-gray-dark, 0 -0.83em 0 -0.44em $color-gray-dark, 0 -0.83em 0 -0.46em $color-gray-dark, 0 -0.83em 0 -0.477em $color-gray-dark;
+	}
+	10%,
+	59% {
+		box-shadow: 0 -0.83em 0 -0.4em $color-gray-dark, -0.087em -0.825em 0 -0.42em $color-gray-dark, -0.173em -0.812em 0 -0.44em $color-gray-dark, -0.256em -0.789em 0 -0.46em $color-gray-dark, -0.297em -0.775em 0 -0.477em $color-gray-dark;
+	}
+	20% {
+		box-shadow: 0 -0.83em 0 -0.4em $color-gray-dark, -0.338em -0.758em 0 -0.42em $color-gray-dark, -0.555em -0.617em 0 -0.44em $color-gray-dark, -0.671em -0.488em 0 -0.46em $color-gray-dark, -0.749em -0.34em 0 -0.477em $color-gray-dark;
+	}
+	38% {
+		box-shadow: 0 -0.83em 0 -0.4em $color-gray-dark, -0.377em -0.74em 0 -0.42em $color-gray-dark, -0.645em -0.522em 0 -0.44em $color-gray-dark, -0.775em -0.297em 0 -0.46em $color-gray-dark, -0.82em -0.09em 0 -0.477em $color-gray-dark;
+	}
+	100% {
+		transform: rotate(360deg);
+		box-shadow: 0 -0.83em 0 -0.4em $color-gray-dark, 0 -0.83em 0 -0.42em $color-gray-dark, 0 -0.83em 0 -0.44em $color-gray-dark, 0 -0.83em 0 -0.46em $color-gray-dark, 0 -0.83em 0 -0.477em $color-gray-dark;
+	}
+}
+
+
+/**
+ * Multicontainer tables
+ */
+#detailTables_multicontainer {
+
+	.google-visualization-table-tr-head .gradient,
+	.google-visualization-table-tr-head-nonstrict .gradient,
+	.google-visualization-table-div-page .gradient {
+		background-color: lighten( $color-gray-light, 5% );
+		background-image: none;
+		vertical-align: baseline;
+	}
+
+	.google-visualization-table-table div.barchart {
+		color: $color-gray-dark;
+		font-size: calc-em(11px);
+		line-height: calc-em(11px);
+		text-align: left;
+	}
+
+	.google-visualization-table-table div.barchart div.bar {
+		border: calc-em(1px) solid $color-gray-light;
+		display: inline-block;
+		height: calc-em(11px);
+		min-width: 3em;
+		padding: 0;
+		width: 65%;
+	}
+
+	.google-visualization-table-table div.barchart div.bar div.value {
+		background-color: $color-primary;
+		height: calc-em(11px);
+		padding: 0
+	}
+	.google-visualization-table-tr-head td {
+		// background-image: none;
+		text-align: left;
+		border-bottom: calc-em(1px) solid $color-gray-dark;
+	}
+
+	.google-visualization-table-td {
+		text-align: left;
+	}
+
+	.nav {
+		@extend .list-inline;
+
+		a {
+			@extend .btn;
+		}
+
+		li.active a {
+			@extend .btn.active;
+		}
+	}
+
+}
+
+
+// When additional specificity is needed.
+// Use with care and avoid whenever possible.
+.page-key {}

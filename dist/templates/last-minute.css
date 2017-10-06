@@ -1,0 +1,12 @@
+/**
+ * Adjust nav menu position
+ */
+#nav-menu-toggle {
+	margin-top: 1.1em;
+}
+
+@media (min-width: 60em) {
+	#nav-menu {
+		margin-top: 1.1em;
+	}
+}

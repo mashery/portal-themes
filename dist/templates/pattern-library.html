@@ -1,0 +1,2240 @@
+<div class="row">
+	<div class="grid-third" id="demo-subnav">
+		<!-- In page navigation is dynamically generated here via JS located at the bottom of the page. -->
+	</div>
+	<div class="grid-two-thirds"><p>The Pattern Library is living documentation for your Portal theme. If you would like to update your theme, <a href="/files/portal-theme.zip">click here to download the source files</a>.</p>
+<h2 id="brand-elements">Brand Elements</h2>
+<style type="text/css">
+    .demo-color-box {
+        border: 1px solid #808080;
+        height: 8em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        padding: 1em;
+        width: 8em;
+    }
+
+    .demo-font {
+        margin-bottom: 0.5em;
+    }
+</style>
+
+<h3 id="colors">Colors</h3>
+<div class="clearfix">
+    <div class="float-left demo-color-box" style="background-color: #d40e14; color: white;">
+        #d40e14
+    </div>
+    <div class="float-left demo-color-box" style="background-color: #70cbf4;">
+        #70cbf4
+    </div>
+    <div class="float-left demo-color-box" style="background-color:  #092a5e; color: white;">
+        #092a5e
+    </div>
+    <div class="float-left demo-color-box" style="background-color: #737373; color: white;">
+        #737373
+    </div>
+    <div class="float-left demo-color-box" style="background-color: #dcdcdc;">
+        #dcdcdc
+    </div>
+    <div class="float-left demo-color-box" style="background-color: #ffffff;">
+        #ffffff
+    </div>
+    <div class="float-left demo-color-box" style="background-color: #272727; color: white;">
+        #272727
+    </div>
+</div>
+
+<h3 id="font-stacks">Font Stacks</h3>
+<p class="demo-font" style="font-family: 'TUITypeLt', 'Helvetica Neue', Arial, sans-serif">TUITypeLt, Helvetica Neue, Arial, sans-serif</p>
+<p class="demo-font" style="font-family: Menlo, Monaco, 'Courier New', monospace;">Menlo, Monaco, Courier New, monospace</p>
+
+<hr>
+
+
+<h2 id="-portalready-javascript-method"><code>portalReady()</code> JavaScript Method</h2>
+<p>Use the <code>portalReady()</code> method to run scripts after the Portal is ready and loaded, without needing to use jQuery.</p>
+<pre><code class="lang-javascript">portalReady(function () {
+    // Your script(s) here...
+});
+</code></pre>
+<hr>
+
+
+<h2 id="updating-the-logo">Updating the Logo</h2>
+<p>Out-of-the-box, your Portal will create a text logo using the <code>Portal Name</code> that you set under <code>Portal Settings</code> &gt; <code>General</code> in the Dashboard. You can replace it with an <code>&lt;img&gt;</code> or <code>&lt;svg&gt;</code> using the <code>loadCustomLogo()</code> JavaScript method. It&#39;s recommended that you add this to the <code>Head JavaScript</code> section in <code>Portal Settings</code> &gt; <code>Portal Setup</code>.</p>
+<pre><code class="lang-javascript">// Example
+portalReady(function () {
+    loadCustomLogo( &#39;&lt;img alt=&quot;Acme Corp&quot; src=&quot;/files/acme-corp-logo.png&quot;&gt;&#39; );
+});
+</code></pre>
+<p>If your logo is tall, it may cause the navigation menu (and small viewport toggle link) to become misaligned with the logo. You can fix this by simply adding a <code>padding-top</code> value to the <code>#nav-menu</code> and <code>#nav-menu-toggle</code> elements. It&#39;s recommended that you add this to the <code>Inline CSS</code> section in <code>Portal Settings</code> &gt; <code>Portal Setup</code>.</p>
+<pre><code class="lang-css">/* Example */
+#nav-menu,
+#nav-menu-toggle {
+    padding-top: 1em;
+}
+</code></pre>
+<hr>
+
+<h2 id="the-grid">The Grid</h2>
+<style type="text/css">
+    /* Add a background to the grids so you can see them in action */
+    .demo-grid-bg {
+        background-color: #f7f7f7;
+        border: 1px solid #e5e5e5;
+        border-radius: 0.0725em;
+        margin-bottom: 1.5625em;
+        padding: 0.9375em;
+    }
+</style>
+
+<p>Your theme uses a fluid, mobile-first grid system based on simple fractions—halves, thirds, and fourths. It supports nesting, and includes special classes for offsets and content choreography.</p>
+<h3 id="base-grid">Base Grid</h3>
+<p>The <code>.container</code> class centers content on the page and restricts it to a maximum width. To create a grid, add a <code>&lt;div&gt;</code> with a <code>.row</code> class. You can create grids within a row by creating <code>&lt;div&gt;</code> elements with the <code>.grid-$size</code> class.</p>
+<div class="row">
+    <div class="grid-third"><div class="demo-grid-bg">.grid-third</div></div>
+    <div class="grid-two-thirds"><div class="demo-grid-bg">.grid-two-thirds</div></div>
+</div>
+
+<div class="row">
+    <div class="grid-fourth"><div class="demo-grid-bg">.grid-fourth</div></div>
+    <div class="grid-three-fourths"><div class="demo-grid-bg">.grid-three-fourths</div></div>
+</div>
+
+<div class="row">
+    <div class="grid-half"><div class="demo-grid-bg">.grid-half</div></div>
+    <div class="grid-half"><div class="demo-grid-bg">.grid-half</div></div>
+</div>
+
+<div class="row">
+    <div class="grid-full"><div class="demo-grid-bg">.grid-full</div></div>
+</div>
+
+<pre><code class="lang-markup">&lt;div class=&quot;container&quot;&gt;
+
+    &lt;p&gt;Your theme uses a fluid, mobile-first grid system...&lt;/p&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;grid-third&quot;&gt;.grid-third&lt;/div&gt;
+        &lt;div class=&quot;grid-two-thirds&quot;&gt;.grid-two-thirds&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;grid-fourth&quot;&gt;.grid-fourth&lt;/div&gt;
+        &lt;div class=&quot;grid-three-fourths&quot;&gt;.grid-three-fourths&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;grid-half&quot;&gt;.grid-half&lt;/div&gt;
+        &lt;div class=&quot;grid-half&quot;&gt;.grid-half&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;grid-full&quot;&gt;.grid-full&lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre>
+<h3 id="offsets">Offsets</h3>
+<p>Push grids to the right by adding an <code>.offset-$size</code> class. Center grids with the <code>.float-center</code> class.</p>
+<div class="row">
+    <div class="grid-three-fourths offset-fourth"><div class="demo-grid-bg">.grid-three-fourths .offset-fourth</div></div>
+</div>
+
+<div class="row">
+    <div class="grid-third"><div class="demo-grid-bg">.grid-third</div></div>
+    <div class="grid-third offset-third"><div class="demo-grid-bg">.grid-third .offset-third</div></div>
+</div>
+
+<div class="row">
+    <div class="grid-two-thirds float-center"><div class="demo-grid-bg">.grid-two-thirds .float-center</div></div>
+</div>
+
+<pre><code class="lang-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;grid-three-fourths offset-fourth&quot;&gt;.grid-three-fourths .offset-fourth&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;grid-third&quot;&gt;.grid-third&lt;/div&gt;
+    &lt;div class=&quot;grid-third offset-third&quot;&gt;.grid-third .offset-third&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;grid-two-thirds float-center&quot;&gt;.grid-two-thirds .float-center&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="grids-on-small-viewports">Grids on Small Viewports</h3>
+<p>The grid activates on medium-sized viewports by default. You can toggle the grid on smaller screens by adding a simple class&mdash;<code>.row-start-xsmall</code> or <code>.row-start-small</code>&mdash;to the desired <code>.row</code> element.</p>
+<p><strong>Extra Small Screens</strong></p>
+<div class="row row-start-xsmall">
+    <div class="grid-fourth"><div class="demo-grid-bg">.grid-fourth</div></div>
+    <div class="grid-fourth"><div class="demo-grid-bg">.grid-fourth</div></div>
+    <div class="grid-fourth"><div class="demo-grid-bg">.grid-fourth</div></div>
+    <div class="grid-fourth"><div class="demo-grid-bg">.grid-fourth</div></div>
+</div>
+
+<p><strong>Small Screens</strong></p>
+<div class="row row-start-small">
+    <div class="grid-fourth"><div class="demo-grid-bg">.grid-fourth</div></div>
+    <div class="grid-fourth"><div class="demo-grid-bg">.grid-fourth</div></div>
+    <div class="grid-fourth"><div class="demo-grid-bg">.grid-fourth</div></div>
+    <div class="grid-fourth"><div class="demo-grid-bg">.grid-fourth</div></div>
+</div>
+
+<pre><code class="lang-markup">Extra Small Screens
+&lt;div class=&quot;row row-start-xsmall&quot;&gt;
+    &lt;div class=&quot;grid-fourth&quot;&gt;.grid-fourth&lt;/div&gt;
+    &lt;div class=&quot;grid-fourth&quot;&gt;.grid-fourth&lt;/div&gt;
+    &lt;div class=&quot;grid-fourth&quot;&gt;.grid-fourth&lt;/div&gt;
+    &lt;div class=&quot;grid-fourth&quot;&gt;.grid-fourth&lt;/div&gt;
+&lt;/div&gt;
+
+Small Screens
+&lt;div class=&quot;row row-start-small&quot;&gt;
+    &lt;div class=&quot;grid-fourth&quot;&gt;.grid-fourth&lt;/div&gt;
+    &lt;div class=&quot;grid-fourth&quot;&gt;.grid-fourth&lt;/div&gt;
+    &lt;div class=&quot;grid-fourth&quot;&gt;.grid-fourth&lt;/div&gt;
+    &lt;div class=&quot;grid-fourth&quot;&gt;.grid-fourth&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="content-choreography">Content Choreography</h3>
+<p>Flip the display order of a grid on bigger viewports by adding the <code>.grid-flip</code> class.</p>
+<div class="row">
+    <div class="grid-third grid-flip"><div class="demo-grid-bg">First in HTML</div></div>
+    <div class="grid-two-thirds"><div class="demo-grid-bg">Second in HTML</div></div>
+</div>
+
+<pre><code class="lang-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;grid-third grid-flip&quot;&gt;First in HTML&lt;/div&gt;
+    &lt;div class=&quot;grid-two-thirds&quot;&gt;Second in HTML&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="dynamic-grids">Dynamic Grids</h3>
+<p>Create grids that vary in size based on screen width using the <code>.grid-dynamic</code> class.</p>
+<div class="row">
+    <div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
+    <div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
+    <div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
+    <div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
+    <div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
+    <div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
+    <div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
+    <div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
+    <div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
+    <div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
+    <div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
+    <div class="grid-dynamic"><p><img src="https://source.unsplash.com/random/350x350"></p></div>
+</div>
+
+<pre><code class="lang-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;grid-dynamic&quot;&gt;&lt;img src=&quot;kitten.jpg&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-dynamic&quot;&gt;&lt;img src=&quot;kitten.jpg&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-dynamic&quot;&gt;&lt;img src=&quot;kitten.jpg&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-dynamic&quot;&gt;&lt;img src=&quot;kitten.jpg&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-dynamic&quot;&gt;&lt;img src=&quot;kitten.jpg&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-dynamic&quot;&gt;&lt;img src=&quot;kitten.jpg&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-dynamic&quot;&gt;&lt;img src=&quot;kitten.jpg&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-dynamic&quot;&gt;&lt;img src=&quot;kitten.jpg&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-dynamic&quot;&gt;&lt;img src=&quot;kitten.jpg&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-dynamic&quot;&gt;&lt;img src=&quot;kitten.jpg&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-dynamic&quot;&gt;&lt;img src=&quot;kitten.jpg&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-dynamic&quot;&gt;&lt;img src=&quot;kitten.jpg&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="full-width-pages">Full Width Pages</h3>
+<p>By default, the main body content on a page is wrapped in a <code>.container</code> class element, which provides left and right padding and centers it in the viewport. To unlock full manual control over the layout, with content bleeding to both edges, call the <code>fullWidth()</code> JavaScript method at the top of the page.</p>
+<pre><code class="lang-markup">&lt;script&gt;
+portalReady(function () {
+    fullWidth();
+});
+&lt;/script&gt;
+</code></pre>
+<p>To hide the <code>h1.first</code> element, the first header on the page, also pass in a <code>true</code> argument.</p>
+<pre><code class="lang-markup">&lt;script&gt;
+portalReady(function () {
+    fullWidth( true );
+});
+&lt;/script&gt;
+</code></pre>
+<hr>
+
+
+<h2 id="typography">Typography</h2>
+<p>Your theme uses relative sizing (ems and % instead of pixels) for everything.</p>
+<p><em>New to relative sizing? <a href="http://gomakethings.com/working-with-relative-sizing/">Learn more.</a></em></p>
+<h3 id="text-basics">Text Basics</h3>
+<p>Default text<br>
+<span class="text-muted">Muted text</span><br>
+<span class="text-small">Small text</span><br>
+<span class="text-large">Large text</span><br>
+<span class="text-hero">Hero text</span><br>
+<a href="#">Hyperlinks</a><br>
+<a class="link-plain" href="#">Plain Hyperlinks</a><br>
+<strong>Bold</strong> and <em>italics</em></p>
+<pre><code class="lang-markup">Default text
+&lt;span class=&quot;text-muted&quot;&gt;Muted text&lt;/span&gt;
+&lt;span class=&quot;text-small&quot;&gt;Small text&lt;/span&gt;
+&lt;span class=&quot;text-large&quot;&gt;Large text&lt;/span&gt;
+&lt;span class=&quot;text-hero&quot;&gt;Hero text&lt;/span&gt;
+&lt;a href=&quot;#&quot;&gt;Hyperlinks&lt;/a&gt;
+&lt;a class=&quot;link-plain&quot; href=&quot;#&quot;&gt;Another Plain Hyperlink&lt;/a&gt; (alternate: &lt;span class=&quot;link-plain&quot;&gt;&lt;a href=&quot;#&quot;&gt;Another Plain Hyperlink&lt;/a&gt;&lt;/span&gt;)
+&lt;strong&gt;Bold&lt;/strong&gt; and &lt;em&gt;italics&lt;/em&gt;
+</code></pre>
+<p><strong>Note:</strong> Because Your theme uses relative sizing, you should always apply <code>.text-large</code> and <code>.text-small</code> classes to a <code>&lt;span&gt;</code> element and not directly to a <code>&lt;p&gt;</code>. Otherwise, your spacing will get all messed up. The <code>.text-*</code> classes can be found in <code>_overrides.scss</code> for better cascade inheritance.</p>
+<h3 id="block-level-links">Block-Level Links</h3>
+<p>Use the <code>.link-block</code> class to create block-level links that are styled like regular text. Add the <code>.link-block-styled</code> class to the sections of text you want styled like a traditional link.</p>
+<p><a class="link-block" href="#">
+    <h4 class="no-margin-bottom">This is a block-level link</h4>
+    <p>
+        This whole section is a clickable link. Hover over it to see.<br>
+        <span class="link-block-styled">Only this text is styled like a link &rarr;</span>
+    </p>
+</a></p>
+<pre><code class="lang-markup">&lt;a class=&quot;link-block&quot; href=&quot;#&quot;&gt;
+    &lt;h4&gt;A block-level link&lt;/h4&gt;
+    &lt;p&gt;This whole section is a clickable link. Hover over it to see.&lt;/p&gt;
+    &lt;p&gt;&lt;span class=&quot;link-block-styled&quot;&gt;Only this text is styled like a link &amp;rarr;&lt;/span&gt;&lt;/p&gt;
+&lt;/a&gt;
+</code></pre>
+<hr>
+
+
+<h2 id="lists">Lists</h2>
+<p>Your theme includes styling for ordered, unordered, unstyled, inline, breadcrumb, and definition lists.</p>
+<div class="row">
+    <div class="grid-third">
+        <strong>Ordered</strong>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+    </div>
+    <div class="grid-third">
+        <strong>Unordered</strong>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    <div class="grid-third">
+        <strong>Unstyled</strong>
+        <ul class="list-unstyled">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+</div>
+
+<div>
+    <strong>Inline</strong>
+    <ul class="list-inline">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</div>
+
+<div>
+    <strong>Inline Responsive</strong>
+    <ul class="list-inline list-inline-responsive">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</div>
+
+<div>
+    <strong>Inline Divided</strong>
+    <ul class="list-inline list-inline-divided">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</div>
+
+<div>
+    <strong>Inline Breadcrumbs</strong>
+    <ul class="list-inline list-inline-breadcrumbs">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</div>
+
+<dl>
+    <dt>Definition List</dt>
+    <dd>Encloses a list of pairs of terms and descriptions. Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs).</dd>
+
+    <dt>Here&#39;s another term</dt>
+    <dd>And another definition.</dd>
+</dl>
+
+<pre><code class="lang-markup">Ordered
+&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+
+Unordered
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+Unstyled
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+Inline
+&lt;ul class=&quot;list-inline&quot;&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+Inline Responsive
+&lt;ul class=&quot;list-inline list-inline-responsive&quot;&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+Inline Divided
+&lt;ul class=&quot;list-inline list-inline-divided&quot;&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+Inline Breadcrumbs
+&lt;ul class=&quot;list-inline list-inline-breadcrumbs&quot;&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;dl&gt;
+    &lt;dt&gt;Definition List&lt;/dt&gt;
+    &lt;dd&gt;Encloses a list of pairs of terms and descriptions. Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs).&lt;/dd&gt;
+
+    &lt;dt&gt;Here&#39;s another term&lt;/dt&gt;
+    &lt;dd&gt;And another definition.&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+<p><em>For semantic reasons, <code>.list-unstyled</code> and <code>.list-inline</code> should only be applied to unordered lists.</em></p>
+<hr>
+
+
+<h2 id="headings">Headings</h2>
+<p>Your theme includes styling for <code>h1</code> through <code>h6</code> headings.</p>
+<h1>h1. Heading 1</h1>
+
+<h2>h2. Heading 2</h2>
+
+<h3>h3. Heading 3</h3>
+
+<h4>h4. Heading 4</h4>
+
+<h5>h5. Heading 5</h5>
+
+<h6>h6. Heading 6</h6>
+
+
+<pre><code class="lang-markup">&lt;h1&gt;h1. Heading 1&lt;/h1&gt;
+&lt;h2&gt;h2. Heading 2&lt;/h2&gt;
+&lt;h3&gt;h3. Heading 3&lt;/h3&gt;
+&lt;h4&gt;h4. Heading 4&lt;/h4&gt;
+&lt;h5&gt;h5. Heading 5&lt;/h5&gt;
+&lt;h6&gt;h6. Heading 6&lt;/h6&gt;
+</code></pre>
+<h3 id="semantic-heading-classes">Semantic Heading Classes</h3>
+<p>All heading values can also be applied as classes. For example, if a heading should be an <code>h1</code> element semantically, but you would like it to be styled as an <code>h4</code> element, you can apply <code>class=&quot;h4&quot;</code> to the <code>h1</code> element.</p>
+<h1 class="h4 text-left">This is an h1 heading that&#39;s styled as an h4 heading</h1>
+
+<pre><code class="lang-markup">&lt;h1 class=&quot;h4 text-left&quot;&gt;This is an h1 heading that&#39;s styled as an h4 heading&lt;/h1&gt;
+</code></pre>
+<hr>
+
+
+<h2 id="quotes-and-citations">Quotes and Citations</h2>
+<blockquote>
+    Someone once said something so important, it was deemed worthy of repeating here in the form of a blockquote. This is that blockquote.
+    <cite>- Someone</cite>
+</blockquote>
+
+<p>You can also include superscripts<sup>1</sup> and subscripts<sub>xyz</sub>.</p>
+<pre><code class="lang-markup">&lt;blockquote&gt;
+    Someone once said something so important, it was deemed worthy of repeating here in the form of a blockquote. This is that blockquote.
+    &lt;cite&gt;- Someone&lt;/cite&gt;
+&lt;/blockquote&gt;
+
+You can also include superscripts&lt;sup&gt;1&lt;/sup&gt; and subscripts&lt;sub&gt;xyz&lt;/sub&gt;.
+</code></pre>
+<hr>
+
+
+<h2 id="code">Code</h2>
+<p>Inline code: <code>.js-example</code>.</p>
+<pre><code class="lang-css">/* Preformatted Text */
+.js-example {
+    color: #272727;
+    background: #ffffff;
+}
+</code></pre>
+<pre><code class="lang-markup">&lt;p&gt;Inline code: &lt;code&gt;.js-example&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;
+    &lt;code class=&quot;lang-css&quot;&gt;
+        /* Preformatted Text */
+        .js-example {
+            color: #272727;
+            background: #ffffff;
+        }
+    &lt;/code&gt;
+&lt;/pre&gt;
+</code></pre>
+<p>You&#39;ll need to escape brackets contained in code by typing <code>&amp;lt;</code> for <code>&lt;</code> and <code>&amp;gt;</code> for <code>&gt;</code>.</p>
+<hr>
+
+
+<h2 id="lines">Lines</h2>
+<p>Add lines to your markup using the <code>&lt;hr&gt;</code> element.</p>
+<hr>
+
+
+<h2 id="backgrounds">Backgrounds</h2>
+<p>Add background colors with a handful of helper classes.</p>
+<div class="bg-muted"><div class="container padding-left padding-right">.bg-muted</div></div>
+<div class="bg-primary"><div class="container padding-left padding-right">.bg-primary</div></div>
+<div class="bg-secondary"><div class="container padding-left padding-right">.bg-secondary</div></div>
+<div class="bg-tertiary margin-bottom"><div class="container padding-left padding-right">.bg-tertiary</div></div>
+
+<pre><code class="lang-markup">&lt;div class=&quot;bg-muted&quot;&gt;.bg-muted&lt;/div&gt;
+&lt;div class=&quot;bg-primary&quot;&gt;.bg-primary&lt;/div&gt;
+&lt;div class=&quot;bg-secondary&quot;&gt;.bg-secondary&lt;/div&gt;
+&lt;div class=&quot;bg-tertiary&quot;&gt;.bg-tertiary&lt;/div&gt;
+</code></pre>
+<h3 id="hero-image-backgrounds">Hero Image Backgrounds</h3>
+<p>Use the <code>.bg-hero</code> class with one of the above background colors to create a background hero image. This class ensures that the image fully covers the background.</p>
+<p>You will need to specify a background image (using either the inline CSS feature in the Dashboard or by adding inline CSS to the element directly). You may also wish to add a minimum height (or heights at different breakpoints) depending on the image.</p>
+<div class="bg-primary bg-hero margin-bottom" style="background-image: url('https://source.unsplash.com/random/740x320'); min-height: 15em;">
+    <div class="padding-top-large padding-bottom-large text-center">
+        <span class="text-large">This is a hero image with text.</span>
+    </div>
+</div>
+
+<pre><code class="lang-markup">&lt;div class=&quot;bg-primary bg-hero&quot; style=&quot;background-image: url(&#39;https://source.unsplash.com/random/740x320&#39;); min-height: 15em;&quot;&gt;
+    &lt;div class=&quot;padding-top-large padding-bottom-large text-center&quot;&gt;
+        &lt;span class=&quot;text-large&quot;&gt;This is a hero image with text.&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<hr>
+
+
+<h2 id="buttons">Buttons</h2>
+<p>Button styles can be applied <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;input type=&quot;submit&quot;&gt;</code> elements using the <code>.btn</code> class. Use <code>.active</code> and <code>.disabled</code> classes to change the appearance of buttons.</p>
+<button class="btn">Button</button>
+<button class="btn btn-secondary">Button Secondary</button>
+<button class="btn btn-tertiary">Button Tertiary</button>
+<button class="btn btn-large">Button Large</button>
+
+<button class="btn btn-block">Button Block</button>
+<button class="btn btn-secondary btn-block">Button Block</button>
+<button class="btn btn-tertiary btn-block">Button Block</button>
+
+<button class="btn active">Active</button>
+<button class="btn btn-secondary active">Secondary Active</button>
+<button class="btn btn-tertiary active">Tertiary Active</button>
+<button class="btn disabled">Disabled</button>
+<button class="btn btn-secondary disabled">Secondary Disabled</button>
+<button class="btn btn-tertiary disabled">Tertiary Disabled</button>
+
+<pre><code class="lang-markup">&lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;btn btn-secondary&quot;&gt;Button Secondary&lt;/button&gt;
+&lt;button class=&quot;btn btn-tertiary&quot;&gt;Button Tertiary&lt;/button&gt;
+&lt;button class=&quot;btn btn-large&quot;&gt;Button Large&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-block&quot;&gt;Button Block&lt;/button&gt;
+&lt;button class=&quot;btn btn-secondary btn-block&quot;&gt;Button Block&lt;/button&gt;
+&lt;button class=&quot;btn btn-tertiary btn-block&quot;&gt;Button Block&lt;/button&gt;
+
+&lt;button class=&quot;btn active&quot;&gt;Active&lt;/button&gt;
+&lt;button class=&quot;btn btn-secondary active&quot;&gt;Secondary Active&lt;/button&gt;
+&lt;button class=&quot;btn btn-tertiary active&quot;&gt;Tertiary Active&lt;/button&gt;
+&lt;button class=&quot;btn disabled&quot;&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;btn btn-secondary disabled&quot;&gt;Secondary Disabled&lt;/button&gt;
+&lt;button class=&quot;btn btn-tertiary disabled&quot;&gt;Tertiary Disabled&lt;/button&gt;
+</code></pre>
+<hr>
+
+
+<h2 id="forms">Forms</h2>
+<p>Labels, legends and inputs are styled as full width block elements (with the exception of checkboxes and radio buttons).</p>
+<form>
+    <label>Label</label>
+    <input type="text">
+    <label>
+        <input type="checkbox">
+        Option 1
+    </label>
+    <label>
+        <input type="checkbox">
+        Option 2
+    </label>
+    <label>
+        <input type="radio" name="radioset">
+        Option 1
+    </label>
+    <label>
+        <input type="radio" name="radioset">
+        Option 2
+    </label>
+    <select>
+        <option>Select 1</option>
+        <option>Select 2</option>
+        <option>Select 3</option>
+    </select>
+    <textarea></textarea>
+</form>
+
+<pre><code class="lang-markup">&lt;form&gt;
+    &lt;label&gt;Label&lt;/label&gt;
+    &lt;input type=&quot;text&quot;&gt;
+    &lt;label&gt;
+        &lt;input type=&quot;checkbox&quot;&gt;
+        Option 1
+    &lt;/label&gt;
+    &lt;label&gt;
+        &lt;input type=&quot;checkbox&quot;&gt;
+        Option 2
+    &lt;/label&gt;
+    &lt;label&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;radioset&quot;&gt;
+        Option 1
+    &lt;/label&gt;
+    &lt;label&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;radioset&quot;&gt;
+        Option 2
+    &lt;/label&gt;
+    &lt;select&gt;
+        &lt;option&gt;Select 1&lt;/option&gt;
+        &lt;option&gt;Select 2&lt;/option&gt;
+        &lt;option&gt;Select 3&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;textarea&gt;&lt;/textarea&gt;
+&lt;/form&gt;
+</code></pre>
+<p><strong><em>Tip:</em></strong> <em>Wrap checkboxes and radio buttons inside a <code>&lt;label&gt;</code> to make them easier to click.</em></p>
+<h3 id="form-layouts">Form Layouts</h3>
+<p>Use the grid system to add structure to your forms.</p>
+<form>
+    <div class="row">
+        <div class="grid-fourth">
+                <label>Name</label>
+        </div>
+        <div class="grid-three-fourths">
+                <input type="text">
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid-fourth">
+                <label>Message</label>
+        </div>
+        <div class="grid-three-fourths">
+                <textarea></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid-three-fourths offset-fourth">
+            <button class="btn btn-blue">Submit</button>
+        </div>
+    </div>
+</form>
+
+<pre><code class="lang-markup">&lt;form&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;grid-fourth&quot;&gt;
+                &lt;label&gt;Name&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;grid-three-fourths&quot;&gt;
+                &lt;input type=&quot;text&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;grid-fourth&quot;&gt;
+                &lt;label&gt;Message&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;grid-three-fourths&quot;&gt;
+                &lt;textarea&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;grid-three-fourths offset-fourth&quot;&gt;
+            &lt;button class=&quot;btn btn-blue&quot;&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+<h3 id="condensed-amp-inline-inputs">Condensed &amp; Inline Inputs</h3>
+<p>For smaller forms, add the <code>.input-condensed</code> class to your input fields. For inline form elements, add the <code>.input-inline</code> class.</p>
+<form>
+    <input type="text" class="input-inline" placeholder=".input-inline">
+    <input type="text" class="input-condensed input-inline" placeholder=".input-condensed">
+</form>
+
+<pre><code class="lang-markup">&lt;form&gt;
+    &lt;input type=&quot;text&quot; class=&quot;input-inline&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;input-condensed input-inline&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+<hr>
+
+
+<h2 id="tables">Tables</h2>
+<p>Simple, easy-to-read tables.</p>
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Super Hero</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Peter</td>
+            <td>Parker</td>
+            <td>Spiderman</td>
+        </tr>
+        <tr>
+            <td>Bruce</td>
+            <td>Wayne</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+            <td>Clark</td>
+            <td>Kent</td>
+            <td>Superman</td>
+        </tr>
+    </tbody>
+</table>
+
+<pre><code class="lang-markup">&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;First Name&lt;/th&gt;
+            &lt;th&gt;Last Name&lt;/th&gt;
+            &lt;th&gt;Super Hero&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Peter&lt;/td&gt;
+            &lt;td&gt;Parker&lt;/td&gt;
+            &lt;td&gt;Spiderman&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Bruce&lt;/td&gt;
+            &lt;td&gt;Wayne&lt;/td&gt;
+            &lt;td&gt;Batman&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Clark&lt;/td&gt;
+            &lt;td&gt;Kent&lt;/td&gt;
+            &lt;td&gt;Superman&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<h3 id="condensed-table">Condensed Table</h3>
+<p>Add the <code>.table-condensed</code> class for more compact tables.</p>
+<table class="table-condensed">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Super Hero</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Peter</td>
+            <td>Parker</td>
+            <td>Spiderman</td>
+        </tr>
+        <tr>
+            <td>Bruce</td>
+            <td>Wayne</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+            <td>Clark</td>
+            <td>Kent</td>
+            <td>Superman</td>
+        </tr>
+    </tbody>
+</table>
+
+<pre><code class="lang-markup">&lt;table class=&quot;table-condensed&quot;&gt;
+    ...
+&lt;/table&gt;
+</code></pre>
+<h3 id="zebra-striping">Zebra Striping</h3>
+<p>Add zebra striping for easier readability with the <code>.table-striped</code> class.</p>
+<table class="table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Super Hero</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Peter</td>
+            <td>Parker</td>
+            <td>Spiderman</td>
+        </tr>
+        <tr>
+            <td>Bruce</td>
+            <td>Wayne</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+            <td>Clark</td>
+            <td>Kent</td>
+            <td>Superman</td>
+        </tr>
+    </tbody>
+</table>
+
+<pre><code class="lang-markup">&lt;table class=&quot;table-striped&quot;&gt;
+    ...
+&lt;/table&gt;
+</code></pre>
+<h3 id="responsive-table">Responsive Table</h3>
+<p>Add the <code>.table-responsive</code> class for tables that reformat on smaller viewports. (You can automatically make all tables responsive&mdash;including adding the <code>data-label</code> attributes&mdash;using <a href="#automatic-responsive-tables">responsive-tables.js</a>.)</p>
+<table class="table-responsive">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Super Hero</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-label="First Name">Peter</td>
+            <td data-label="Last Name">Parker</td>
+            <td data-label="Super Hero">Spiderman</td>
+        </tr>
+        <tr>
+            <td data-label="First Name">Bruce</td>
+            <td data-label="Last Name">Wayne</td>
+            <td data-label="Super Hero">Batman</td>
+        </tr>
+        <tr>
+            <td data-label="First Name">Clark</td>
+            <td data-label="Last Name">Kent</td>
+            <td data-label="Super Hero">Superman</td>
+        </tr>
+    </tbody>
+</table>
+
+<pre><code class="lang-markup">&lt;table class=&quot;table-responsive&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;First Name&lt;/th&gt;
+            &lt;th&gt;Last Name&lt;/th&gt;
+            &lt;th&gt;Super Hero&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td data-label=&quot;First Name&quot;&gt;Peter&lt;/td&gt;
+            &lt;td data-label=&quot;Last Name&quot;&gt;Parker&lt;/td&gt;
+            &lt;td data-label=&quot;Super Hero&quot;&gt;Spiderman&lt;/td&gt;
+        &lt;/tr&gt;
+        ...
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<h3 id="combining-classes">Combining Classes</h3>
+<p>Classes can be combined as needed.</p>
+<table class="table-condensed table-striped table-responsive">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Super Hero</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Peter</td>
+            <td>Parker</td>
+            <td>Spiderman</td>
+        </tr>
+        <tr>
+            <td>Bruce</td>
+            <td>Wayne</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+            <td>Clark</td>
+            <td>Kent</td>
+            <td>Superman</td>
+        </tr>
+    </tbody>
+</table>
+
+<pre><code class="lang-markup">&lt;table class=&quot;table-condensed table-striped table-responsive&quot;&gt;
+    ...
+&lt;/table&gt;
+</code></pre>
+<h3 id="wysiwyg-generated-tables">WYSIWYG Generated Tables</h3>
+<p>The Mashery Portal WYSIWYG generates tables that are missing the required <code>&lt;thead&gt;</code> and <code>&lt;th&gt;</code> elements. You can fix this by calling the <code>addTableHeaders()</code> JavaScript method. This is done for you already in the <em>Body JavaScript</em> section of <em>Portal Setup</em> in the Dashboard.</p>
+<pre><code class="lang-js">portalReady(function () {
+    addTableHeaders();
+});
+</code></pre>
+<hr>
+
+
+<h2 id="alignment-spacing-visibility">Alignment, Spacing &amp; Visibility</h2>
+<p>You can adjust text alignment, spacing, and visibility using a few simple CSS classes.</p>
+<h3 id="text-alignment">Text Alignment</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Alignment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.text-left</code></td>
+<td>Left</td>
+</tr>
+<tr>
+<td><code>.text-center</code></td>
+<td>Centered</td>
+</tr>
+<tr>
+<td><code>.text-right</code></td>
+<td>Right</td>
+</tr>
+<tr>
+<td><code>.text-right-large</code></td>
+<td>Right <em>(only on bigger screens)</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="floats">Floats</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Float</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.float-left</code></td>
+<td>Left</td>
+</tr>
+<tr>
+<td><code>.float-center</code></td>
+<td>Centered</td>
+</tr>
+<tr>
+<td><code>.float-right</code></td>
+<td>Right</td>
+</tr>
+<tr>
+<td><code>.float-middle</code></td>
+<td>Middle</td>
+</tr>
+<tr>
+<td><code>.float-bottom</code></td>
+<td>Bottom</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>.float-middle</code> and <code>.float-bottom</code> classes should be applied to block level elements, and require a parent <code>&lt;div&gt;</code> with a <code>.float-*-wrap</code> class.</p>
+<pre><code class="lang-markup">&lt;div class=&quot;float-middle-wrap&quot;&gt;
+    &lt;div class=&quot;float-middle&quot;&gt;
+        .float-middle
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;float-bottom-wrap&quot;&gt;
+    &lt;div class=&quot;float-bottom&quot;&gt;
+        .float-bottom
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Clear floats by wrapping floated content in a <code>&lt;div&gt;</code> with the <code>.clearfix</code> class.</p>
+<pre><code class="lang-markup">&lt;div class=&quot;clearfix&quot;&gt;
+    &lt;button class=&quot;float-right&quot;&gt;Floated to the Right&lt;/button&gt;
+    &lt;button&gt;Not floated&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="margins">Margins</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Margin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.no-margin</code></td>
+<td>all: <code>0</code></td>
+</tr>
+<tr>
+<td><code>.no-margin-top</code></td>
+<td>top: <code>0</code></td>
+</tr>
+<tr>
+<td><code>.no-margin-bottom</code></td>
+<td>bottom: <code>0</code></td>
+</tr>
+<tr>
+<td><code>.margin-top</code></td>
+<td>top: <code>1.5625em</code></td>
+</tr>
+<tr>
+<td><code>.margin-bottom</code></td>
+<td>bottom: <code>1.5625em</code></td>
+</tr>
+<tr>
+<td><code>.margin-bottom-small</code></td>
+<td>bottom: <code>0.5em</code></td>
+</tr>
+<tr>
+<td><code>.margin-bottom-large</code></td>
+<td>bottom: <code>2em</code></td>
+</tr>
+<tr>
+<td><code>.margin-left</code></td>
+<td>left:   <code>1.5625em</code></td>
+</tr>
+<tr>
+<td><code>.margin-left-small</code></td>
+<td>left:   <code>0.5em</code></td>
+</tr>
+<tr>
+<td><code>.margin-right</code></td>
+<td>right:  <code>1.5625em</code></td>
+</tr>
+<tr>
+<td><code>.margin-right-small</code></td>
+<td>right:  <code>0.5em</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="padding">Padding</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>padding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.no-padding</code></td>
+<td>all: <code>0</code></td>
+</tr>
+<tr>
+<td><code>.no-padding-top</code></td>
+<td>top: <code>0</code></td>
+</tr>
+<tr>
+<td><code>.no-padding-bottom</code></td>
+<td>bottom: <code>0</code></td>
+</tr>
+<tr>
+<td><code>.padding-top</code></td>
+<td>top: <code>1.5625em</code></td>
+</tr>
+<tr>
+<td><code>.padding-top-small</code></td>
+<td>top: <code>0.5em</code></td>
+</tr>
+<tr>
+<td><code>.padding-top-large</code></td>
+<td>top: <code>2em</code></td>
+</tr>
+<tr>
+<td><code>.padding-bottom</code></td>
+<td>bottom: <code>1.5625em</code></td>
+</tr>
+<tr>
+<td><code>.padding-bottom-small</code></td>
+<td>bottom: <code>0.5em</code></td>
+</tr>
+<tr>
+<td><code>.padding-bottom-large</code></td>
+<td>bottom: <code>2em</code></td>
+</tr>
+<tr>
+<td><code>.padding-left</code></td>
+<td>left: <code>1.5625em</code></td>
+</tr>
+<tr>
+<td><code>.padding-right</code></td>
+<td>right: <code>1.5625em</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="visibility">Visibility</h3>
+<p>Hide content using the <code>[hidden]</code> attribute.</p>
+<pre><code class="lang-markup">&lt;div hidden&gt;This is removed from the markup.&lt;/div&gt;
+</code></pre>
+<p>If you have text that you don&#39;t want displayed on screen, but that should still be in the markup for screen readers (for example, a search form label), simply apply the <code>.screen-reader</code> class.</p></p>
+<pre><code class="lang-markup">&lt;form&gt;
+    &lt;label class=&quot;screen-reader&quot;&gt;Search this site&lt;/label&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Search this site...&quot;&gt;
+    &lt;input type=&quot;submit&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+<p>For visually hidden content that should become visible on focus (such as a <a href="http://webaim.org/techniques/skipnav/">skip nav link</a> for sighted users navigating by keyboard), also add the <code>.screen-reader-focusable</code> class.</p>
+<pre><code class="lang-markup">&lt;a class=&quot;screen-reader screen-reader-focusable&quot; href=&quot;#main&quot;&gt;Skip to content&lt;/a&gt;
+</code></pre>
+<hr>
+
+
+<h2 id="svg-icons">SVG Icons</h2>
+<p>Your theme includes support for SVG icons. We recommend using inline SVGs to maximize browser compatibility.</p>
+<p>Open the SVG file in your text editor of choice, and then literally copy-and-paste the content from the file into your markup. Add the <code>.icon</code> class&mdash;which sets the height, width, and color to inherit based on its context&mdash;and any others to the <code>svg</code> tag.</p>
+<pre><code class="lang-markup">&lt;svg class=&quot;icon&quot; ...&gt;...&lt;/svg&gt;
+</code></pre>
+<p>Your theme comes with SVG support detection that adds an <code>.svg</code> class to the <code>&lt;html&gt;</code> element if supported. If an image is more than decorative, always include supporting text in a <code>&lt;span&gt;</code> with the <code>.icon-fallback-text</code> class. This text will display when SVG is not supported by the browser, and is accessible to screen readers.</p>
+<pre><code class="lang-markup">&lt;svg class=&quot;icon&quot; id=&quot;tweet-this&quot; ...&gt;...&lt;/svg&gt;
+&lt;span class=&quot;icon-fallback-text&quot;&gt;Tweet This&lt;/span&gt;
+</code></pre>
+<hr>
+
+
+<h2 id="image-styling">Image Styling</h2>
+<p>Add simple <code>.img-*</code> classes to any img element to add styling. You can combine classes for additional styling options. Mix-and-match as desired.</p>
+<div class="row">
+    <div class="grid-third">
+        <p style="text-align: center;">
+            <strong>Circle</strong><br>
+            <img class="img-circle" src="https://source.unsplash.com/random/200x200">
+        </p>
+    </div>
+    <div class="grid-third">
+        <p style="text-align: center;">
+            <strong>Border</strong><br>
+            <img class="img-border" src="https://source.unsplash.com/random/200x200">
+        </p>
+    </div>
+    <div class="grid-third">
+        <p style="text-align: center;">
+            <strong>Photo</strong><br>
+            <img class="img-photo" src="https://source.unsplash.com/random/200x200">
+        </p>
+    </div>
+</div>
+
+<pre><code class="lang-markup">&lt;img class=&quot;img-circle&quot; src=&quot;#&quot;&gt;
+&lt;img class=&quot;img-border&quot; src=&quot;#&quot;&gt;
+&lt;img class=&quot;img-photo&quot; src=&quot;#&quot;&gt;
+</code></pre>
+<hr>
+
+
+<h2 id="responsive-videos">Responsive Videos</h2>
+<p>Your theme comes bundled with <a href="https://github.com/toddmotto/fluidvids">fluidvids.js</a>, a lightweight script that makes iframe videos responsive.</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/aQ_isEq-pT8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+
+<p>The script will not run until initialized. This is done for you already in the <em>Body JavaScript</em> section of <em>Portal Setup</em> in the Dashboard.</p>
+<pre><code class="lang-javascript">portalReady(function () {
+    fluidvids.init({
+        selector: [&#39;iframe&#39;, &#39;object&#39;], // runs querySelectorAll()
+        players: [&#39;www.youtube.com&#39;, &#39;player.vimeo.com&#39;] // players to support
+    });
+});
+</code></pre>
+<hr>
+
+
+<h2 id="syntax-highlighting">Syntax Highlighting</h2>
+<p>Syntax highlighting is provided by <a href="http://prismjs.com/">Prism by Lea Verou</a>. It includes support for:</p>
+<ul>
+<li>Bash</li>
+<li>CSS</li>
+<li>C-like languages</li>
+<li>HTTP</li>
+<li>Markup/HTML</li>
+<li>Java</li>
+<li>JavaScript</li>
+<li>PHP</li>
+<li>Python</li>
+<li>Ruby</li>
+<li>Sass/scss</li>
+</ul>
+<p>Add <code>class=&quot;lang-*&quot;</code> to your <code>&lt;code&gt;</code> element, where <code>*</code> is the language to be highlighted.</p>
+<pre><code class="lang-markup">&lt;pre&gt;&lt;code class=&quot;lang-*&quot;&gt;
+    /* Your code here...  */
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!-- Example --&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-php&quot;&gt;
+    // Your code here...
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+<p><strong><em>Note:</em></strong> <em>The syntax highlighter tool in TinyMCE will automatically add the correct markup and classes and highlighting for you.</em></p>
+<h3 id="language-table">Language Table</h3>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>Class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bash</td>
+<td><code>.lang-bash</code></td>
+</tr>
+<tr>
+<td>CSS</td>
+<td><code>.lang-css</code></td>
+</tr>
+<tr>
+<td>C, C#, C++</td>
+<td><code>.lang-clike</code></td>
+</tr>
+<tr>
+<td>HTTP</td>
+<td><code>.lang-http</code></td>
+</tr>
+<tr>
+<td>Markup/HTML</td>
+<td><code>.lang-markup</code></td>
+</tr>
+<tr>
+<td>Java</td>
+<td><code>.lang-java</code></td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td><code>.lang-javascript</code></td>
+</tr>
+<tr>
+<td>PHP</td>
+<td><code>.lang-php</code></td>
+</tr>
+<tr>
+<td>Python</td>
+<td><code>.lang-python</code></td>
+</tr>
+<tr>
+<td>Ruby</td>
+<td><code>.lang-ruby</code></td>
+</tr>
+<tr>
+<td>Sass</td>
+<td><code>.lang-sass</code></td>
+</tr>
+<tr>
+<td>scss</td>
+<td><code>.lang-scss</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+
+<h2 id="click-to-highlight">Click-to-Highlight</h2>
+<p>Make it easier for developers to copy-and-paste your code by enabling click-to-highlight. Try it for yourself by clicking or tapping anywhere in the code sample below.</p>
+<pre><code class="lang-css">/* Preformatted Text */
+.js-example {
+    color: #272727;
+    background: #ffffff;
+}</code></pre>
+
+<h3 id="getting-started">Getting Started</h3>
+<h4 id="javascript">JavaScript</h4>
+<p>The script will not run until initialized. This is done for you already in the <em>Body JavaScript</em> section of <em>Portal Setup</em> in the Dashboard.</p>
+<pre><code class="lang-javascript">portalReady(function () {
+    clickToHighlight.init();
+});
+</code></pre>
+<h3 id="global-settings">Global Settings</h3>
+<p>You can pass options and callbacks into Click-to-Highlight through the <code>init()</code> function:</p>
+<pre><code class="lang-javascript">clickToHighlight.init({
+    initClass: &#39;js-click-highlight&#39;, // Class that&#39;s added to the HTML element on init
+    callback: function ( container ) {} // Function that runs after content is highlighted
+});
+</code></pre>
+<h3 id="use-click-to-highlight-events-in-your-own-scripts">Use Click-to-Highlight events in your own scripts</h3>
+<p>You can also call the highlight function in your own scripts.</p>
+<h4 id="highlight-">highlight()</h4>
+<p>Highlight the contents of an element</p>
+<pre><code class="lang-javascript">clickToHighlight.highlight(
+    elem // The element to highlight
+)
+
+// Example
+var container = document.querySelector(&#39;#container&#39;);
+clickToHighlight.highlight( container );
+</code></pre>
+<h4 id="destroy-">destroy()</h4>
+<p>Destroy the current <code>clickToHighlight.init()</code>. This is called automatically during the <code>init</code> function to remove any existing initializations.</p>
+<pre><code class="lang-javascript">clickToHighlight.destroy();
+</code></pre>
+<hr>
+
+
+<h2 id="dynamic-links">Dynamic Links</h2>
+<p>You can create links whose <code>href</code> changes after a user logs in. For example, you may wish to invite a logged out user to register, and a logged in user to view the docs.</p>
+<p>Add the <code>.js-get-startCall the</code>getStartedLink()` JavaScript method with a selector and the URL to use for the link when the user is logged in.</p>
+<pre><code class="lang-markup">&lt;script&gt;
+    portalReady(function() {
+        dynamicLinks( &#39;#get-started-link&#39;, &#39;/docs&#39; );
+    });
+&lt;/script&gt;
+&lt;a id=&quot;get-started-link&quot; href=&quot;/member/register&quot;&gt;Get Started&lt;/a&gt;
+</code></pre>
+<hr>
+
+
+<h2 id="sticky-footer">Sticky Footer</h2>
+<p>Force your footer to stick to the bottom of the viewport, even when there&#39;s not a lot of content on a page.</p>
+<h3 id="getting-started">Getting Started</h3>
+<h4 id="markup">Markup</h4>
+<p>Add the <code>.js-sticky-footer</code> class to your footer.</p>
+<pre><code class="lang-markup">&lt;footer class=&quot;js-sticky-footer&quot;&gt;
+    ...
+&lt;/footer&gt;
+</code></pre>
+<h4 id="javascript">JavaScript</h4>
+<p>The script will not run until initialized. This is done for you already in the <em>Body JavaScript</em> section of <em>Portal Setup</em> in the Dashboard.</p>
+<pre><code class="lang-javascript">portalReady(function () {
+    stickyFooter.init({
+        selector: &#39;js-sticky-footer&#39;,
+    });
+});
+</code></pre>
+<h3 id="global-settings">Global Settings</h3>
+<p>You can pass options and callbacks into the script through the <code>init()</code> function:</p>
+<pre><code class="lang-javascript">stickyFooter.init({
+    selector: &#39;[data-sticky-footer]&#39;, // The selector for the footer
+    content: &#39;#content&#39;, // The selector for the element that contains your main content
+    callback: function () {} // Function that runs after adjusting footer
+});
+</code></pre>
+<h3 id="use-script-events-in-your-own-scripts">Use script events in your own scripts</h3>
+<p>You can also call Sticky Footer events in your own scripts.</p>
+<h4 id="setcontentheight">setContentHeight</h4>
+<p>Set page content min-height to push footer to the bottom of the page.</p>
+<pre><code class="lang-javascript">stickyFooter.setContentHeight(
+    content, // The content node
+    footer, // The footer node
+    options // Classes and callbacks. Same options as those passed into the init() function.
+);
+
+// Example
+var content = document.querySelector(&#39;#content&#39;);
+var footer = document.querySelector(&#39;[data-sticky-footer]&#39;);
+stickyFooter.setContentHeight( content, footer );
+</code></pre>
+<h4 id="destroy-">destroy()</h4>
+<p>Destroy the current <code>stickyFooter.init()</code>. This is called automatically during the init function to remove any existing initializations.</p>
+<pre><code class="lang-javascript">stickyFooter.destroy();
+</code></pre>
+<hr>
+
+
+<h2 id="right-height">Right Height</h2>
+<p>Dynamically set content areas of different lengths to the same height.</p>
+<div class="row js-right-height">
+    <div class="grid-third">
+        <div class="demo-grid-bg js-right-height-content">
+            <h2>Content 1</h2>
+            <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.</p>
+        </div>
+    </div>
+    <div class="grid-third">
+        <div class="demo-grid-bg js-right-height-content">
+            <h2>Content 2</h2>
+            <p>Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz.</p>
+        </div>
+    </div>
+    <div class="grid-third">
+        <div class="demo-grid-bg js-right-height-content">
+            <h2>Content 3</h2>
+            <p>Quick, Baz, get my woven flax jodhpurs! &quot;Now fax quiz Jack!&quot; my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls.</p>
+        </div>
+    </div>
+</div>
+
+<h3 id="getting-started">Getting Started</h3>
+<h4 id="markup">Markup</h4>
+<p>Add the <code>.js-right-height</code> class to the wrapper div for your content areas. This let&#39;s Right Height adjust heights for different sections of content independently from each other. Give each content area that you want Right Height to adjust a <code>.js-right-height-content</code> class.</p>
+<pre><code class="lang-markup">&lt;div class=&quot;row js-right-height&quot;&gt;
+    &lt;div class=&quot;grid-third js-right-height-content&quot;&gt;
+        Content 1
+    &lt;/div&gt;
+    &lt;div class=&quot;grid-third js-right-height-content&quot;&gt;
+        Content 2
+    &lt;/div&gt;
+    &lt;div class=&quot;grid-third js-right-height-content&quot;&gt;
+        Content 3
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="javascript">JavaScript</h4>
+<p>The script will not run until initialized. This is done for you already in the <em>Body JavaScript</em> section of <em>Portal Setup</em> in the Dashboard.</p>
+<pre><code class="lang-markup">&lt;script&gt;
+    portalReady(function () {
+        rightHeight.init({
+            selector: &#39;.js-right-height&#39;,
+            selectorContent: &#39;.js-right-height-content&#39;,
+        });
+    });
+&lt;/script&gt;
+</code></pre>
+<h3 id="global-settings">Global Settings</h3>
+<p>You can pass options and callbacks into Right Height through the <code>init()</code> function:</p>
+<pre><code class="lang-javascript">rightHeight.init({
+    selector: &#39;[data-right-height]&#39;, // Selector for the right height parent container
+    selectorContent: &#39;[data-right-height-content]&#39;, // Selector for right height content areas
+    callback: function () {} // Function to run after height is adjusted
+});
+</code></pre>
+<h3 id="use-right-height-events-in-your-own-scripts">Use Right Height events in your own scripts</h3>
+<p>You can also call the Right Height adjust height function in your own scripts.</p>
+<h4 id="adjustcontainerheight-">adjustContainerHeight()</h4>
+<p>Set all content areas in a container to the same height.</p>
+<pre><code class="lang-javascript">rightHeight.adjustContainerHeight(
+    container, // Node that contains the content areas. ex. document.querySelector(&#39;#content-wrapper&#39;)
+    options // Callbacks. Same options as those passed into the init() function.
+);
+
+// Example
+var container = document.querySelector(&#39;#container&#39;);
+rightHeight.adjustContainerHeight( container );
+</code></pre>
+<h4 id="destroy-">destroy()</h4>
+<p>Destroy the current <code>rightHeight.init()</code>. This is called automatically during the init function to remove any existing initializations.</p>
+<pre><code class="lang-javascript">rightHeight.destroy();
+</code></pre>
+<hr>
+
+
+<h2 id="expand-and-collapse-widgets">Expand-and-Collapse Widgets</h2>
+<p>Add simple expand-and-collapse widgets and accordions.</p>
+<p><strong>Collapsed by Default</strong></p>
+<div class="collapse" id="show-me">
+    Now you see me, now you don&#39;t.
+</div>
+
+<p>
+    <a class="collapse-toggle" data-collapse href="#show-me">
+        <span class="collapse-text-show">Show +</span>
+        <span class="collapse-text-hide">Hide -</span>
+    </a>
+</p>
+
+<p><strong>Expanded by Default</strong></p>
+<p>
+    <a class="btn collapse-toggle active" data-collapse href="#hide-me">
+        <span class="collapse-text-show">Show</span>
+        <span class="collapse-text-hide">Hide</span>
+    </a>
+</p>
+
+<div class="collapse active" id="hide-me">
+    Hide me!
+</div>
+
+<p><strong>Accordions</strong></p>
+<div>
+    <a class="collapse-toggle active" data-collapse data-group="accordion" href="#section1">
+        Section 1
+        <span class="collapse-text-show">+</span>
+        <span class="collapse-text-hide">-</span>
+    </a><br>
+    <div class="collapse active" id="section1">
+        <h3>Section 1</h3>
+        <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.</p>
+    </div>
+    <a class="collapse-toggle" data-collapse data-group="accordion" href="#section2">
+        Section 2
+        <span class="collapse-text-show">+</span>
+        <span class="collapse-text-hide">-</span>
+    </a><br>
+    <div class="collapse" id="section2">
+        <h3>Section 2</h3>
+        <p>Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz.</p>
+    </div>
+    <a class="collapse-toggle" data-collapse data-group="accordion" href="#section3">
+        Section 3
+        <span class="collapse-text-show">+</span>
+        <span class="collapse-text-hide">-</span>
+    </a><br>
+    <div class="collapse" id="section3">
+        <h3>Section 3</h3>
+        <p>Quick, Baz, get my woven flax jodhpurs! &quot;Now fax quiz Jack!&quot; my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls.</p>
+    </div>
+</div>
+
+<h3 id="getting-started">Getting Started</h3>
+<h4 id="markup">Markup</h4>
+<p>Add the <code>.collapse-toggle</code> class to your toggle element, and the <code>.collapse</code> class to your content. You also need to provide an <code>href</code> that matches the <code>id</code> of the content you want to expand-and-collapse.</p>
+<pre><code class="lang-html">&lt;a class=&quot;collapse-toggle&quot; href=&quot;#show-me&quot;&gt;
+    &lt;span class=&quot;collapse-text-show&quot;&gt;Show +&lt;/span&gt;
+    &lt;span class=&quot;collapse-text-hide&quot;&gt;Hide -&lt;/span&gt;
+&lt;/a&gt;
+&lt;div class=&quot;collapse&quot; id=&quot;show-me&quot;&gt;
+    &lt;p&gt;Now you see me, now you don&#39;t.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p><strong>Expanded by Default</strong></p>
+<p>If you&#39;d prefer to show content by default, include the <code>.active</code> class along with the <code>.collapse</code> and <code>.collapse-toggle</code> classes.</p>
+<pre><code class="lang-html">&lt;a class=&quot;collapse-toggle active&quot; href=&quot;#hide-me&quot;&gt;
+    &lt;span class=&quot;collapse-text-show&quot;&gt;Show +&lt;/span&gt;
+    &lt;span class=&quot;collapse-text-hide&quot;&gt;Hide -&lt;/span&gt;
+&lt;/a&gt;
+&lt;div class=&quot;collapse active&quot; id=&quot;hide-me&quot;&gt;
+    &lt;p&gt;Hide me!&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p><strong>Accordions</strong></p>
+<p>Expand-and-collapse accordion groups are also supported. Add a <code>[data-group]</code> attribute to every toggle in the accordion, and make sure they all have the same value. The script will sort out the rest.</p>
+<pre><code class="lang-html">&lt;a class=&quot;collapse-toggle active&quot; data-group=&quot;accordion&quot; href=&quot;#section1&quot;&gt;
+    Section 1
+    &lt;span class=&quot;collapse-text-show&quot;&gt;+&lt;/span&gt;
+    &lt;span class=&quot;collapse-text-hide&quot;&gt;-&lt;/span&gt;
+&lt;/a&gt;
+&lt;div class=&quot;collapse active&quot; id=&quot;section1&quot;&gt;
+    &lt;h3&gt;Section 1&lt;/h3&gt;
+    &lt;p&gt;The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;a class=&quot;collapse-toggle&quot; data-group=&quot;accordion&quot; href=&quot;#section2&quot;&gt;
+    Section 2
+    &lt;span class=&quot;collapse-text-show&quot;&gt;+&lt;/span&gt;
+    &lt;span class=&quot;collapse-text-hide&quot;&gt;-&lt;/span&gt;
+&lt;/a&gt;
+&lt;div class=&quot;collapse&quot; id=&quot;section2&quot;&gt;
+    &lt;h3&gt;Section 2&lt;/h3&gt;
+    &lt;p&gt;Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz.&lt;/p&gt;
+&lt;/div&gt;
+&lt;a class=&quot;collapse-toggle&quot; data-group=&quot;accordion&quot; href=&quot;#section3&quot;&gt;
+    Section 3
+    &lt;span class=&quot;collapse-text-show&quot;&gt;+&lt;/span&gt;
+    &lt;span class=&quot;collapse-text-hide&quot;&gt;-&lt;/span&gt;
+&lt;/a&gt;
+&lt;div class=&quot;collapse&quot; id=&quot;section3&quot;&gt;
+    &lt;h3&gt;Section 3&lt;/h3&gt;
+    &lt;p&gt;Quick, Baz, get my woven flax jodhpurs! &quot;Now fax quiz Jack!&quot; my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="javascript">JavaScript</h4>
+<p>The script will not run until initialized. This is done for you already in the <em>Body JavaScript</em> section of <em>Portal Setup</em> in the Dashboard.</p>
+<pre><code class="lang-markup">&lt;script&gt;
+    portalReady(function () {
+        houdini.init({
+            selectorToggle: &#39;.collapse-toggle&#39;,
+        });
+    });
+&lt;/script&gt;
+</code></pre>
+<h4 id="tinymce-issues">TinyMCE Issues</h4>
+<p>TinyMCE removes data attributes from the markup. In order to use this script as an accordion, you must uncheck the &quot;Use TinyMCE&quot; checkbox in the Content section of the Portal Dashboard.</p>
+<h3 id="global-settings">Global Settings</h3>
+<p>You can pass options and callbacks through the <code>init()</code> function:</p>
+<pre><code class="lang-javascript">houdini.init({
+    selectorToggle: &#39;[data-collapse]&#39;, // Collapse toggle selector
+    selectorContent: &#39;.collapse&#39;, // Collapse content selector
+    toggleActiveClass: &#39;active&#39;, // Class added to active toggle elements
+    contentActiveClass: &#39;active&#39;, // Class added to active content elements
+    initClass: &#39;js-houdini&#39;, // Class added to `&lt;html&gt;` element when initiated
+    stopVideo: true, // If true, stop any videos that are playing when content is collapsed
+    callbackOpen: function ( content, toggle ) {}, // Function that&#39;s run after content is expanded
+    callbackClose: function ( content, toggle ) {} // Function that&#39;s run after content is collapse
+});
+</code></pre>
+<h3 id="use-expand-and-collapse-events-in-your-own-scripts">Use expand-and-collapse events in your own scripts</h3>
+<p>You can also call the toggle events in your own scripts.</p>
+<h4 id="opencontent-">openContent()</h4>
+<p>Expand a closed content area.</p>
+<pre><code class="lang-javascript">houdini.openContent(
+    contentID, // The ID of the content area to expand. ex. &#39;#content&#39;
+    toggle, // Node that toggles the expand and collapse action. ex. document.querySelector(&#39;#toggle&#39;) [optional]
+    options // Classes and callbacks. Same options as those passed into the init() function. [optional]
+);
+</code></pre>
+<p><strong>Examples</strong></p>
+<pre><code class="lang-javascript">houdini.openContent( &#39;#show-me&#39; );
+houdini.openContent( &#39;#show-me-too&#39;, document.querySelector( &#39;a[href*=&quot;#show-me-too&quot;]&#39; ) );
+</code></pre>
+<h4 id="closecontent-">closeContent()</h4>
+<p>Expand a closed content area.</p>
+<pre><code class="lang-javascript">houdini.closeContent(
+    contentID, // The ID of the content area to collapse. ex. &#39;#content&#39;
+    toggle, // Node that toggles the expand and collapse action. ex. document.querySelector(&#39;#toggle&#39;) [optional]
+    options // Classes and callbacks. Same options as those passed into the init() function. [optional]
+);
+</code></pre>
+<p><strong>Examples</strong></p>
+<pre><code class="lang-javascript">houdini.closeContent( &#39;#hide-me&#39; );
+houdini.closeContent( &#39;#hide-me-too&#39;, document.querySelector( &#39;a[href*=&quot;#show-me-too&quot;]&#39; ) );
+</code></pre>
+<h4 id="destroy-">destroy()</h4>
+<p>Destroy the current <code>houdini.init()</code>. This is called automatically during the init function to remove any existing initializations.</p>
+<pre><code class="lang-javascript">houdini.destroy();
+</code></pre>
+<hr>
+
+
+<h2 id="expand-and-collapse-for-the-documentation-subnav">Expand-and-Collapse for the Documentation Subnav</h2>
+<p>While you cannot directly modify the markup in your documenation subnav, adding expand-and-collapse functionality is as simple as running a JavaScript method.</p>
+<pre><code class="lang-javascript">portalReady(function () {
+    houdiniSubnav.init();
+});
+</code></pre>
+<p>You can customize the appearance of your subnav using a few simple settings:</p>
+<pre><code class="lang-javascript">houdiniSubnav.init({
+    selectorNav: &#39;#sub &gt; ul&#39;, // Navigation selector
+    selectorNavs: &#39;#sub &gt; ul &gt; li&#39;, // Navigation items selector
+    isAccordion: false, // If true, activates the accordion functionality
+    iconShow: &#39;+&#39;, // The icon for showing hidden content
+    iconHide: &#39;&amp;ndash;&#39;, // The icon for hiding visibile content
+    iconAfter: true, // If true, displays the hide/show icons after the link text
+    iconMargin: &#39;0.5em&#39;, // The amount of space between the icon and the page link
+    initClass: &#39;js-houdini-subnav&#39;, // The JS class to the `html` element on init
+});
+</code></pre>
+<hr>
+
+
+<h2 id="toggle-tabs">Toggle Tabs</h2>
+<p>Light weight toggle tabs.</p>
+<ul class="tabs">
+    <li class="active"><a class="js-tab active" href="#taba">Superheroes</a></li>
+    <li><a class="js-tab" href="#tabb">Ice Cream</a></li>
+    <li><a class="js-tab" href="#tabc">Seasons</a></li>
+</ul>
+
+<div class="js-tabs-content">
+    <div class="tabs-pane active" id="taba">
+        <p><strong>Superheros</strong></p>
+        <p>Spiderman, Batman, or Iron Man... which one is your favorite?</p>
+    </div>
+    <div class="tabs-pane" id="tabb">
+        <p><strong>Ice Cream</strong></p>
+        <p>Chocolate, vanilla or strawberry?</p>
+    </div>
+    <div class="tabs-pane" id="tabc">
+        <p><strong>Seasons</strong></p>
+        <p>Winter, summer, spring or fall?</p>
+    </div>
+</div>
+
+<h3 id="getting-started">Getting Started</h3>
+<h4 id="markup">Markup</h4>
+<p>For semantic reasons, tab toggles must be links, but can be strutured however you see fit. Make sure that the <code>href</code> for each tab toggle matches the id of the target <code>.tabs-pane</code>.</p>
+<p>Add the <code>.tabs</code> class to the tab toggles parent element, and the <code>.js-tab</code> class to individual toggles. Add a <code>.js-tabs-content</code> class to the tab content group parent element, and the <code>.tabs-pane</code> class to individual tab content.</p>
+<p>Add the <code>.active</code> class to the tab and content that you&#39;d like displayed by default.</p>
+<pre><code class="lang-markup">&lt;ul class=&quot;tabs&quot;&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a class=&quot;js-tab active&quot; href=&quot;#taba&quot;&gt;Superheroes&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;js-tab&quot; href=&quot;#tabb&quot;&gt;Ice Cream&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;js-tab&quot; href=&quot;#tabc&quot;&gt;Seasons&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;js-tabs-content&quot;&gt;
+    &lt;div class=&quot;tabs-pane active&quot; id=&quot;taba&quot;&gt;
+        &lt;p&gt;&lt;strong&gt;Superheros&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;Spiderman, Batman, or Iron Man... which one is your favorite?&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tabs-pane&quot; id=&quot;tabb&quot;&gt;
+        &lt;p&gt;&lt;strong&gt;Ice Cream&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;Chocolate, vanilla or strawberry?&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tabs-pane&quot; id=&quot;tabc&quot;&gt;
+        &lt;p&gt;&lt;strong&gt;Seasons&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;Winter, summer, spring or fall?&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="javascript">JavaScript</h4>
+<p>The script will not run until initialized. This is done for you already in the <em>Body JavaScript</em> section of <em>Portal Setup</em> in the Dashboard.</p>
+<pre><code class="lang-markup">&lt;script&gt;
+    portalReady(function () {
+        tabby.init({
+            selectorToggle: &#39;.js-tab&#39;,
+            selectorToggleGroup: &#39;.tabs&#39;,
+            selectorContent: &#39;.tabs-pane&#39;,
+            selectorContentGroup: &#39;.js-tabs-content&#39;,
+        });
+    });
+&lt;/script&gt;
+</code></pre>
+<h3 id="global-settings">Global Settings</h3>
+<p>You can pass options and callbacks into Tabby through the <code>init()</code> function:</p>
+<pre><code class="lang-javascript">tabby.init({
+    selectorToggle: &#39;[data-tab]&#39;, // Tab toggle selector
+    selectorToggleGroup: &#39;[data-tabs]&#39;, // Tab toggle group selector
+    selectorContent: &#39;[data-tabs-pane]&#39;, // Tab content selector
+    selectorContentGroup: &#39;[data-tabs-content]&#39;, // Tab content group selector
+    toggleActiveClass: &#39;active&#39;, // Class added to active toggle elements
+    contentActiveClass: &#39;active&#39;, // Class added to active tab content areas
+    initClass: &#39;js-tabby&#39;, // Class added to &lt;html&gt; element when initiated
+    stopVideo: true, // [Boolean] If true, stop videos when tab closes
+    callback: function ( tabs, toggle ) {} // Function that&#39;s run after tab content is toggled
+});
+</code></pre>
+<h3 id="use-tabby-events-in-your-own-scripts">Use Tabby events in your own scripts</h3>
+<p>You can also call toggle events in your own scripts.</p>
+<h3 id="toggletab-">toggleTab()</h3>
+<p>Show tab content.</p>
+<pre><code class="lang-javascript">tabby.toggleTab(
+    tabID, // The ID of the tab content area to show. ex. &#39;#content&#39;
+    toggle, // Node that toggles the tab action. ex. document.querySelector(&#39;#toggle&#39;) [optional]
+    options, // Classes and callbacks. Same options as those passed into the init() function.
+);
+</code></pre>
+<p><strong>Example</strong></p>
+<pre><code class="lang-javascript">tabby.toggleTab( &#39;#tab2&#39; );
+tabby.toggleTab( &#39;#tab3&#39;, document.querySelector(&#39;[data-tab][href*=&quot;#tab2&quot;]&#39;) );
+</code></pre>
+<h4 id="destroy-">destroy()</h4>
+<p>Destroy the current <code>tabby.init()</code>. This is called automatically during the init function to remove any existing initializations.</p>
+<pre><code class="lang-javascript">tabby.destroy();
+</code></pre>
+<hr>
+
+
+<h2 id="smooth-scroll">Smooth Scroll</h2>
+<p>Animate scrolling to anchor links.</p>
+<p>
+    <strong>Linear</strong><br>
+    <a class="js-scroll" data-options='{ "easing": "linear" }' href="#bazinga">Linear (no other options)</a><br>
+</p>
+
+<p>
+    <strong>Ease-In</strong><br>
+    <a class="js-scroll" data-options='{ "easing": "easeInQuad" }' href="#bazinga">Quad</a><br>
+    <a class="js-scroll" data-options='{ "easing": "easeInCubic" }' href="#bazinga">Cubic</a><br>
+    <a class="js-scroll" data-options='{ "easing": "easeInQuart" }' href="#bazinga">Quart</a><br>
+    <a class="js-scroll" data-options='{ "easing": "easeInQuint" }' href="#bazinga">Quint</a>
+</p>
+
+<p>
+    <strong>Ease-In-Out</strong><br>
+    <a class="js-scroll" data-options='{ "easing": "easeInOutQuad" }' href="#bazinga">Quad</a><br>
+    <a class="js-scroll" data-options='{ "easing": "easeInOutCubic" }' href="#bazinga">Cubic</a><br>
+    <a class="js-scroll" data-options='{ "easing": "easeInOutQuart" }' href="#bazinga">Quart</a><br>
+    <a class="js-scroll" data-options='{ "easing": "easeInOutQuint" }' href="#bazinga">Quint</a>
+</p>
+
+<p>
+    <strong>Ease-Out</strong><br>
+    <a class="js-scroll" data-options='{ "easing": "easeOutQuad" }' href="#bazinga">Quad</a><br>
+    <a class="js-scroll" data-options='{ "easing": "easeOutCubic" }' href="#bazinga">Cubic</a><br>
+    <a class="js-scroll" data-options='{ "easing": "easeOutQuart" }' href="#bazinga">Quart</a><br>
+    <a class="js-scroll" data-options='{ "easing": "easeOutQuint" }' href="#bazinga">Quint</a>
+</p>
+
+<p>
+    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
+</p>
+
+<p id="bazinga"><a class="js-scroll" href="#1@#%^-bottom">Bazinga!</a></p>
+
+<p>
+    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
+</p>
+
+<p id="1@#%^-bottom"><a class="js-scroll" data-options='{ "easing": "easeOutCubic" }' href="#smooth-scroll">Back to the top</a></p>
+
+<h3 id="getting-started">Getting Started</h3>
+<h4 id="markup">Markup</h4>
+<p>Turn anchor links into Smooth Scroll links by adding the <code>.js-scroll</code> class. Give the anchor location an ID just like you normally would.</p>
+<pre><code class="lang-markup">&lt;a class=&quot;js-scroll&quot; href=&quot;#bazinga&quot;&gt;Anchor Link&lt;/a&gt;
+...
+&lt;span id=&quot;bazinga&quot;&gt;Bazinga!&lt;/span&gt;
+</code></pre>
+<h4 id="javascript">JavaScript</h4>
+<p>The script will not run until initialized. This is done for you already in the <em>Body JavaScript</em> section of <em>Portal Setup</em> in the Dashboard.</p>
+<pre><code class="lang-markup">&lt;script&gt;
+    portalReady(function () {
+        smoothScroll.init({
+            selector: &#39;.js-scroll&#39;,
+            selectorHeader: &#39;.js-scroll-header&#39;,
+        });
+    });
+&lt;/script&gt;
+</code></pre>
+<h3 id="global-settings">Global Settings</h3>
+<p>You can pass options and callbacks into Smooth Scroll through the <code>init()</code> function. Learn more about the different easing patterns and what they do at <a href="http://easings.net/">easings.net</a>.</p>
+<pre><code class="lang-javascript">smoothScroll.init({
+    selector: &#39;[data-scroll]&#39;, // Smooth scroll link selector
+    selectorHeader: null, // Selector for a fixed header (if one exists)
+    speed: 500, // Integer. How fast to complete the scroll in milliseconds
+    easing: &#39;easeInOutCubic&#39;, // Easing pattern to use
+    offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+    callback: function () {} // Function to run after scrolling
+});
+</code></pre>
+<h3 id="override-settings-with-data-attributes">Override settings with data attributes</h3>
+<p>Smooth Scroll also lets you override global settings on a link-by-link basis using the <code>[data-options]</code> data attribute.</p>
+<pre><code class="lang-markup">&lt;a class=&quot;js-scroll&quot;
+   data-options=&#39;{
+                    &quot;speed&quot;: 500,
+                    &quot;easing&quot;: &quot;easeInOutCubic&quot;,
+                    &quot;offset&quot;: 0
+                }&#39;
+&gt;
+    Anchor Link
+&lt;/a&gt;
+</code></pre>
+<p><strong><em>Note:</em></strong> <em>You must use <a href="http://jsonlint.com/">valid JSON</a> in order for the <code>data-options</code> feature to work.</em></p>
+<h3 id="use-smooth-scroll-events-in-your-own-scripts">Use Smooth Scroll events in your own scripts</h3>
+<p>You can also call Smooth Scroll&#39;s scroll animation events in your own scripts.</p>
+<h4 id="animatescroll-">animateScroll()</h4>
+<p>Animate scrolling to an anchor.</p>
+<pre><code class="lang-javascript">smoothScroll.animateScroll(
+    anchor, // ID of the anchor to scroll to, or a position on the page. ex. &#39;#bazinga&#39;, 750
+    toggle, // Node that toggles the animation, OR an integer. ex. document.querySelector(&#39;#toggle&#39;)
+    options // Classes and callbacks. Same options as those passed into the init() function.
+);
+
+// Example 1
+smoothScroll.animateScroll( &#39;#bazinga&#39; );
+
+// Example 2
+var toggle = document.querySelector(&#39;#toggle&#39;);
+var options = { speed: 1000, easing: &#39;easeOutCubic&#39; };
+smoothScroll.animateScroll( &#39;#bazinga&#39;, toggle, options );
+
+// Example 3
+smoothScroll.animateScroll( 750 );
+</code></pre>
+<h4 id="destroy-">destroy()</h4>
+<p>Destroy the current <code>smoothScroll.init()</code>. This is called automatically during the <code>init</code> function to remove any existing initializations.</p>
+<pre><code class="lang-javascript">smoothScroll.destroy();
+</code></pre>
+<h3 id="fixed-headers">Fixed Headers</h3>
+<p>Add a <code>[class=&quot;js-scroll&quot;-header]</code> data attribute to fixed headers. Smooth Scroll will automatically offset scroll distances by the header height. If you have multiple fixed headers, add <code>[class=&quot;js-scroll&quot;-header]</code> to the last one in the markup.</p>
+<pre><code class="lang-markup">&lt;nav class=&quot;js-scroll-header&quot;&gt;
+    ...
+&lt;/nav&gt;
+</code></pre>
+<hr>
+
+
+<h2 id="automatic-responsive-tables">Automatic Responsive Tables</h2>
+<p>Automatically make all tables responsive&mdash;including adding <code>data-label</code> attributes.</p>
+<h3 id="getting-started">Getting Started</h3>
+<p>The script will not run until initialized.</p>
+<pre><code class="lang-markup">&lt;script&gt;
+    portalReady(function () {
+        responsiveTables.init();
+    });
+&lt;/script&gt;
+</code></pre>
+<h3 id="global-settings">Global Settings</h3>
+<p>You can pass options and callbacks into Breadcrumbs through the <code>init()</code> function:</p>
+<pre><code class="lang-javascript">responsiveTables.init({
+    selector: &#39;table&#39;, // The selector to use (defaults to all tables)
+    responsiveClass: &#39;table-responsive&#39;, // The responsive tables class
+    initClass: &#39;js-responsive-tables&#39;, // Class to add to the &lt;html&gt; element on init
+    callback: function () {}, // Callback to run after init successfully run
+});
+</code></pre>
+<h3 id="use-responsive-table-events-in-your-own-scripts">Use Responsive Table events in your own scripts</h3>
+<p>You can also call the Breadcrumbs functions in your own scripts.</p>
+<h4 id="destroy-">destroy()</h4>
+<p>Destroy the current <code>responsiveTables.init()</code>. This is called automatically during the init function to remove any existing initializations.</p>
+<pre><code class="lang-javascript">responsiveTables.destroy();
+</code></pre>
+<hr>
+
+
+<h2 id="breadcrumbs">Breadcrumbs</h2>
+<p>Add breadcrumb navigation to all or just select pages of your portal.</p>
+<h3 id="getting-started">Getting Started</h3>
+<p>The script will not run until initialized.</p>
+<pre><code class="lang-markup">&lt;script&gt;
+    portalReady(function () {
+        breadcrumbs.init();
+    });
+&lt;/script&gt;
+</code></pre>
+<h3 id="global-settings">Global Settings</h3>
+<p>You can pass options and callbacks into Breadcrumbs through the <code>init()</code> function:</p>
+<pre><code class="lang-javascript">breadcrumbs.init({
+    pages: &#39;all&#39;, // Which pages to load breadcrumbs on. {String|Array} [all | docs | page | blog | forum | ioDocs | account]
+    exclude: &#39;.dom-landing&#39;, // Which pages to explicitly exclude. Must be a valid CSS selector. {String|Array}
+    selector: &#39;#page&#39; // Where to add the breadcrumbs.
+    docs: &#39;Documentation&#39;, // Label to use for Documentation pages
+    ioDocs: &#39;IO-Docs&#39;, // Label to use for IO-Docs pages
+    forumAddCategory: &#39;Add Category&#39;, // Label to use for Forum &quot;Add Category&quot; page
+    accountMyAccount: &#39;My Account&#39;, // Label to use for &quot;My Account&quot; page
+    accountMyKeys: &#39;My API Keys&#39;, // Label to use for &quot;My API Keys&quot; page
+    accountMyApps: &#39;My Applications&#39;, // Label to use for &quot;My Applications&quot; page
+    memberManage: &#39;Manage My Account&#39;, // Label to use for &quot;Manage My Account&quot; page
+    memberEmail: &#39;Change Email&#39;, // Label to use for &quot;Change Email&quot; page
+    memberPassword: &#39;Change Password&#39;, // Label to use for &quot;Change Password&quot; page
+    initClass: &#39;js-breadcrumbs&#39;, // Class to add to the &lt;html&gt; element on init
+    containerClass: &#39;padding-top-small text-muted link-plain&#39;, // Classes to add to the breadcrumbs container
+    listClass: &#39;list-inline list-inline-breadcrumbs&#39;, // Classes to add to the breadcrumbs list
+    callback: function () {}, // Callback to run after breadcrumbs are added
+});
+</code></pre>
+<h3 id="use-breadcrumbs-events-in-your-own-scripts">Use Breadcrumbs events in your own scripts</h3>
+<p>You can also call the Breadcrumbs functions in your own scripts.</p>
+<h4 id="destroy-">destroy()</h4>
+<p>Destroy the current <code>breadcrumbs.init()</code>. This is called automatically during the init function to remove any existing initializations.</p>
+<pre><code class="lang-javascript">breadcrumbs.destroy();
+</code></pre>
+<hr>
+
+
+<h2 id="create-dropdown-menus">Create Dropdown Menus</h2>
+<p>The Portal Dashboard only allows you to add single-level navigation elements. Your theme includes a simple JavaScript method you can use to add dropdown menus.</p>
+<p>Pass in your navigation structure as an array of objects.</p>
+<pre><code class="lang-javascript">createDropdown(
+    target,   // The (case insensitive) text label of the menu item that you&#39;d like to add the dropdown to. Ex. &#39;Documentation&#39;
+    dropdown, // An array of objects with the dropdown menu data. Ex. [{text: &#39;Something&#39;, url: &#39;#&#39;}, {text: &#39;Something Else&#39;, url: &#39;#&#39;}]
+    nav       // Selector for the nav [optional]
+);
+
+// Example
+portalReady(function () {
+    createDropdown(
+        &#39;documentation&#39;,
+        [
+            {
+                url: &#39;#1&#39;,
+                text: &#39;Link 1&#39;
+            },
+            {
+                url: &#39;#2&#39;,
+                text: &#39;Link 2&#39;
+            }
+        ]
+    );
+});
+</code></pre>
+<hr>
+
+
+<h2 id="add-more-than-6-nav-items">Add more than 6 nav items</h2>
+<p>The Portal Dashboard only allows you to add 6 primary navigation elements. Your theme includes a simple JavaScript method you can use to add more.</p>
+<pre><code class="lang-javascript">addNavItem(
+    target, // The (case insensitive) text label of the menu item that you&#39;d like to add the item before or after. Ex. &#39;Documentation&#39;
+    text,   // The text for the menu item
+    url,    // The URL for the new menu item
+    before, // If true, place new item before target instead of after it [optional]
+    nav     // Selector for the nav [optional]
+);
+
+// Example
+portalReady(function () {
+    addNavItem( &#39;Contact&#39;, &#39;New Link&#39;, &#39;#1&#39; );
+    addNavItem( &#39;documentation&#39;, &#39;Another New Link&#39;, &#39;#2&#39;, true );
+});
+</code></pre>
+<hr>
+
+
+<h2 id="dynamic-io-docs-api-selection">Dynamic IO-Docs API selection</h2>
+<p>You can force IO-Docs to load a particular API on page load by using the following query string pattern:</p>
+<pre><code class="lang-javascript">// Load an API
+http://yourdomain.com/io-docs?api=NameOfTheAPI
+
+// Load an API and expand and scroll to a specific method
+http://yourdomain.com/io-docs?api=NameOfTheAPI&amp;method=NameOfTheMethod
+</code></pre>
+<h3 id="getting-started">Getting Started</h3>
+<p>The script will not run until initialized. The ideal place to do this is in the <em>Body JavaScript</em> section of <em>Portal Setup</em> in the Dashboard.</p>
+<pre><code class="lang-javascript">portalReady(function () {
+    toggleIODocs.init();
+});
+</code></pre>
+<h3 id="global-settings">Global Settings</h3>
+<p>You can pass options and callbacks into Click-to-Highlight through the <code>init()</code> function:</p>
+<pre><code class="lang-javascript">toggleIODocs.init({
+    initClass: &#39;js-toggle-io-docs&#39;, // Class that&#39;s added to the HTML element on init
+    callback: function ( select, val ) {} // Function that runs after content is highlighted
+});
+</code></pre>
+<h3 id="use-toggleiodocs-events-in-your-own-scripts">Use toggleIODocs events in your own scripts</h3>
+<p>You can also call the toggle function in your own scripts.</p>
+<h4 id="toggle-">toggle()</h4>
+<p>Toggle an IO-Docs API.</p>
+<pre><code class="lang-javascript">toggleIODocs.toggle(
+    api, // The value of the API
+    method, // The value of the method
+    options // Settings (same ones passed in during init)
+);
+
+// Examples
+toggleIODocs.toggle( &#39;Some API&#39; );
+toggleIODocs.toggle( &#39;Some API&#39;, &#39;Some Method&#39; );
+</code></pre>
+<h4 id="destroy-">destroy()</h4>
+<p>Destroy the current <code>toggleIODocs.init()</code>. This is called automatically during the init function to remove any existing initializations.</p>
+<pre><code class="lang-javascript">toggleIODocs.destroy();
+</code></pre>
+<hr>
+
+
+<h2 id="manipulating-the-dom">Manipulating the DOM</h2>
+<p>Because the Portal limits your ability to change markup in many areas, your theme includes a collection of lightweight helper methods that let you load, move, and manipulate DOM elements to work the way you need them to. View working examples in your <code>header.js</code> file.</p>
+<h3 id="removecss-">removeCSS()</h3>
+<p>Remove default stylesheets.</p>
+<pre><code class="lang-javascript">/**
+ * @param  {String} filename The name of the stylesheet to remove
+ * @return {Object}          The stylesheet that was removed
+ */
+removeCSS( filename );
+
+// Example
+removeCSS( &#39;Mashery-base.css&#39; );
+</code></pre>
+<h3 id="loadcss-">loadCSS()</h3>
+<p>Asynchronously load a CSS file. <a href="https://github.com/filamentgroup/loadCSS">Authored by the Filament Group.</a></p>
+<pre><code class="lang-javascript">/**
+ * @param  {String} href   The URL for your CSS file.
+ * @param  {Object} before Optionally defines the element we&#39;ll use as a reference for injecting our link.
+ * @param  {String} media  CSS media type (default: All).
+ * @return {Object}        The stylesheet.
+ */
+loadCSS( href, before, media );
+
+// Example
+loadCSS( &#39;http://fonts.googleapis.com/css?family=Open+Sans&#39; );
+</code></pre>
+<h3 id="fontfaceobserver-">fontFaceObserver()</h3>
+<p>A small <code>@font-face</code> loader. Use in conjuction with <a href="#loadcss-">loadCSS</a> to avoid <a href="https://github.com/filamentgroup/loadCSS/issues/16">FOIT</a>. <a href="https://github.com/bramstein/fontfaceobserver">Authored by Bram Stein.</a></p>
+<pre><code class="lang-javascript">loadCSS(&#39;//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&#39;);
+var font = new FontFaceObserver(&#39;PT Serif&#39;);
+font.load().then(function () {
+    document.documentElement.className += &#39; fonts-loaded&#39;;
+});
+</code></pre>
+<pre><code class="lang-css">body {
+    font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+.fonts-loaded body {
+    font-family: &#39;PT Serif&#39;, sans-serif;
+}
+</code></pre>
+<h3 id="loadjs-">loadJS()</h3>
+<p>Asynchronously load a JS file. <a href="https://github.com/filamentgroup/loadJS">Authored by the Filament Group.</a></p>
+<pre><code class="lang-javascript">/**
+ * @param  {String}   src URL of script to load.
+ * @param  {Function} cb  Callback to run on completion.
+ * @return {String}       The script URL.
+ */
+loadJS( src, cb );
+
+// Example
+if ( !window.jQuery ) {
+    loadJS( &#39;//code.jquery.com/jquery-0.8.2.min.js&#39; );
+}
+</code></pre>
+<h3 id="loadinline-">loadInline()</h3>
+<p>Load CSS or JS inline in the header. While the Portal provides the ability to do this inline, this script let&#39;s you do so conditionally.</p>
+<pre><code class="lang-javascript">/**
+ * @param  {String}   elem The CSS or JS to load (with &lt;style&gt; or &lt;script&gt; tags).
+ * @param  {Function} cb   Callback to run on completion.
+ * @return {Object}        The inlined node.
+ */
+loadInline( elem, cb );
+
+// Examples
+loadInline( &#39;&lt;style&gt;.example { text-align: left; font-weight: bold; }&lt;/style&gt;&#39; );
+loadInline( &#39;&lt;script&gt;console.log(&quot;It works!&quot;);&lt;/script&gt;&#39; );
+</code></pre>
+<h3 id="loadhtml-">loadHTML()</h3>
+<p>Load HTML anywhere in the DOM. Must be called in the <code>&lt;body&gt;</code>.</p>
+<pre><code class="lang-javascript">/**
+ * @param  {String|Node} html     The markup. If a string, must be enclosed in a single node (ex. &lt;div&gt;, &lt;span&gt;, etc.).
+ * @param  {Node}        target   The node to place your HTML before or after.
+ * @param  {Boolean}     after    If true, load markup after target node. Else, load before.
+ * @param  {Function}    cb       Callback to run after method.
+ * @return {Object}               Element in the DOM.
+ */
+loadHTML( html, selector, after, cb );
+
+// Examples
+loadHTML( &#39;&lt;div class=&quot;example&quot;&gt;Sample Text&lt;/div&gt;&#39;, document.getElementById( &#39;page&#39; ) );
+loadHTML( &#39;&lt;span class=&quot;example-2&quot;&gt;Success!&lt;/span&gt;&#39;, document.querySelect( &#39;table td:first-child&#39; ), true );
+</code></pre>
+<h3 id="moveelem-">moveElem()</h3>
+<p>Move an element or its contents to another location in the DOM. Must be called in the <code>&lt;body&gt;</code>.</p>
+<pre><code class="lang-javascript">/**
+ * @param  {Node}     elem      Element to move.
+ * @param  {Node}     target    The node to place the node before or after.
+ * @param  {Boolean}  innerHTML If true, grabs markup inside node.
+ * @param  {Boolean}  after     If true, load markup after target node. Else, load before.
+ * @param  {Function} cb        Callback to run after method.
+ * @return {Object|String}      Node/markup in the DOM.
+ */
+moveElem( elem, selector, innerHTML, after, cb );
+
+// Examples
+moveElem( document.getElementById( &#39;example&#39; ), document.getElementById( &#39;put-elem-here&#39; );
+moveElem( document.getElementById( &#39;example-2&#39; ), document.getElementById( &#39;put-elem-here-2&#39; ), true );
+moveElem( document.getElementById( &#39;example-3&#39; ), document.getElementById( &#39;put-elem-here-3&#39; ), false, true );
+</code></pre>
+<h3 id="wrapelem-">wrapElem()</h3>
+<p>Wrap markup around an element in the DOM&#39;s content. Must be called in the <code>&lt;body&gt;</code>.</p>
+<pre><code class="lang-javascript">/**
+* @param  {Node}     elem       Element to wrap in markup. Uses querySelector().
+* @param  {String}   wrap       Markup to wrap content in. Use {{content}} as content placeholder.
+* @param  {Boolean}  innerHTML  If true, grabs markup inside node.
+* @param  {Function} cb         Call back to run after method.
+* @return {Object}              Element in the DOM.
+ */
+wrapElem( elem, wrap, innerHTML, cb );
+
+// Example
+wrapElem( document.getElementById( &#39;content&#39; ), &#39;&lt;div class=&quot;container&quot;&gt;{{content}}&lt;/div&gt;&#39;, true );
+</code></pre>
+<hr>
+
+<h2 id="adding-code-to-the-head-">Adding code to the <code>&lt;head&gt;</code></h2>
+<p>While the Mashery CMS does not allow you to directly control the output in the <code>&lt;head&gt;</code> element, you can use the <em>Head JavaScript</em> section under <em>Portal Setup</em> in the Dashboard to add content to this section.</p>
+<p>The Portal automatically adds any content added to this section between opening and closing <code>&lt;script&gt;</code> tags. You can use this behavior to add non-JS content by closing out the open script tag, adding your markup, and then opening the script tag up again.</p>
+<pre><code class="lang-markup">&lt;/script&gt;&lt;!-- Close script tag --&gt;
+
+&lt;!-- Mobile Screen Resizing --&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+&lt;!-- Favicons --&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/files/favicon.ico&quot;&gt;
+&lt;link rel=&quot;icon&quot; sizes=&quot;16x16 32x32&quot; href=&quot;/files/favicon.ico&quot;&gt;
+
+&lt;!-- Reopen script tag --&gt;
+&lt;script&gt;
+</code></pre>
+<hr>
+
+<h2 id="using-jquery">Using jQuery</h2>
+<p>Certain pages on the Portal (like IO-Docs) load jQuery automatically, but most do not. To safely load jQuery onto your Portal without introducing conflicts, use the following method. Using other approaches can cause jQuery to be loaded twice, negatively affect performance, and introduce conflicts.</p>
+<pre><code class="lang-javascript">/**
+ * Load jQuery
+ */
+;(function (window, document, undefined) {
+
+    &#39;use strict&#39;;
+
+    // If jQuery is already loaded, don&#39;t load it again
+    if ( window.jQuery ) return;
+
+    // Load jQuery
+    loadJS( &#39;//code.jquery.com/jquery-1.8.2.js&#39;, function () {
+        // Run your jQuery dependent code here
+        // You can also call loadJS() again to load additional jQuery-dependent plugins
+    });
+
+})(window, document);
+</code></pre>
+<hr>
+
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="targeting-specific-pages-for-styling">Targeting specific pages for styling</h3>
+<p>The <code>header.js</code> file includes a method that adds a unique class to the <code>&lt;html&gt;</code> element on each page. This class is prefixed with <code>.dom-*</code> and based on the page path. It can be used to target styles and scripts to a specific page.</p>
+<p>To target categories of pages (for example, <em>all</em> documentation pages), use the <code>.page-*</code> class on the <code>&lt;body&gt;</code> element.</p>
+<p><strong>JavaScript</strong></p>
+<pre><code class="lang-javascript">if ( document.documentElement.classList.contains( &#39;dom-landing&#39; ) ) {
+    // run a script only on the landing page...
+}
+
+if ( document.documentElement.classList.contains( &#39;dom-docs-example&#39; ) ) {
+    // run a script only on the /docs/example page...
+}
+
+if ( document.body.classList.contains( &#39;page-docs&#39; ) ) {
+    // run a script only on documentatin pages
+}
+</code></pre>
+<p><strong>CSS</strong></p>
+<pre><code class="lang-scss">.dom-landing .some-selector {
+    // apply a style only on the landing page...
+}
+
+.dom-docs-example .some-selector {
+    // apply a style only on the /docs/example page...
+}
+
+.page-docs .some-selector {
+    // apply a style only on documentation pages
+}
+</code></pre>
+<h3 id="avoiding-foit">Avoiding FOIT</h3>
+<p>Loading web fonts results in a <a href="https://github.com/filamentgroup/loadCSS/issues/16">Flash of Invisible Text (FOIT)</a> that leaves the page unusable until it loads (this is a browser problem, not specific to the Portal). Using the included <a href="#fontfaceobserver-">loadCSS() and fontFaceObserver methods</a> to load your web font and detect when it&#39;s available will eliminate FOIT.</p>
+<h3 id="preserving-data-attributes-and-svgs">Preserving Data Attributes and SVGs</h3>
+<p>TinyMCE, which powers the Portal WYSIWYG editor, strips out data attributes the SVG <code>viewBox</code> attribute in the markup. In order to use inline SVGs or any components that require data attributes, you must either uncheck the &quot;Use TinyMCE&quot; checkbox in the Content section of the Portal Dashboard, or inject the appropriate data attributes using JavaScript.</p>
+<hr>
+
+
+<h2 id="browser-compatibility">Browser Compatibility</h2>
+<p>Your theme is optimized for modern browsers and IE 9+.</p>
+<h3 id="vendor-prefixing">Vendor Prefixing</h3>
+<p>Your theme&#39;s build system uses <a href="https://github.com/postcss/autoprefixer">autoprefixer</a>, and is configured to only add prefixes if required by the last two versions of a browser. If a feature isn&#39;t working (for example, the grid does not work in Firefox 28 and lower), it may simply need a vendor prefix.</p>
+<p>For more details on when support for specific features were added to different browsers, consult <a href="http://caniuse.com/">Can I Use</a>.</p>
+			</div>
+		</div>
+
+		<script>
+			// Create table of contents
+			;(function (window, document, undefined) {
+
+				'use strict';
+
+				// Feature detection
+				if ( !document.querySelector ) return;
+
+				// Variables
+				var subnav = document.querySelector( '#demo-subnav' );
+				var sections = document.querySelectorAll( 'h2' );
+				var subnavContent = '';
+
+				// Check that all variables exist
+				if ( !subnav || sections.length === 0 ) return;
+
+				// Loop through each section and create a link to it
+				for ( var i = 0, len = sections.length; i < len; i++  ) {
+
+					// Ignore sections without an id
+					var id = sections[i].id;
+					if ( !id ) continue;
+
+					// Create section navigation
+					subnavContent += '<li><a class="js-scroll link-plain" href="#' + id + '">' + sections[i].innerHTML + '</a></li>';
+
+				}
+
+				// Add subnav
+				subnav.innerHTML = '<h3>Contents</h3><ul>' + subnavContent + '</ul>';
+			})(window, document);
+		</script>

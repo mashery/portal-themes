@@ -1,0 +1,13 @@
+// Settings & Mixins
+@import "config";
+@import "mixins";
+
+@font-face{
+	font-family: "TUITypeLt";
+	src: url(//dfe0eojhz1m41.cloudfront.net/assets/fonts/TUITypeLt-8f3b427ad22f0bfb4e06407b027f784eadc0f4dfe4275ca32d6f32b60b3063a1.otf) format("opentype"),
+	     url(//dfe0eojhz1m41.cloudfront.net/assets/fonts/TUITypeLt-29b3c910e2061748bbc087a6741f6ff3b566c7f5c6bcd30ca308d7fde45ec9c1.ttf) format("truetype"),
+	     url(//dfe0eojhz1m41.cloudfront.net/assets/fonts/TUITypeLt-3933e9e5378bfc3f8b7b5d0a64df016379ee7f626803fb37430548376b9720bc.svg) format("svg"),
+	     url(//dfe0eojhz1m41.cloudfront.net/assets/fonts/TUITypeLt-ddb9ce0e1ca67eb7351f70e2c04a60c7a25a8bfcb054e9c86bf21ad999e55f73.woff) format("woff");
+	font-weight: normal;
+	font-style: normal
+}
