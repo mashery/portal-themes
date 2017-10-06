@@ -45,7 +45,7 @@
  * Remove the tap delay in webkit
  * @link https://medium.com/@adactio/delay-a9df9edceef3#.7dmbl3xow
  */
-/* line 23, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_normalize.scss */
+/* line 23, /Users/cferdinandi/Sites/client-portals/src/sass/components/_normalize.scss */
 a, .link-block-styled,
 button,
 input,
@@ -61,7 +61,7 @@ summary {
  * Add box sizing to everything
  * @link http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  */
-/* line 38, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_normalize.scss */
+/* line 38, /Users/cferdinandi/Sites/client-portals/src/sass/components/_normalize.scss */
 *,
 *:before,
 *:after {
@@ -74,7 +74,7 @@ summary {
  * 3. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 51, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_normalize.scss */
+/* line 51, /Users/cferdinandi/Sites/client-portals/src/sass/components/_normalize.scss */
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* 1 */
@@ -89,7 +89,7 @@ html {
 /**
  * Remove default margin.
  */
-/* line 60, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_normalize.scss */
+/* line 60, /Users/cferdinandi/Sites/client-portals/src/sass/components/_normalize.scss */
 body {
   margin: 0;
 }
@@ -100,7 +100,7 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-/* line 70, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_normalize.scss */
+/* line 70, /Users/cferdinandi/Sites/client-portals/src/sass/components/_normalize.scss */
 article,
 aside,
 cite,
@@ -122,7 +122,7 @@ summary {
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-/* line 91, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_normalize.scss */
+/* line 91, /Users/cferdinandi/Sites/client-portals/src/sass/components/_normalize.scss */
 audio,
 canvas,
 progress,
@@ -137,7 +137,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 103, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_normalize.scss */
+/* line 103, /Users/cferdinandi/Sites/client-portals/src/sass/components/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -146,7 +146,7 @@ audio:not([controls]) {
 /**
  * Prevent img and video elements from spilling outside of the page on smaller screens.
  */
-/* line 111, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_normalize.scss */
+/* line 111, /Users/cferdinandi/Sites/client-portals/src/sass/components/_normalize.scss */
 img,
 video {
   max-width: 100%;
@@ -157,7 +157,7 @@ video {
  * Prevent iframe, object, and embed elements from spilling outside of the page on smaller screens.
  * height: auto causes iframes to smush, so it's omitted here.
  */
-/* line 121, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_normalize.scss */
+/* line 121, /Users/cferdinandi/Sites/client-portals/src/sass/components/_normalize.scss */
 iframe,
 object,
 embed {
@@ -171,7 +171,7 @@ embed {
  * 1. Remove border when inside `a` element in IE 8/9/10.
  * 2. Prevents IE from making scaled images look like crap
  */
-/* line 138, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_normalize.scss */
+/* line 138, /Users/cferdinandi/Sites/client-portals/src/sass/components/_normalize.scss */
 img {
   border: 0;
   /* 1 */
@@ -182,7 +182,7 @@ img {
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
-/* line 146, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_normalize.scss */
+/* line 146, /Users/cferdinandi/Sites/client-portals/src/sass/components/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -190,7 +190,7 @@ svg:not(:root) {
 /**
  * Address inconsistent margin.
  */
-/* line 153, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_normalize.scss */
+/* line 153, /Users/cferdinandi/Sites/client-portals/src/sass/components/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -199,7 +199,7 @@ figure {
  * @workaround Remove focus from <main> element when using tabindex="-1" hack for skipnav link
  * @link https://code.google.com/p/chromium/issues/detail?id=37721
  */
-/* line 161, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_normalize.scss */
+/* line 161, /Users/cferdinandi/Sites/client-portals/src/sass/components/_normalize.scss */
 [tabindex="-1"]:focus {
   outline: none;
 }
@@ -211,7 +211,7 @@ figure {
 /**
  * Base grid styles: single column
  */
-/* line 9, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+/* line 9, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
 .container, .page {
   margin-left: auto;
   margin-right: auto;
@@ -219,13 +219,13 @@ figure {
   width: 88%;
 }
 
-/* line 16, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+/* line 16, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
 .row, .content, .page-login .signin_member_mashery {
   margin-left: -1.4%;
   margin-right: -1.4%;
 }
 
-/* line 21, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+/* line 21, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
 .grid-fourth, .grid-third, .sub, .grid-half, .page-login div.signin, .page-login div.options, .grid-two-thirds, .main, .page-page .no_sub .main,
 .page-forum .no_sub .main,
 .page-blog .no_sub .main,
@@ -239,7 +239,7 @@ figure {
 /**
  * Reverses order of grid for content choreography
  */
-/* line 38, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+/* line 38, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
 .grid-flip {
   float: right;
 }
@@ -248,19 +248,19 @@ figure {
  * Add columns to grid on bigger screens
  */
 @media (min-width: 20em) {
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .row-start-xsmall .grid-fourth {
     width: 25%;
   }
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .row-start-xsmall .grid-third, .row-start-xsmall .sub {
     width: 33.33333%;
   }
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .row-start-xsmall .grid-half, .row-start-xsmall .page-login div.signin, .page-login .row-start-xsmall div.signin, .row-start-xsmall .page-login div.options, .page-login .row-start-xsmall div.options {
     width: 50%;
   }
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .row-start-xsmall .grid-two-thirds, .row-start-xsmall .main, .row-start-xsmall .page-page .no_sub .main, .page-page .no_sub .row-start-xsmall .main, .row-start-xsmall
   .page-forum .no_sub .main,
   .page-forum .no_sub .row-start-xsmall .main, .row-start-xsmall
@@ -270,30 +270,30 @@ figure {
   .page-contact .no_sub .row-start-xsmall .main {
     width: 66.66667%;
   }
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .row-start-xsmall .grid-three-fourths {
     width: 75%;
   }
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .row-start-xsmall .grid-full, .row-start-xsmall .no_sub .main, .no_sub .row-start-xsmall .main {
     width: 100%;
   }
 }
 
 @media (min-width: 30em) {
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .row-start-small .grid-fourth {
     width: 25%;
   }
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .row-start-small .grid-third, .row-start-small .sub {
     width: 33.33333%;
   }
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .row-start-small .grid-half, .row-start-small .page-login div.signin, .page-login .row-start-small div.signin, .row-start-small .page-login div.options, .page-login .row-start-small div.options {
     width: 50%;
   }
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .row-start-small .grid-two-thirds, .row-start-small .main, .row-start-small .page-page .no_sub .main, .page-page .no_sub .row-start-small .main, .row-start-small
   .page-forum .no_sub .main,
   .page-forum .no_sub .row-start-small .main, .row-start-small
@@ -303,65 +303,65 @@ figure {
   .page-contact .no_sub .row-start-small .main {
     width: 66.66667%;
   }
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .row-start-small .grid-three-fourths {
     width: 75%;
   }
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .row-start-small .grid-full, .row-start-small .no_sub .main, .no_sub .row-start-small .main {
     width: 100%;
   }
 }
 
 @media (min-width: 40em) {
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .grid-fourth {
     width: 25%;
   }
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .grid-third, .sub {
     width: 33.33333%;
   }
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .grid-half, .page-login div.signin, .page-login div.options {
     width: 50%;
   }
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .grid-two-thirds, .main, .page-page .no_sub .main,
   .page-forum .no_sub .main,
   .page-blog .no_sub .main,
   .page-contact .no_sub .main {
     width: 66.66667%;
   }
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .grid-three-fourths {
     width: 75%;
   }
-  /* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .grid-full, .no_sub .main, .dom-wide .no_sub .main {
     width: 100%;
   }
-  /* line 55, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 55, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .offset-fourth {
     margin-left: 25%;
   }
-  /* line 55, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 55, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .offset-third {
     margin-left: 33.33333%;
   }
-  /* line 55, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 55, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .offset-half {
     margin-left: 50%;
   }
-  /* line 55, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 55, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .offset-two-thirds {
     margin-left: 66.66667%;
   }
-  /* line 55, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 55, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .offset-three-fourths {
     margin-left: 75%;
   }
-  /* line 55, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 55, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .offset-full {
     margin-left: 100%;
   }
@@ -371,14 +371,14 @@ figure {
  * Dynamic grid
  */
 @media (min-width: 40em) {
-  /* line 71, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 71, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .grid-dynamic {
     width: 50%;
   }
 }
 
 @media (min-width: 60em) {
-  /* line 71, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_grid.scss */
+  /* line 71, /Users/cferdinandi/Sites/client-portals/src/sass/components/_grid.scss */
   .grid-dynamic {
     width: 25%;
   }
@@ -388,7 +388,7 @@ figure {
  * @section Typography
  * Sets font styles for entire site
  */
-/* line 6, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 6, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 body {
   color: #272727;
   background: #ffffff;
@@ -398,18 +398,18 @@ body {
 }
 
 @media (min-width: 40em) {
-  /* line 6, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+  /* line 6, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
   body {
     line-height: 1.5625;
   }
 }
 
-/* line 17, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 17, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 .fonts-loaded body {
   font-family: franklin-gothic-urw, sans-serif;
 }
 
-/* line 22, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 22, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 p {
   margin: 0 0 1.5625em;
 }
@@ -417,7 +417,7 @@ p {
 /**
  * Hyperlink styling
  */
-/* line 31, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 31, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 a, .link-block-styled {
   background-color: transparent;
   color: #2573ba;
@@ -425,7 +425,7 @@ a, .link-block-styled {
   word-wrap: break-word;
 }
 
-/* line 37, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 37, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 a.link-plain, .link-plain.link-block-styled, .link-block-styled.nav, .link-block-styled.nav-toggle, .link-block-styled#nav-user, .link-block-styled#nav-footer-content, .page-apps .section-menu.navigation ul.link-block-styled, .page-apps .key-actions.actions ul.link-block-styled, .page-apps .section-body table ul.link-block-styled, .page-apps #application-edit ul.link-block-styled, .page-member .section-menu.navigation ul.link-block-styled, .page-member .link-block-styled.section-menu.actions, a.nav, a.nav-toggle, a#nav-user, a#nav-footer-content, #sub ul a, #sub ul .link-block-styled, .page-member a.section-menu.actions,
 .link-plain a, .nav a, .nav-toggle a, #nav-user a, #nav-footer-content a, #sub ul a a, #sub ul .link-block-styled a, .page-apps .section-menu.navigation ul a, .page-apps .key-actions.actions ul a, .page-apps .section-body table ul a, .page-apps #application-edit ul a, .page-member .section-menu.navigation ul a, .page-member .section-menu.actions a,
 .link-plain .link-block-styled, .nav .link-block-styled, .nav-toggle .link-block-styled, #nav-user .link-block-styled, #nav-footer-content .link-block-styled, #sub ul a .link-block-styled, #sub ul .link-block-styled .link-block-styled, .page-apps .section-menu.navigation ul .link-block-styled, .page-apps .key-actions.actions ul .link-block-styled, .page-apps .section-body table ul .link-block-styled, .page-apps #application-edit ul .link-block-styled, .page-member .section-menu.navigation ul .link-block-styled, .page-member .section-menu.actions .link-block-styled {
@@ -435,7 +435,7 @@ a.link-plain, .link-plain.link-block-styled, .link-block-styled.nav, .link-block
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 46, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 46, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 a:active, .link-block-styled:active,
 a:hover,
 .link-block-styled:hover,
@@ -443,14 +443,14 @@ a:hover,
   outline: 0;
 }
 
-/* line 51, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 51, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 a:hover, .link-block-styled:hover, .link-block:hover .link-block-styled,
 a:focus,
 .link-block-styled:focus {
   color: #1c568b;
 }
 
-/* line 55, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 55, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 a:hover.link-plain, .link-block-styled:hover.link-plain, .link-block-styled.nav:hover, .link-block-styled.nav-toggle:hover, .link-block-styled#nav-user:hover, .link-block-styled#nav-footer-content:hover, #sub ul .link-block:hover .link-block-styled, .link-block:hover #sub ul .link-block-styled, .page-apps .section-menu.navigation ul.link-block-styled:hover, .page-apps .key-actions.actions ul.link-block-styled:hover, .page-apps .section-body table ul.link-block-styled:hover, .page-apps #application-edit ul.link-block-styled:hover, .page-member .section-menu.navigation ul.link-block-styled:hover, .page-member .link-block-styled.section-menu.actions:hover, .link-block:hover .link-plain.link-block-styled, .link-block:hover .link-block-styled.nav, .link-block:hover .link-block-styled.nav-toggle, .link-block:hover .link-block-styled#nav-user, .link-block:hover .link-block-styled#nav-footer-content, .link-block:hover .page-apps .section-menu.navigation ul.link-block-styled, .page-apps .section-menu.navigation .link-block:hover ul.link-block-styled, .link-block:hover .page-apps .key-actions.actions ul.link-block-styled, .page-apps .key-actions.actions .link-block:hover ul.link-block-styled, .link-block:hover .page-apps .section-body table ul.link-block-styled, .page-apps .section-body table .link-block:hover ul.link-block-styled, .link-block:hover .page-apps #application-edit ul.link-block-styled, .page-apps #application-edit .link-block:hover ul.link-block-styled, .link-block:hover .page-member .section-menu.navigation ul.link-block-styled, .page-member .section-menu.navigation .link-block:hover ul.link-block-styled, .link-block:hover .page-member .link-block-styled.section-menu.actions, .page-member .link-block:hover .link-block-styled.section-menu.actions, a.nav:hover, a.nav-toggle:hover, a#nav-user:hover, a#nav-footer-content:hover, #sub ul a:hover, #sub ul .link-block-styled:hover, .page-member a.section-menu.actions:hover,
 .link-plain a:hover, .nav a:hover, .nav-toggle a:hover, #nav-user a:hover, #nav-footer-content a:hover, #sub ul a a:hover, #sub ul .link-block-styled a:hover, .page-apps .section-menu.navigation ul a:hover, .page-apps .key-actions.actions ul a:hover, .page-apps .section-body table ul a:hover, .page-apps #application-edit ul a:hover, .page-member .section-menu.navigation ul a:hover, .page-member .section-menu.actions a:hover,
 .link-plain .link-block-styled:hover, .nav .link-block-styled:hover, .nav-toggle .link-block-styled:hover, #nav-user .link-block-styled:hover, #nav-footer-content .link-block-styled:hover, #sub ul a .link-block-styled:hover, #sub ul .link-block-styled .link-block-styled:hover, .page-apps .section-menu.navigation ul .link-block-styled:hover, .page-apps .key-actions.actions ul .link-block-styled:hover, .page-apps .section-body table ul .link-block-styled:hover, .page-apps #application-edit ul .link-block-styled:hover, .page-member .section-menu.navigation ul .link-block-styled:hover, .page-member .section-menu.actions .link-block-styled:hover,
@@ -517,7 +517,7 @@ a:focus,
   text-decoration: underline;
 }
 
-/* line 61, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 61, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 a img, .link-block-styled img {
   background: none;
   border: none;
@@ -526,7 +526,7 @@ a img, .link-block-styled img {
 /**
  * Prevents border/background on linked image hover.
  */
-/* line 69, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 69, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 a:hover img, .link-block-styled:hover img, .link-block:hover .link-block-styled img {
   background: none;
   border: none;
@@ -535,7 +535,7 @@ a:hover img, .link-block-styled:hover img, .link-block:hover .link-block-styled 
 /**
  * Block links
  */
-/* line 79, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 79, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 a.link-block, .link-block.link-block-styled {
   color: #272727;
   display: block;
@@ -545,14 +545,14 @@ a.link-block, .link-block.link-block-styled {
 /**
  * List styling
  */
-/* line 98, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 98, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 ul,
 ol {
   margin: 0 0 1.5625em 2em;
   padding: 0;
 }
 
-/* line 104, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 104, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 ul ul,
 ul ol,
 ol ol,
@@ -560,31 +560,31 @@ ol ul {
   margin-bottom: 0;
 }
 
-/* line 111, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 111, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 li {
   margin-bottom: 0.5em;
 }
 
 @media (min-width: 40em) {
-  /* line 111, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+  /* line 111, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
   li {
     margin-bottom: 0.25em;
   }
 }
 
-/* line 119, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 119, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 dl,
 dd {
   margin: 0;
   padding: 0;
 }
 
-/* line 125, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 125, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 dd {
   margin-bottom: 1.5625em;
 }
 
-/* line 129, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 129, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 dt {
   font-weight: bold;
 }
@@ -593,7 +593,7 @@ dt {
  * Removes list styling.
  * For semantic reasons, should only be used on unordered lists.
  */
-/* line 137, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 137, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 .list-unstyled, .section-menu ul, form ul.success, ul.failure,
 ul.error, ol.categories,
 ol.topics,
@@ -605,7 +605,7 @@ ol.topics,
 /**
  * Display lists on a single line.
  */
-/* line 145, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 145, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 .list-inline, #controls ul, .endpoint > .title .actions, .breadcrumbs, .page-forum ol.comments .comment-tags ul, .page-wiki .section-tags ul, .page-apps .section-menu.navigation ul, .page-apps .key-actions.actions ul, .page-apps .section-body table ul, .page-apps .application-actions.actions ul, .page-member .section-menu.navigation ul, #detailTables_multicontainer .nav, .page-logout .main ul {
   list-style: none;
   margin-left: -0.25em;
@@ -613,7 +613,7 @@ ol.topics,
   padding: 0;
 }
 
-/* line 151, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 151, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 .list-inline > li, #controls ul > li, .endpoint > .title .actions > li, .breadcrumbs > li, .page-forum ol.comments .comment-tags ul > li, .page-wiki .section-tags ul > li, .page-apps .section-menu.navigation ul > li, .page-apps .key-actions.actions ul > li, .page-apps .section-body table ul > li, .page-apps .application-actions.actions ul > li, .page-member .section-menu.navigation ul > li, #detailTables_multicontainer .nav > li, .page-logout .main ul > li {
   display: inline;
   margin-left: 0.25em;
@@ -623,13 +623,13 @@ ol.topics,
 /**
  * Display lists stacked on smaller viewports and on a single line on bigger viewports.
  */
-/* line 163, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 163, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 .list-inline-responsive > li {
   display: block;
 }
 
 @media (min-width: 40em) {
-  /* line 163, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+  /* line 163, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
   .list-inline-responsive > li {
     display: inline-block;
   }
@@ -638,14 +638,14 @@ ol.topics,
 /**
  * Inline list with dividers.
  */
-/* line 178, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 178, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 .list-inline-divided > li:before, .page-apps .section-menu.navigation ul > li:before, .page-member .section-menu.navigation ul > li:before {
   color: #2573ba;
   content: "|";
   margin-right: 0.5em;
 }
 
-/* line 184, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 184, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 .list-inline-divided > li:first-child:before, .page-apps .section-menu.navigation ul > li:first-child:before, .page-member .section-menu.navigation ul > li:first-child:before {
   content: "";
   margin-right: 0;
@@ -654,13 +654,13 @@ ol.topics,
 /**
  * Display .list-inline lists as breadcrumbs
  */
-/* line 196, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 196, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 .list-inline-breadcrumbs > li:before, .breadcrumbs > li:before {
   content: ">";
   margin-right: 1em;
 }
 
-/* line 201, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 201, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 .list-inline-breadcrumbs > li:first-child:before, .breadcrumbs > li:first-child:before {
   content: "";
   margin-right: 0;
@@ -670,7 +670,7 @@ ol.topics,
  * Heading styling for h1 through h6 elements.
  * Heading class lets you use one heading type for semantics, but style it as another heading type.
  */
-/* line 214, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 214, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 h1, .page-login h2.signin, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 1.2;
@@ -679,7 +679,7 @@ h1, .page-login h2.signin, h2, h3, h4, h5, h6 {
   word-wrap: break-word;
 }
 
-/* line 222, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 222, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 h1, .page-login h2.signin,
 .h1 {
   font-size: 1.5em;
@@ -687,20 +687,20 @@ h1, .page-login h2.signin,
 }
 
 @media (min-width: 40em) {
-  /* line 222, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+  /* line 222, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
   h1, .page-login h2.signin,
   .h1 {
     font-size: 1.75em;
   }
 }
 
-/* line 232, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 232, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 h2,
 .h2 {
   font-size: 1.3125em;
 }
 
-/* line 237, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 237, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 h3,
 .h3,
 .apiDescriptionList h4,
@@ -708,7 +708,7 @@ h3,
   font-size: 1.1875em;
 }
 
-/* line 242, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 242, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 h4, h5, h6,
 .h4, .h5, .h6 {
   font-size: 1em;
@@ -717,7 +717,7 @@ h4, h5, h6,
 /**
  * Lines, Quotes and Emphasis
  */
-/* line 252, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 252, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 hr {
   border: 0;
   border-top: 1px solid #e5e5e5;
@@ -725,7 +725,7 @@ hr {
   margin: 2em auto;
 }
 
-/* line 259, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 259, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 b,
 strong,
 ol.categories .category .subject,
@@ -734,7 +734,7 @@ ol.topics .topic .subject,
   font-weight: bold;
 }
 
-/* line 264, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 264, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 i,
 em {
   font-style: italic;
@@ -743,7 +743,7 @@ em {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
-/* line 272, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 272, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 abbr[title] {
   border-bottom: 1px dotted;
   cursor: help;
@@ -752,7 +752,7 @@ abbr[title] {
 /**
  * Address styling not present in Safari and Chrome.
  */
-/* line 280, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 280, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 dfn {
   font-style: italic;
 }
@@ -760,7 +760,7 @@ dfn {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 287, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 287, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 mark {
   background: #ff0;
 }
@@ -768,7 +768,7 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 294, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 294, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 small {
   font-size: 80%;
 }
@@ -776,7 +776,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 301, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 301, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 sub,
 sup {
   font-size: 75%;
@@ -785,12 +785,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 309, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 309, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 313, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 313, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 sub {
   bottom: -0.25em;
 }
@@ -798,7 +798,7 @@ sub {
 /**
  * Blockquotes
  */
-/* line 322, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 322, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 blockquote {
   font-size: 1.1875em;
   font-style: italic;
@@ -807,20 +807,20 @@ blockquote {
   padding-right: 0.84211em;
 }
 
-/* line 329, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 329, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 blockquote cite {
   color: #808080;
   font-size: 0.84211em;
   padding-top: 1em;
 }
 
-/* line 336, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 336, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 blockquote,
 q {
   quotes: none;
 }
 
-/* line 341, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_typography.scss */
+/* line 341, /Users/cferdinandi/Sites/client-portals/src/sass/components/_typography.scss */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -833,19 +833,19 @@ q:after {
  * @section Forms
  * Styling for form elements.
  */
-/* line 10, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+/* line 10, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
 form,
 fieldset {
   margin: 0 0 1.5625em;
 }
 
-/* line 15, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+/* line 15, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
 fieldset {
   border: 0;
   padding: 0;
 }
 
-/* line 20, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+/* line 20, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
 legend,
 label {
   display: block;
@@ -860,7 +860,7 @@ label {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-/* line 34, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+/* line 34, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
 button,
 input,
 optgroup,
@@ -878,7 +878,7 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-/* line 48, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+/* line 48, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
 button {
   overflow: visible;
 }
@@ -889,13 +889,13 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-/* line 58, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+/* line 58, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 63, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+/* line 63, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
 input,
 textarea,
 select {
@@ -908,7 +908,7 @@ select {
 }
 
 @media (min-width: 40em) {
-  /* line 63, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+  /* line 63, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
   input,
   textarea,
   select {
@@ -920,24 +920,24 @@ select {
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
-/* line 83, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+/* line 83, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
 optgroup {
   font-weight: bold;
 }
 
-/* line 87, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+/* line 87, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
 form button,
 form .button {
   margin-bottom: 1.1875em;
 }
 
-/* line 92, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+/* line 92, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
 textarea {
   height: 12em;
   overflow: auto;
 }
 
-/* line 97, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+/* line 97, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
 input[type="image"],
 input[type="checkbox"],
 input[type="radio"] {
@@ -954,13 +954,13 @@ input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-/* line 113, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+/* line 113, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 118, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+/* line 118, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
 input:focus,
 textarea:focus {
   border-color: rgba(82, 168, 236, 0.8);
@@ -969,7 +969,7 @@ textarea:focus {
   outline: thin dotted \9;
 }
 
-/* line 126, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+/* line 126, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
 input[type="file"]:focus,
 input[type="checkbox"]:focus,
 select:focus {
@@ -981,7 +981,7 @@ select:focus {
 /**
  * Inline inputs
  */
-/* line 138, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+/* line 138, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
 .input-inline, input[type="submit"], .search-input .search-box {
   display: inline-block;
   vertical-align: middle;
@@ -991,7 +991,7 @@ select:focus {
 /**
  * Condensed inputs
  */
-/* line 148, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_forms.scss */
+/* line 148, /Users/cferdinandi/Sites/client-portals/src/sass/components/_forms.scss */
 .input-condensed, .search-input .search-box {
   font-size: 0.9375em;
   padding: 1px 0.3125em;
@@ -1004,7 +1004,7 @@ select:focus {
 /**
  * Primary buttons
  */
-/* line 10, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+/* line 10, /Users/cferdinandi/Sites/client-portals/src/sass/components/_buttons.scss */
 .btn, button, input[type="submit"], .page-forum .create-new, .page-apps .section-menu .add-app.action, .page-apps .key-actions.actions ul a, .page-apps .key-actions.actions ul .link-block-styled, .page-apps .section-body table ul a, .page-apps .section-body table ul .link-block-styled, .page-apps .section-body .action.new-key, .page-apps .application-actions.actions ul .edit.action,
 .page-apps .application-actions.actions ul .delete-app.action, #detailTables_multicontainer .nav a, #detailTables_multicontainer .nav .link-block-styled, .page-logout .main li a, .page-logout .main li .link-block-styled {
   background-color: #2573ba;
@@ -1021,7 +1021,7 @@ select:focus {
   text-decoration: none;
 }
 
-/* line 24, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+/* line 24, /Users/cferdinandi/Sites/client-portals/src/sass/components/_buttons.scss */
 .btn:hover, button:hover, input[type="submit"]:hover, .page-forum .create-new:hover, .page-apps .section-menu .add-app.action:hover, .page-apps .key-actions.actions ul a:hover, .page-apps .key-actions.actions ul .link-block-styled:hover, .page-apps .key-actions.actions ul .link-block:hover .link-block-styled, .link-block:hover .page-apps .key-actions.actions ul .link-block-styled, .page-apps .section-body table ul a:hover, .page-apps .section-body table ul .link-block-styled:hover, .page-apps .section-body table ul .link-block:hover .link-block-styled, .link-block:hover .page-apps .section-body table ul .link-block-styled, .page-apps .section-body .action.new-key:hover, .page-apps .application-actions.actions ul .edit.action:hover,
 .page-apps .application-actions.actions ul .delete-app.action:hover, #detailTables_multicontainer .nav a:hover, #detailTables_multicontainer .nav .link-block-styled:hover, #detailTables_multicontainer .nav .link-block:hover .link-block-styled, .link-block:hover #detailTables_multicontainer .nav .link-block-styled, .page-logout .main li a:hover, .page-logout .main li .link-block-styled:hover, .page-logout .main li .link-block:hover .link-block-styled, .link-block:hover .page-logout .main li .link-block-styled,
 a .btn:hover, .link-block-styled .btn:hover,
@@ -1151,13 +1151,13 @@ a .link-block-styled:active, .link-block-styled .page-logout .main li .link-bloc
 /**
  * Secondary buttons
  */
-/* line 42, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+/* line 42, /Users/cferdinandi/Sites/client-portals/src/sass/components/_buttons.scss */
 .btn-secondary {
   background-color: #518197;
   border-color: #518197;
 }
 
-/* line 47, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+/* line 47, /Users/cferdinandi/Sites/client-portals/src/sass/components/_buttons.scss */
 .btn-secondary:hover,
 a .btn-secondary:hover, .link-block-styled .btn-secondary:hover, .btn-secondary:focus,
 a .btn-secondary:focus, .link-block-styled .btn-secondary:focus, .btn-secondary:active,
@@ -1169,13 +1169,13 @@ a .btn-secondary:active, .link-block-styled .btn-secondary:active, .btn-secondar
 /**
  * Tertiary buttons
  */
-/* line 64, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+/* line 64, /Users/cferdinandi/Sites/client-portals/src/sass/components/_buttons.scss */
 .btn-tertiary {
   background-color: #6dad46;
   border-color: #6dad46;
 }
 
-/* line 69, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+/* line 69, /Users/cferdinandi/Sites/client-portals/src/sass/components/_buttons.scss */
 .btn-tertiary:hover,
 a .btn-tertiary:hover, .link-block-styled .btn-tertiary:hover, .btn-tertiary:focus,
 a .btn-tertiary:focus, .link-block-styled .btn-tertiary:focus, .btn-tertiary:active,
@@ -1187,7 +1187,7 @@ a .btn-tertiary:active, .link-block-styled .btn-tertiary:active, .btn-tertiary.a
 /**
  * Active state
  */
-/* line 86, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+/* line 86, /Users/cferdinandi/Sites/client-portals/src/sass/components/_buttons.scss */
 .btn:active, button:active, input[type="submit"]:active, .page-forum .create-new:active, .page-apps .section-menu .add-app.action:active, .page-apps .key-actions.actions ul a:active, .page-apps .key-actions.actions ul .link-block-styled:active, .page-apps .section-body table ul a:active, .page-apps .section-body table ul .link-block-styled:active, .page-apps .section-body .action.new-key:active, .page-apps .application-actions.actions ul .edit.action:active,
 .page-apps .application-actions.actions ul .delete-app.action:active, #detailTables_multicontainer .nav a:active, #detailTables_multicontainer .nav .link-block-styled:active, .page-logout .main li a:active, .page-logout .main li .link-block-styled:active,
 .btn.active,
@@ -1215,7 +1215,7 @@ input.active[type="submit"],
 /**
  * Disabled state
  */
-/* line 96, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+/* line 96, /Users/cferdinandi/Sites/client-portals/src/sass/components/_buttons.scss */
 .btn.disabled, button.disabled, input.disabled[type="submit"], .page-forum .disabled.create-new, .page-apps .section-menu .disabled.add-app.action, .page-apps .key-actions.actions ul a.disabled, .page-apps .key-actions.actions ul .disabled.link-block-styled, .page-apps .section-body table ul a.disabled, .page-apps .section-body table ul .disabled.link-block-styled, .page-apps .section-body .disabled.action.new-key, .page-apps .application-actions.actions ul .disabled.edit.action,
 .page-apps .application-actions.actions ul .disabled.delete-app.action, #detailTables_multicontainer .nav a.disabled, #detailTables_multicontainer .nav .disabled.link-block-styled, .page-logout .main li a.disabled, .page-logout .main li .disabled.link-block-styled,
 .btn[disabled],
@@ -1243,14 +1243,14 @@ input[disabled][type="submit"],
 /**
  * Button size
  */
-/* line 108, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+/* line 108, /Users/cferdinandi/Sites/client-portals/src/sass/components/_buttons.scss */
 .btn-large {
   font-size: 1em;
   line-height: normal;
   padding: 0.6875em 0.9375em;
 }
 
-/* line 114, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+/* line 114, /Users/cferdinandi/Sites/client-portals/src/sass/components/_buttons.scss */
 .btn-xlarge {
   font-size: 1.2em;
   line-height: normal;
@@ -1260,7 +1260,7 @@ input[disabled][type="submit"],
 /**
  * Block-level buttons
  */
-/* line 124, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+/* line 124, /Users/cferdinandi/Sites/client-portals/src/sass/components/_buttons.scss */
 .btn-block,
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
@@ -1275,7 +1275,7 @@ input[type="button"].btn-block {
 /**
  * General styles
  */
-/* line 139, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+/* line 139, /Users/cferdinandi/Sites/client-portals/src/sass/components/_buttons.scss */
 .btn, button, input[type="submit"], .page-forum .create-new, .page-apps .section-menu .add-app.action, .page-apps .key-actions.actions ul a, .page-apps .key-actions.actions ul .link-block-styled, .page-apps .section-body table ul a, .page-apps .section-body table ul .link-block-styled, .page-apps .section-body .action.new-key, .page-apps .application-actions.actions ul .edit.action,
 .page-apps .application-actions.actions ul .delete-app.action, #detailTables_multicontainer .nav a, #detailTables_multicontainer .nav .link-block-styled, .page-logout .main li a, .page-logout .main li .link-block-styled,
 button,
@@ -1296,7 +1296,7 @@ input[type="submit"] {
 /**
  * Remove right margin on last element and inputs
  */
-/* line 161, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_buttons.scss */
+/* line 161, /Users/cferdinandi/Sites/client-portals/src/sass/components/_buttons.scss */
 .btn:last-child, button:last-child, input[type="submit"]:last-child, .page-forum .create-new:last-child, .page-apps .section-menu .add-app.action:last-child, .page-apps .key-actions.actions ul a:last-child, .page-apps .key-actions.actions ul .link-block-styled:last-child, .page-apps .section-body table ul a:last-child, .page-apps .section-body table ul .link-block-styled:last-child, .page-apps .section-body .action.new-key:last-child, .page-apps .application-actions.actions ul .edit.action:last-child,
 .page-apps .application-actions.actions ul .delete-app.action:last-child, #detailTables_multicontainer .nav a:last-child, #detailTables_multicontainer .nav .link-block-styled:last-child, .page-logout .main li a:last-child, .page-logout .main li .link-block-styled:last-child,
 input.btn,
@@ -1313,7 +1313,7 @@ input[type="submit"],
  * @section Tables
  * Styling for tables
  */
-/* line 6, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tables.scss */
+/* line 6, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tables.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -1322,42 +1322,42 @@ table {
   width: 100%;
 }
 
-/* line 14, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tables.scss */
+/* line 14, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tables.scss */
 th,
 td {
   text-align: left;
   padding: 0.5em;
 }
 
-/* line 20, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tables.scss */
+/* line 20, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tables.scss */
 thead {
   border-bottom: 0.125em solid #e5e5e5;
 }
 
-/* line 23, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tables.scss */
+/* line 23, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tables.scss */
 .search-form thead {
   border-bottom: 0;
 }
 
-/* line 28, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tables.scss */
+/* line 28, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tables.scss */
 th,
 thead td {
   font-weight: bold;
   vertical-align: bottom;
 }
 
-/* line 34, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tables.scss */
+/* line 34, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tables.scss */
 .search-form th, .search-form
 thead td {
   vertical-align: top;
 }
 
-/* line 39, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tables.scss */
+/* line 39, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tables.scss */
 tbody tr {
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 43, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tables.scss */
+/* line 43, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tables.scss */
 td {
   vertical-align: top;
 }
@@ -1365,7 +1365,7 @@ td {
 /**
  * Adds zebra striping
  */
-/* line 50, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tables.scss */
+/* line 50, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tables.scss */
 .table-striped tbody tr:nth-child(odd) {
   background-color: #f7f7f7;
 }
@@ -1373,7 +1373,7 @@ td {
 /**
  * Reduces padding on condensed tables
  */
-/* line 58, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tables.scss */
+/* line 58, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tables.scss */
 .table-condensed th,
 .table-condensed td {
   padding: 0.25em;
@@ -1385,24 +1385,24 @@ td {
  * @link https://techblog.livingsocial.com/blog/2015/04/06/responsive-tables-in-pure-css/
  */
 @media (max-width: 40em) {
-  /* line 72, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tables.scss */
+  /* line 72, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tables.scss */
   .table-responsive thead {
     display: none;
     visibility: hidden;
   }
-  /* line 77, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tables.scss */
+  /* line 77, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tables.scss */
   .table-responsive tr {
     border-top: 1px solid #ededed;
     display: block;
     padding: 0.5em;
   }
-  /* line 83, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tables.scss */
+  /* line 83, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tables.scss */
   .table-responsive td {
     border: 0;
     display: block;
     padding: 0.25em;
   }
-  /* line 88, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tables.scss */
+  /* line 88, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tables.scss */
   .table-responsive td:before {
     content: attr(data-label);
     display: block;
@@ -1414,7 +1414,7 @@ td {
  * @section Code
  * Styling for code and preformatted text.
  */
-/* line 6, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_code.scss */
+/* line 6, /Users/cferdinandi/Sites/client-portals/src/sass/components/_code.scss */
 code,
 kbd,
 pre,
@@ -1424,14 +1424,14 @@ samp {
   font-size: 0.875em;
 }
 
-/* line 15, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_code.scss */
+/* line 15, /Users/cferdinandi/Sites/client-portals/src/sass/components/_code.scss */
 code {
   background-color: #f7f7f7;
   color: #dd1144;
   padding: 0.25em;
 }
 
-/* line 21, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_code.scss */
+/* line 21, /Users/cferdinandi/Sites/client-portals/src/sass/components/_code.scss */
 pre {
   background-color: #f4f4f4;
   border: 1px solid #e5e5e5;
@@ -1447,7 +1447,7 @@ pre {
   word-break: break-all;
 }
 
-/* line 34, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_code.scss */
+/* line 34, /Users/cferdinandi/Sites/client-portals/src/sass/components/_code.scss */
 pre code {
   background-color: transparent;
   border: 0;
@@ -1461,22 +1461,22 @@ pre code {
  * Syntax highlighting.
  */
 @media screen {
-  /* line 8, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_prism.scss */
+  /* line 8, /Users/cferdinandi/Sites/client-portals/src/sass/components/_prism.scss */
   .token.comment,
   .token.prolog,
   .token.doctype,
   .token.cdata {
     color: slategray;
   }
-  /* line 15, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_prism.scss */
+  /* line 15, /Users/cferdinandi/Sites/client-portals/src/sass/components/_prism.scss */
   .token.punctuation {
     color: #999;
   }
-  /* line 19, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_prism.scss */
+  /* line 19, /Users/cferdinandi/Sites/client-portals/src/sass/components/_prism.scss */
   .namespace {
     opacity: .7;
   }
-  /* line 23, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_prism.scss */
+  /* line 23, /Users/cferdinandi/Sites/client-portals/src/sass/components/_prism.scss */
   .token.property,
   .token.tag,
   .token.boolean,
@@ -1486,7 +1486,7 @@ pre code {
   .token.deleted {
     color: #905;
   }
-  /* line 33, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_prism.scss */
+  /* line 33, /Users/cferdinandi/Sites/client-portals/src/sass/components/_prism.scss */
   .token.selector,
   .token.attr-name,
   .token.string,
@@ -1495,7 +1495,7 @@ pre code {
   .token.inserted {
     color: #690;
   }
-  /* line 42, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_prism.scss */
+  /* line 42, /Users/cferdinandi/Sites/client-portals/src/sass/components/_prism.scss */
   .token.operator,
   .token.entity,
   .token.url,
@@ -1504,32 +1504,32 @@ pre code {
     color: #a67f59;
     background: rgba(255, 255, 255, 0.5);
   }
-  /* line 51, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_prism.scss */
+  /* line 51, /Users/cferdinandi/Sites/client-portals/src/sass/components/_prism.scss */
   .token.atrule,
   .token.attr-value,
   .token.keyword {
     color: #07a;
   }
-  /* line 57, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_prism.scss */
+  /* line 57, /Users/cferdinandi/Sites/client-portals/src/sass/components/_prism.scss */
   .token.function {
     color: #DD4A68;
   }
-  /* line 61, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_prism.scss */
+  /* line 61, /Users/cferdinandi/Sites/client-portals/src/sass/components/_prism.scss */
   .token.regex,
   .token.important,
   .token.variable {
     color: #e90;
   }
-  /* line 67, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_prism.scss */
+  /* line 67, /Users/cferdinandi/Sites/client-portals/src/sass/components/_prism.scss */
   .token.important,
   .token.bold {
     font-weight: bold;
   }
-  /* line 71, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_prism.scss */
+  /* line 71, /Users/cferdinandi/Sites/client-portals/src/sass/components/_prism.scss */
   .token.italic {
     font-style: italic;
   }
-  /* line 75, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_prism.scss */
+  /* line 75, /Users/cferdinandi/Sites/client-portals/src/sass/components/_prism.scss */
   .token.entity {
     cursor: help;
   }
@@ -1544,7 +1544,7 @@ pre code {
 /**
  * Base styles
  */
-/* line 11, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_svg.scss */
+/* line 11, /Users/cferdinandi/Sites/client-portals/src/sass/components/_svg.scss */
 .icon {
   display: inline-block;
   fill: currentColor;
@@ -1552,7 +1552,7 @@ pre code {
   width: 0;
 }
 
-/* line 17, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_svg.scss */
+/* line 17, /Users/cferdinandi/Sites/client-portals/src/sass/components/_svg.scss */
 .svg .icon {
   height: 1em;
   width: 1em;
@@ -1561,13 +1561,13 @@ pre code {
 /**
  * Icon sizes
  */
-/* line 28, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_svg.scss */
+/* line 28, /Users/cferdinandi/Sites/client-portals/src/sass/components/_svg.scss */
 .svg .icon-large {
   height: 2em;
   width: 2em;
 }
 
-/* line 33, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_svg.scss */
+/* line 33, /Users/cferdinandi/Sites/client-portals/src/sass/components/_svg.scss */
 .svg .icon-xlarge {
   height: 3em;
   width: 3em;
@@ -1576,32 +1576,32 @@ pre code {
 /**
  * Icon colors
  */
-/* line 43, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_svg.scss */
+/* line 43, /Users/cferdinandi/Sites/client-portals/src/sass/components/_svg.scss */
 .icon-black {
   fill: #272727;
 }
 
-/* line 44, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_svg.scss */
+/* line 44, /Users/cferdinandi/Sites/client-portals/src/sass/components/_svg.scss */
 .icon-gray {
   fill: #808080;
 }
 
-/* line 45, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_svg.scss */
+/* line 45, /Users/cferdinandi/Sites/client-portals/src/sass/components/_svg.scss */
 .icon-primary {
   fill: #2573ba;
 }
 
-/* line 46, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_svg.scss */
+/* line 46, /Users/cferdinandi/Sites/client-portals/src/sass/components/_svg.scss */
 .icon-secondary {
   fill: #518197;
 }
 
-/* line 47, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_svg.scss */
+/* line 47, /Users/cferdinandi/Sites/client-portals/src/sass/components/_svg.scss */
 .icon-tertiary {
   fill: #6dad46;
 }
 
-/* line 49, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_svg.scss */
+/* line 49, /Users/cferdinandi/Sites/client-portals/src/sass/components/_svg.scss */
 a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link-block-styled .icon-link {
   fill: #184c7a;
 }
@@ -1616,7 +1616,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Adds a border
  */
-/* line 9, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_images.scss */
+/* line 9, /Users/cferdinandi/Sites/client-portals/src/sass/components/_images.scss */
 .img-border, .img-photo {
   border: 1px solid #cccccc;
 }
@@ -1624,7 +1624,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Adds padding and a white border
  */
-/* line 16, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_images.scss */
+/* line 16, /Users/cferdinandi/Sites/client-portals/src/sass/components/_images.scss */
 .img-photo {
   background-color: #ffffff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -1634,7 +1634,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Adds a 50% border radius, turning square images into a circle.
  */
-/* line 26, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_images.scss */
+/* line 26, /Users/cferdinandi/Sites/client-portals/src/sass/components/_images.scss */
 .img-circle {
   border-radius: 50%;
 }
@@ -1646,14 +1646,14 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Show/hide text
  */
-/* line 9, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_houdini.scss */
+/* line 9, /Users/cferdinandi/Sites/client-portals/src/sass/components/_houdini.scss */
 .js-houdini .active > .collapse-text-show,
 .collapse-text-hide {
   display: none;
   visibility: hidden;
 }
 
-/* line 15, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_houdini.scss */
+/* line 15, /Users/cferdinandi/Sites/client-portals/src/sass/components/_houdini.scss */
 .js-houdini .active > .collapse-text-hide {
   display: inline-block;
   visibility: visible;
@@ -1662,7 +1662,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * The content
  */
-/* line 31, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_houdini.scss */
+/* line 31, /Users/cferdinandi/Sites/client-portals/src/sass/components/_houdini.scss */
 .js-houdini .collapse:focus {
   outline: none;
 }
@@ -1670,7 +1670,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Houdini subnav
  */
-/* line 40, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_houdini.scss */
+/* line 40, /Users/cferdinandi/Sites/client-portals/src/sass/components/_houdini.scss */
 .js-houdini ul.collapse.active {
   margin-left: 1.5625em;
 }
@@ -1682,7 +1682,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Tabs list
  */
-/* line 10, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tabby.scss */
+/* line 10, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tabby.scss */
 .tabs {
   border-bottom: 1px solid #808080;
   list-style: none;
@@ -1690,7 +1690,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
   padding: 0;
 }
 
-/* line 16, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tabby.scss */
+/* line 16, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tabby.scss */
 .tabs li {
   background-color: #e5e5e5;
   border: 1px solid #808080;
@@ -1699,12 +1699,12 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
   padding: 0.5em 1em;
 }
 
-/* line 23, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tabby.scss */
+/* line 23, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tabby.scss */
 .tabs li:hover {
   background-color: #f7f7f7;
 }
 
-/* line 27, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tabby.scss */
+/* line 27, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tabby.scss */
 .tabs li.active {
   background-color: #ffffff;
   border-bottom-color: #ffffff;
@@ -1712,7 +1712,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
   pointer-events: none;
 }
 
-/* line 35, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tabby.scss */
+/* line 35, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tabby.scss */
 .tabs a, .tabs .link-block-styled {
   display: block;
   color: #272727;
@@ -1723,7 +1723,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Tab content
  */
-/* line 47, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tabby.scss */
+/* line 47, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tabby.scss */
 .js-tabby .tabs-pane {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1735,7 +1735,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
   width: 1px;
 }
 
-/* line 57, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tabby.scss */
+/* line 57, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tabby.scss */
 .js-tabby .tabs-pane.active {
   clip: auto;
   height: auto;
@@ -1745,7 +1745,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
   width: auto;
 }
 
-/* line 66, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_tabby.scss */
+/* line 66, /Users/cferdinandi/Sites/client-portals/src/sass/components/_tabby.scss */
 .js-tabby .tabs-pane:focus {
   outline: none;
 }
@@ -1760,7 +1760,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Logo
  */
-/* line 29, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+/* line 29, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
 .logo {
   background-color: #ffffff;
   box-sizing: content-box;
@@ -1772,21 +1772,21 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
   text-decoration: none;
 }
 
-/* line 39, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+/* line 39, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
 .logo:hover {
   color: #272727;
   text-decoration: none;
 }
 
 @media (min-width: 60em) {
-  /* line 45, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+  /* line 45, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
   .js-astro .nav-collapse .logo {
     float: left;
   }
 }
 
 @media (min-width: 60em) {
-  /* line 29, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+  /* line 29, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
   .logo {
     float: left;
   }
@@ -1795,13 +1795,13 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Navigation Menu Container
  */
-/* line 59, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+/* line 59, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
 .nav-menu {
   background-color: #2573ba;
 }
 
 @media (max-width: 59.9375em) {
-  /* line 63, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+  /* line 63, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
   .js-astro .nav-collapse .nav-menu {
     box-sizing: border-box;
     display: none;
@@ -1809,11 +1809,11 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
     padding-top: 0.5em;
     width: 100%;
   }
-  /* line 70, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+  /* line 70, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
   .js-astro .nav-collapse .nav-menu.active {
     display: block;
   }
-  /* line 74, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+  /* line 74, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
   .js-astro .nav-collapse .nav-menu li {
     display: block;
     width: 100%;
@@ -1826,21 +1826,21 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Navigation Menu
  */
-/* line 89, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+/* line 89, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
 .nav {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 96, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+/* line 96, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
 .nav > li {
   display: inline-block;
   float: none;
   margin: 0;
 }
 
-/* line 107, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+/* line 107, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
 .nav > li a, .nav > li .link-block-styled {
   color: #ffffff;
   display: inline-block;
@@ -1849,7 +1849,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
   text-decoration: none;
 }
 
-/* line 114, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+/* line 114, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
 .nav > li a:after, .nav > li .link-block-styled:after {
   border-bottom: 0.25em solid #6dad46;
   content: '';
@@ -1863,30 +1863,30 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
   width: 100%;
 }
 
-/* line 126, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+/* line 126, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
 .nav > li a:active, .nav > li .link-block-styled:active, .nav > li a:focus, .nav > li .link-block-styled:focus, .nav > li a:hover, .nav > li .link-block-styled:hover, .nav > li .link-block:hover .link-block-styled, .link-block:hover .nav > li .link-block-styled {
   text-decoration: none;
 }
 
 @media (min-width: 60em) {
-  /* line 132, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+  /* line 132, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
   .nav > li a:active:after, .nav > li .link-block-styled:active:after, .nav > li a:focus:after, .nav > li .link-block-styled:focus:after, .nav > li a:hover:after, .nav > li .link-block-styled:hover:after, .nav > li .link-block:hover .link-block-styled:after, .link-block:hover .nav > li .link-block-styled:after {
     opacity: 1;
   }
 }
 
-/* line 139, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+/* line 139, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
 .nav > li.first a:after, .nav > li.first .link-block-styled:after {
   left: 0.3125em;
 }
 
-/* line 143, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+/* line 143, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
 .nav > li #nav-search a:after, .nav > li #nav-search .link-block-styled:after {
   right: 0.3125em;
 }
 
 @media (min-width: 60em) {
-  /* line 156, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+  /* line 156, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
   .nav #nav-search {
     border-left: 1px solid #ffffff;
     float: right;
@@ -1896,14 +1896,14 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Navigation Toggle
  */
-/* line 167, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+/* line 167, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
 .nav-toggle {
   display: none;
   visibility: hidden;
 }
 
 @media (max-width: 59.9375em) {
-  /* line 173, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+  /* line 173, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
   .js-astro .nav-collapse .nav-toggle {
     display: block;
     float: right;
@@ -1914,14 +1914,14 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Clearfix
  */
-/* line 186, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+/* line 186, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
 .nav-wrap:before,
 .nav-wrap:after {
   display: table;
   content: "";
 }
 
-/* line 192, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_astro.scss */
+/* line 192, /Users/cferdinandi/Sites/client-portals/src/sass/components/_astro.scss */
 .nav-wrap:after {
   clear: both;
 }
@@ -1929,12 +1929,12 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Dropdown links
  */
-/* line 4, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_drop.scss */
+/* line 4, /Users/cferdinandi/Sites/client-portals/src/sass/components/_drop.scss */
 .dropdown {
   position: relative;
 }
 
-/* line 7, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_drop.scss */
+/* line 7, /Users/cferdinandi/Sites/client-portals/src/sass/components/_drop.scss */
 .dropdown > a:after, .dropdown > .link-block-styled:after {
   content: "+";
   display: inline-block;
@@ -1943,13 +1943,13 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 }
 
 @media (max-width: 59.9375em) {
-  /* line 13, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_drop.scss */
+  /* line 13, /Users/cferdinandi/Sites/client-portals/src/sass/components/_drop.scss */
   .js-astro .dropdown > a:after, .js-astro .dropdown > .link-block-styled:after {
     content: "";
   }
 }
 
-/* line 20, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_drop.scss */
+/* line 20, /Users/cferdinandi/Sites/client-portals/src/sass/components/_drop.scss */
 .dropdown:focus > a:after, .dropdown:focus > .link-block-styled:after,
 .dropdown:hover > a:after,
 .dropdown:hover > .link-block-styled:after,
@@ -1959,7 +1959,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 }
 
 @media (max-width: 59.9375em) {
-  /* line 26, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_drop.scss */
+  /* line 26, /Users/cferdinandi/Sites/client-portals/src/sass/components/_drop.scss */
   .js-astro .dropdown:focus > a:after, .js-astro .dropdown:focus > .link-block-styled:after, .js-astro
   .dropdown:hover > a:after, .js-astro
   .dropdown:hover > .link-block-styled:after, .js-astro
@@ -1972,7 +1972,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Dropdown content
  */
-/* line 37, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_drop.scss */
+/* line 37, /Users/cferdinandi/Sites/client-portals/src/sass/components/_drop.scss */
 .dropdown-menu {
   background-color: #ffffff;
   border: 0;
@@ -1997,14 +1997,14 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 	 */
 }
 
-/* line 57, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_drop.scss */
+/* line 57, /Users/cferdinandi/Sites/client-portals/src/sass/components/_drop.scss */
 .dropdown-menu ul,
 .dropdown-menu ol {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 63, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_drop.scss */
+/* line 63, /Users/cferdinandi/Sites/client-portals/src/sass/components/_drop.scss */
 .dropdown-menu a, .dropdown-menu .link-block-styled {
   display: block;
   padding-left: 0.5em;
@@ -2012,13 +2012,13 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 }
 
 @media (max-width: 59.9375em) {
-  /* line 63, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_drop.scss */
+  /* line 63, /Users/cferdinandi/Sites/client-portals/src/sass/components/_drop.scss */
   .dropdown-menu a, .dropdown-menu .link-block-styled {
     padding-left: 1.5625em;
   }
 }
 
-/* line 73, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_drop.scss */
+/* line 73, /Users/cferdinandi/Sites/client-portals/src/sass/components/_drop.scss */
 .dropdown:focus .dropdown-menu,
 .dropdown:hover .dropdown-menu,
 .dropdown.drop-active .dropdown-menu {
@@ -2032,7 +2032,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
   width: auto;
 }
 
-/* line 85, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_drop.scss */
+/* line 85, /Users/cferdinandi/Sites/client-portals/src/sass/components/_drop.scss */
 .js-drop .dropdown:focus .dropdown-menu, .js-drop
 .dropdown:hover .dropdown-menu, .js-drop
 .dropdown.drop-active .dropdown-menu {
@@ -2040,7 +2040,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 }
 
 @media (max-width: 59.9375em) {
-  /* line 100, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_drop.scss */
+  /* line 100, /Users/cferdinandi/Sites/client-portals/src/sass/components/_drop.scss */
   .js-astro .dropdown-menu,
   .js-astro .dropdown.drop-active .dropdown-menu {
     background-color: transparent;
@@ -2064,43 +2064,43 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Background colors
  */
-/* line 11, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 11, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .bg-primary, .bg-secondary, .bg-tertiary {
   background-color: #272727;
   color: #ffffff;
 }
 
-/* line 15, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 15, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .bg-primary a, .bg-secondary a, .bg-tertiary a, .bg-primary .link-block-styled, .bg-secondary .link-block-styled, .bg-tertiary .link-block-styled {
   color: #e5e5e5;
 }
 
-/* line 18, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 18, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .bg-primary a:hover, .bg-secondary a:hover, .bg-tertiary a:hover, .bg-primary .link-block-styled:hover, .bg-secondary .link-block-styled:hover, .bg-tertiary .link-block-styled:hover, .bg-primary .link-block:hover .link-block-styled, .link-block:hover .bg-primary .link-block-styled, .bg-secondary .link-block:hover .link-block-styled, .link-block:hover .bg-secondary .link-block-styled, .bg-tertiary .link-block:hover .link-block-styled, .link-block:hover .bg-tertiary .link-block-styled, .bg-primary a:active, .bg-secondary a:active, .bg-tertiary a:active, .bg-primary .link-block-styled:active, .bg-secondary .link-block-styled:active, .bg-tertiary .link-block-styled:active {
   color: #ffffff;
 }
 
-/* line 25, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 25, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .bg-muted {
   background-color: #e5e5e5;
 }
 
-/* line 29, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 29, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .bg-primary {
   background-color: #2573ba;
 }
 
-/* line 34, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 34, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .bg-secondary {
   background-color: #518197;
 }
 
-/* line 39, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 39, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .bg-tertiary {
   background-color: #6dad46;
 }
 
-/* line 44, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 44, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .bg-hero {
   background-position: center;
   background-size: cover;
@@ -2110,32 +2110,32 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Text sizes
  */
-/* line 54, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 54, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .text-small, .section-meta, .paging, ol.categories .category .edit-category, ol.categories .category .no-topics, ol.categories .category .topic-count, ol.categories .category .comment-count, ol.categories .category .last-comment, ol.categories .category .last-active, ol.categories .category .last-topic, ol.topics .topic .edit-topic, ol.topics .topic .moniker, ol.topics .topic .comment-count, ol.topics .topic .last-comment, ol.topics .topic .last-active, .page-forum ol.comments .edit-topic, .page-forum ol.comments .edit-timestamp {
   font-size: 0.9375em;
 }
 
-/* line 58, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 58, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .text-large {
   font-size: 1.1875em;
   line-height: 1.4;
 }
 
 @media (min-width: 40em) {
-  /* line 58, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+  /* line 58, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
   .text-large {
     font-size: 1.3125em;
   }
 }
 
-/* line 67, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 67, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .text-hero {
   font-size: 1.75em;
   line-height: 1.4;
 }
 
 @media (min-width: 40em) {
-  /* line 67, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+  /* line 67, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
   .text-hero {
     font-size: 2em;
   }
@@ -2144,12 +2144,12 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Text colors
  */
-/* line 81, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 81, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .text-muted, .section-meta, .paging, ol.categories .category .no-topics, ol.categories .category .topic-count, ol.categories .category .comment-count, ol.categories .category .last-comment, ol.categories .category .last-active, ol.categories .category .last-topic, ol.topics .topic .moniker, ol.topics .topic .comment-count, ol.topics .topic .last-comment, ol.topics .topic .last-active, .page-forum ol.comments .edit-timestamp, .page-blog ol.comments .comment-meta, .page-wiki ol.comments .comment-meta, span.timezone-note {
   color: #808080;
 }
 
-/* line 85, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 85, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .text-white {
   color: #ffffff;
 }
@@ -2157,30 +2157,30 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Text alignment
  */
-/* line 94, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 94, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .text-center {
   text-align: center;
 }
 
 @media (max-width: 40em) {
-  /* line 99, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+  /* line 99, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
   .text-center-small {
     text-align: center;
   }
 }
 
-/* line 104, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 104, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .text-right, .method .title .description, ol.categories .category .edit-category, ol.topics .topic .edit-topic {
   text-align: right;
 }
 
-/* line 108, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 108, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .text-left {
   text-align: left;
 }
 
 @media (min-width: 40em) {
-  /* line 113, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+  /* line 113, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
   .text-right-large {
     text-align: right;
   }
@@ -2189,12 +2189,12 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Floats
  */
-/* line 123, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 123, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .float-left, input[type="submit"], ol.categories .category .subject, ol.categories .category .topic-count, ol.categories .category .last-comment, ol.categories .category .last-active, ol.categories .category .last-topic, ol.topics .topic .subject, ol.topics .topic .last-comment, ol.topics .topic .last-active {
   float: left;
 }
 
-/* line 127, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 127, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .float-center, .page-page .no_sub .main,
 .page-forum .no_sub .main,
 .page-blog .no_sub .main,
@@ -2204,28 +2204,28 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
   margin-right: auto;
 }
 
-/* line 133, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 133, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .float-right, h1 .edit, .page-login h2.signin .edit, .section-menu .edit, .endpoint > .title .actions, .method .title .description {
   float: right;
 }
 
-/* line 137, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 137, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .float-middle-wrap {
   display: table;
 }
 
-/* line 141, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 141, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .float-middle {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 146, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 146, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .float-bottom-wrap {
   position: relative;
 }
 
-/* line 150, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 150, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .float-bottom {
   position: absolute;
   bottom: 0;
@@ -2235,52 +2235,52 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Margins
  */
-/* line 161, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 161, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .no-margin-top {
   margin-top: 0;
 }
 
-/* line 165, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 165, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .no-margin-bottom, .descr p {
   margin-bottom: 0;
 }
 
-/* line 169, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 169, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .margin-top {
   margin-top: 1.5625em;
 }
 
-/* line 173, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 173, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .margin-bottom, .nav-wrap, .paging, .method {
   margin-bottom: 1.5625em;
 }
 
-/* line 177, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 177, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .margin-bottom-small, .servicesIodocs, .page-login h2.signin {
   margin-bottom: 0.5em;
 }
 
-/* line 181, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 181, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .margin-bottom-large {
   margin-bottom: 2em;
 }
 
-/* line 185, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 185, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .margin-left {
   margin-left: 1.5625em;
 }
 
-/* line 189, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 189, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .margin-left-small {
   margin-left: 0.5em;
 }
 
-/* line 193, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 193, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .margin-right {
   margin-right: 1.5625em;
 }
 
-/* line 197, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 197, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .margin-right-small {
   margin-right: 0.5em;
 }
@@ -2288,62 +2288,62 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
 /**
  * Padding
  */
-/* line 206, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 206, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .no-padding-top {
   padding-top: 0;
 }
 
-/* line 210, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 210, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .no-padding-bottom {
   padding-bottom: 0;
 }
 
-/* line 214, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 214, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .padding-top, .page-blog ol.comments .comment, .page-wiki ol.comments .comment {
   padding-top: 1.5625em;
 }
 
-/* line 218, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 218, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .padding-top-small, .page-login h2.signin {
   padding-top: 0.5em;
 }
 
-/* line 222, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 222, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .padding-top-large, .page-login .signin_member_mashery {
   padding-top: 2em;
 }
 
-/* line 226, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 226, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .padding-top-xlarge {
   padding-top: 4em;
 }
 
-/* line 230, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 230, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .padding-bottom {
   padding-bottom: 1.5625em;
 }
 
-/* line 234, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 234, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .padding-bottom-small {
   padding-bottom: 0.5em;
 }
 
-/* line 238, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 238, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .padding-bottom-large {
   padding-bottom: 2em;
 }
 
-/* line 242, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 242, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .padding-bottom-xlarge {
   padding-bottom: 4em;
 }
 
-/* line 246, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 246, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .padding-left {
   padding-left: 1.5625em;
 }
 
-/* line 250, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 250, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .padding-right {
   padding-right: 1.5625em;
 }
@@ -2356,7 +2356,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
  * @link https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css
  * @link http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 264, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 264, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .screen-reader, .svg .icon-fallback-text, .js-houdini .collapse {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2374,7 +2374,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
  * @link https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css
  * @link https://www.drupal.org/node/897638
  */
-/* line 281, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 281, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .screen-reader-focusable:active, .js-houdini .collapse.active,
 .screen-reader-focusable:focus {
   clip: auto;
@@ -2391,7 +2391,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
  * @affected IE 8/9/10
  * @link http://juicystudio.com/article/screen-readers-display-none.php
  */
-/* line 297, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 297, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 [hidden], template, #user-menu, .pun-nav, a.rss, .rss.link-block-styled, #nav-user .status, .dom-forum .breadcrumbs, .page-forum .section-menu ul, .search-input .search-button, #detailTables_container.loading #detailTables div {
   display: none;
   visibility: hidden;
@@ -2402,7 +2402,7 @@ a:hover .icon-link, .link-block-styled:hover .icon-link, .link-block:hover .link
  * The space content is one way to avoid an Opera bug when the `contenteditable` attribute is included anywhere else in the document.
  * @link https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css
  */
-/* line 309, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 309, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .clearfix:before, .container:before, .page:before,
 .row:before, .content:before, .page-login .signin_member_mashery:before, form:before, .section-menu ul:before, .method .title:before, ol.categories .category ul:before, ol.topics .topic > ul:before, .page-wiki .section-tags:before, span.timezone-note:before, #quotaInfo:before, #detailTables_container:before,
 .clearfix:after,
@@ -2426,7 +2426,7 @@ span.timezone-note:after,
   display: table;
 }
 
-/* line 315, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_overrides.scss */
+/* line 315, /Users/cferdinandi/Sites/client-portals/src/sass/components/_overrides.scss */
 .clearfix:after, .container:after, .page:after,
 .row:after, .content:after, .page-login .signin_member_mashery:after, form:after, .section-menu ul:after, .method .title:after, .method a.clear-results:after, .method .clear-results.link-block-styled:after, ol.categories .category ul:after, ol.topics .topic > ul:after, .page-wiki .section-tags:after, span.timezone-note:after, #quotaInfo:after, #detailTables_container:after {
   clear: both;
@@ -2437,19 +2437,19 @@ span.timezone-note:after,
  * Portal DOM-specific overrides not tied to any specific page or area.
  * Copyright (c) 2017. TIBCO Software Inc. All Rights Reserved.
  */
-/* line 12, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-overrides.scss */
+/* line 12, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-overrides.scss */
 .dom-full-width .page {
   max-width: none;
   width: 100%;
 }
 
-/* line 21, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-overrides.scss */
+/* line 21, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-overrides.scss */
 .dom-full-width .content {
   margin-left: 0;
   margin-right: 0;
 }
 
-/* line 27, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-overrides.scss */
+/* line 27, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-overrides.scss */
 .dom-full-width .main, .dom-full-width .sub, .dom-full-width .no_sub .main {
   padding-left: 0;
   padding-right: 0;
@@ -2458,7 +2458,7 @@ span.timezone-note:after,
 /**
  * Header edit links
  */
-/* line 94, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-overrides.scss */
+/* line 94, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-overrides.scss */
 h1 .edit, .page-login h2.signin .edit {
   font-size: 0.6875em;
 }
@@ -2466,7 +2466,7 @@ h1 .edit, .page-login h2.signin .edit {
 /**
  * Buttons
  */
-/* line 151, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-overrides.scss */
+/* line 151, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-overrides.scss */
 input[type="submit"],
 input[type="submit"]:last-child {
   margin-right: 0.3125em;
@@ -2475,17 +2475,17 @@ input[type="submit"]:last-child {
 /**
  * Markdown Guide
  */
-/* line 160, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-overrides.scss */
+/* line 160, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-overrides.scss */
 #mashery-markdown-help {
   clear: left;
 }
 
-/* line 164, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-overrides.scss */
+/* line 164, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-overrides.scss */
 #mashery-markdown-help h2:first-child a, #mashery-markdown-help h2:first-child .link-block-styled {
   font-size: 0.75em;
 }
 
-/* line 168, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-overrides.scss */
+/* line 168, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-overrides.scss */
 #mashery-markdown-help h2:first-child a:before, #mashery-markdown-help h2:first-child .link-block-styled:before {
   content: "\A";
   white-space: pre;
@@ -2495,7 +2495,7 @@ input[type="submit"]:last-child {
  * RSS Icon
  * Hide default. Icon added via JS.
  */
-/* line 186, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-overrides.scss */
+/* line 186, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-overrides.scss */
 .rss-icon {
   fill: #e06c33;
   height: 1em;
@@ -2505,12 +2505,12 @@ input[type="submit"]:last-child {
 /**
  * Add indicator for required form fields
  */
-/* line 202, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-overrides.scss */
+/* line 202, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-overrides.scss */
 label.require:after {
   content: " *";
 }
 
-/* line 206, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-overrides.scss */
+/* line 206, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-overrides.scss */
 label.require:empty:after {
   content: "";
 }
@@ -2518,7 +2518,7 @@ label.require:empty:after {
 /**
  * Success message styling
  */
-/* line 219, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-overrides.scss */
+/* line 219, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-overrides.scss */
 form ul.success li {
   font-style: italic;
 }
@@ -2526,20 +2526,20 @@ form ul.success li {
 /**
  * Form error styling
  */
-/* line 229, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-overrides.scss */
+/* line 229, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-overrides.scss */
 input.failure,
 textarea.failure {
   border-color: #880e14;
   margin-bottom: 0;
 }
 
-/* line 234, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-overrides.scss */
+/* line 234, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-overrides.scss */
 input.failure:focus,
 textarea.failure:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0.5em rgba(136, 14, 20, 0.6);
 }
 
-/* line 239, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-overrides.scss */
+/* line 239, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-overrides.scss */
 ul.failure,
 ul.error {
   color: #880e14;
@@ -2554,14 +2554,14 @@ ul.error {
  * Hide "Signed-in as" text on small screens
  */
 @media (min-width: 40em) {
-  /* line 11, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-navigation.scss */
+  /* line 11, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-navigation.scss */
   #nav-user .status {
     display: inline;
     visibility: visible;
   }
 }
 
-/* line 43, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-navigation.scss */
+/* line 43, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-navigation.scss */
 #nav-footer-content a, #nav-footer-content .link-block-styled {
   font-weight: bold;
 }
@@ -2584,7 +2584,7 @@ ul.error {
 /**
  * Sidebar
  */
-/* line 11, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-docs.scss */
+/* line 11, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-docs.scss */
 #sub {
   /**
 	 * Active links
@@ -2594,7 +2594,7 @@ ul.error {
 	 */
 }
 
-/* line 20, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-docs.scss */
+/* line 20, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-docs.scss */
 #sub li.js-active > a, #sub li.js-active > .link-block-styled {
   color: #808080;
   cursor: not-allowed;
@@ -2602,13 +2602,13 @@ ul.error {
   text-decoration: none;
 }
 
-/* line 26, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-docs.scss */
+/* line 26, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-docs.scss */
 #sub li.js-active > a.collapse-toggle, #sub li.js-active > .collapse-toggle.link-block-styled {
   cursor: pointer;
   pointer-events: auto;
 }
 
-/* line 35, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-docs.scss */
+/* line 35, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-docs.scss */
 #sub ul.collapse.active {
   margin-left: 1.5625em;
 }
@@ -2621,7 +2621,7 @@ ul.error {
 /**
  * API Select Element
  */
-/* line 14, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 14, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .servicesIodocs h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -2630,13 +2630,13 @@ ul.error {
 }
 
 @media (min-width: 40em) {
-  /* line 14, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+  /* line 14, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
   .servicesIodocs h2 {
     line-height: 1.5625;
   }
 }
 
-/* line 26, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 26, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 #apiTitle {
   display: none;
   overflow: hidden;
@@ -2645,7 +2645,7 @@ ul.error {
 /**
  * Form for API Key
  */
-/* line 35, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 35, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .credentials {
   background-color: #f7f7f7;
   border: 1px solid #e5e5e5;
@@ -2656,7 +2656,7 @@ ul.error {
   padding: 1.5em;
 }
 
-/* line 44, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 44, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .credentials #apiKeyContainer,
 .credentials #apiSecretContainer,
 .credentials #apiKeySecretListContainer,
@@ -2668,14 +2668,14 @@ ul.error {
 /**
  * Error styling
  */
-/* line 58, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 58, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 pre.error {
   background-color: #e7cfd0;
   border-color: #d5abad;
   color: #43070a;
 }
 
-/* line 64, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 64, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 div.error {
   clear: left;
 }
@@ -2683,7 +2683,7 @@ div.error {
 /**
  * Toggle Endpoints/Methods Links
  */
-/* line 72, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 72, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 #controls {
   display: none;
   overflow: hidden;
@@ -2692,24 +2692,24 @@ div.error {
 /**
  * List of all available endpoints and methods
  */
-/* line 86, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 86, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .endpointList {
   display: none;
 }
 
-/* line 90, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 90, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .apiDescriptionList th,
 .method th {
   background-color: transparent;
 }
 
-/* line 95, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 95, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .apiDescriptionList tbody tr,
 .method tbody tr {
   background-color: transparent;
 }
 
-/* line 104, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 104, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .apiDescriptionList h4 a.select-all, .apiDescriptionList h4 .select-all.link-block-styled,
 .method h4 a.select-all,
 .method h4 .select-all.link-block-styled {
@@ -2717,7 +2717,7 @@ div.error {
   margin-left: 1em;
 }
 
-/* line 110, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 110, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .apiDescriptionList {
   display: none;
 }
@@ -2725,13 +2725,13 @@ div.error {
 /**
  * Make h3 element appear as a link
  */
-/* line 120, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 120, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .endpoint > .title .name:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-/* line 125, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 125, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .endpoint > .title .actions {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.85em;
@@ -2741,23 +2741,23 @@ div.error {
 /**
  * Individual Methods
  */
-/* line 144, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 144, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .method .title {
   overflow: hidden;
   padding: 0.75em;
 }
 
-/* line 149, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 149, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .method .title:hover {
   cursor: pointer;
 }
 
-/* line 152, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 152, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .method .title:hover .name {
   text-decoration: underline;
 }
 
-/* line 157, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 157, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .method .title .http-method {
   border-radius: 0.3125em;
   color: #ffffff;
@@ -2769,35 +2769,35 @@ div.error {
   text-align: center;
 }
 
-/* line 168, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 168, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .method .title .name {
   margin-right: 0.5em;
 }
 
-/* line 172, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 172, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .method .title .uri {
   margin-right: 0.5em;
   opacity: 0.8;
 }
 
-/* line 183, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 183, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .method form {
   display: none;
   padding: 0.75em;
 }
 
-/* line 187, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 187, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .method form .parameters tr.hidden {
   display: none;
 }
 
-/* line 192, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 192, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .method a.clear-results, .method .clear-results.link-block-styled {
   color: red;
   margin-left: 1em;
 }
 
-/* line 196, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 196, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .method a.clear-results:hover, .method .clear-results.link-block-styled:hover, .method .link-block:hover .clear-results.link-block-styled, .link-block:hover .method .clear-results.link-block-styled {
   background-color: #2573ba;
   color: #ffffff;
@@ -2806,7 +2806,7 @@ div.error {
 /**
  * SOAP/JSON Nesting
  */
-/* line 213, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 213, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .fieldset-expanded {
   padding-left: 1em;
   padding-right: 1em;
@@ -2814,14 +2814,14 @@ div.error {
 }
 
 @media (min-width: 40em) {
-  /* line 213, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+  /* line 213, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
   .fieldset-expanded {
     padding-left: 1.5625em;
     padding-right: 1.5625em;
   }
 }
 
-/* line 224, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 224, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .legend-expanded {
   background-color: inherit;
   padding-left: 0.25em;
@@ -2831,24 +2831,24 @@ div.error {
 /**
  * GET Methods
  */
-/* line 234, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 234, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .get {
   background-color: #e9f1f8;
   border: 1px solid #c9dcee;
 }
 
-/* line 238, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 238, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .get .http-method {
   background-color: #2573ba;
 }
 
-/* line 242, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 242, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .get th,
 .get td {
   border-color: #c9dcee;
 }
 
-/* line 247, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 247, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .get .fieldset-expanded {
   border-color: #c9dcee;
 }
@@ -2856,24 +2856,24 @@ div.error {
 /**
  * POST Methods
  */
-/* line 255, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 255, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .post {
   background-color: #f0f7ed;
   border: 1px solid #dbebd1;
 }
 
-/* line 259, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 259, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .post .http-method {
   background-color: #6dad46;
 }
 
-/* line 263, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 263, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .post th,
 .post td {
   border-color: #dbebd1;
 }
 
-/* line 268, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 268, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .post .fieldset-expanded {
   border-color: #dbebd1;
 }
@@ -2881,24 +2881,24 @@ div.error {
 /**
  * PUT Methods
  */
-/* line 276, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 276, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .put {
   background-color: #f9fcf1;
   border: 1px solid #f1f7dc;
 }
 
-/* line 280, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 280, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .put .http-method {
   background-color: #c7dd72;
 }
 
-/* line 284, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 284, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .put th,
 .put td {
   border-color: #f1f7dc;
 }
 
-/* line 289, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 289, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .put .fieldset-expanded {
   border-color: #f1f7dc;
 }
@@ -2906,24 +2906,24 @@ div.error {
 /**
  * DELETE Methods
  */
-/* line 297, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 297, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .delete {
   background-color: #eef2f5;
   border: 1px solid #d4e0e5;
 }
 
-/* line 301, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 301, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .delete .http-method {
   background-color: #518197;
 }
 
-/* line 305, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 305, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .delete th,
 .delete td {
   border-color: #d4e0e5;
 }
 
-/* line 310, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 310, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .delete .fieldset-expanded {
   border-color: #d4e0e5;
 }
@@ -2931,24 +2931,24 @@ div.error {
 /**
  * PATCH Methods
  */
-/* line 318, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 318, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .patch {
   background-color: #f3e7f4;
   border: 1px solid #e1c3e3;
 }
 
-/* line 322, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 322, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .patch .http-method {
   background-color: #860d8e;
 }
 
-/* line 326, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 326, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .patch th,
 .patch td {
   border-color: #e1c3e3;
 }
 
-/* line 331, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 331, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .patch .fieldset-expanded {
   border-color: #e1c3e3;
 }
@@ -2956,24 +2956,24 @@ div.error {
 /**
  * OPTIONS Methods
  */
-/* line 339, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 339, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .method.options {
   background-color: #faf1e6;
   border: 1px solid #f2dcbf;
 }
 
-/* line 343, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 343, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .method.options .http-method {
   background-color: #cc7100;
 }
 
-/* line 347, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 347, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .method.options th,
 .method.options td {
   border-color: #f2dcbf;
 }
 
-/* line 352, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 352, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .method.options .fieldset-expanded {
   border-color: #f2dcbf;
 }
@@ -2981,36 +2981,36 @@ div.error {
 /**
  * HEAD Methods
  */
-/* line 360, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 360, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .head {
   background-color: #e6eef2;
   border: 1px solid #bfd5df;
 }
 
-/* line 364, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 364, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .head .http-method {
   background-color: #00557f;
 }
 
-/* line 368, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 368, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .head th,
 .head td {
   border-color: #bfd5df;
 }
 
-/* line 373, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 373, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .head .fieldset-expanded {
   border-color: #bfd5df;
 }
 
-/* line 381, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 381, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .page-ioDocs {
   /**
 	 * Limit the max height of the response
 	 */
 }
 
-/* line 383, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 383, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .page-ioDocs .main {
   /**
 		 * Prevent select content from clipping
@@ -3020,23 +3020,23 @@ div.error {
 		 */
 }
 
-/* line 388, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 388, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .page-ioDocs .main select {
   width: auto;
 }
 
-/* line 396, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 396, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .page-ioDocs .main ul {
   margin: 0;
 }
 
-/* line 400, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 400, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .page-ioDocs .main li {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 410, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-iodocs.scss */
+/* line 410, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-iodocs.scss */
 .page-ioDocs pre.response {
   max-height: 32em;
   overflow-y: auto;
@@ -3047,20 +3047,20 @@ div.error {
  * Styling specific to forum pages.
  * Copyright (c) 2017. TIBCO Software Inc. All Rights Reserved.
  */
-/* line 14, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 14, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 li.recent-topics a:before, li.recent-topics .link-block-styled:before {
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"><path d="M17 14.081c0 0.711 0.407 1.327 1 1.628v0.249c-0.166 0.023-0.335 0.035-0.508 0.035-1.063 0-2.021-0.446-2.699-1.16-0.41 0.109-0.844 0.168-1.293 0.168-2.485 0-4.5-1.791-4.5-4s2.015-4 4.5-4c2.485 0 4.5 1.791 4.5 4 0 0.865-0.309 1.665-0.834 2.32-0.107 0.232-0.166 0.489-0.166 0.761zM8 0c4.351 0 7.89 2.822 7.997 6.336-0.768-0.343-1.619-0.524-2.497-0.524-1.493 0-2.903 0.523-3.971 1.472-1.107 0.984-1.717 2.304-1.717 3.716 0 0.698 0.149 1.373 0.433 1.997-0.082 0.002-0.164 0.003-0.246 0.003-0.424 0-0.841-0.027-1.247-0.079-1.718 1.718-3.77 2.027-5.753 2.072v-0.421c1.071-0.525 2-1.48 2-2.572 0-0.152-0.012-0.302-0.034-0.448-1.809-1.192-2.966-3.012-2.966-5.052 0-3.59 3.582-6.5 8-6.5z" fill="#808080"></path></svg>');
   margin-right: 0.25em;
 }
 
-/* line 35, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 35, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 ol.categories,
 ol.topics,
 .page-forum ol.comments {
   padding-top: 1em;
 }
 
-/* line 42, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 42, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 ol.categories .category,
 ol.topics .topic {
   border: 1px solid #e5e5e5;
@@ -3068,19 +3068,19 @@ ol.topics .topic {
   padding: 0.5em;
 }
 
-/* line 48, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 48, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 ol.categories .category:first-child,
 ol.topics .topic:first-child {
   border-top: 0.125em solid #2573ba;
 }
 
-/* line 52, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 52, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 ol.categories .category:nth-child(odd),
 ol.topics .topic:nth-child(odd) {
   background-color: #f7f7f7;
 }
 
-/* line 61, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 61, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 ol.categories .category {
   margin-bottom: 0;
   /**
@@ -3100,38 +3100,38 @@ ol.categories .category {
 		 */
 }
 
-/* line 85, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 85, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 ol.categories .category .description {
   clear: left;
 }
 
-/* line 109, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 109, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 ol.categories .category .comment-count:before {
   content: "/ ";
   margin-left: 0.25em;
 }
 
-/* line 118, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 118, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 ol.categories .category .last-comment {
   clear: left;
 }
 
-/* line 128, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 128, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 ol.categories .category .last-active {
   margin-left: 0.25em;
 }
 
-/* line 138, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 138, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 ol.categories .category .last-topic {
   margin-left: 0.25em;
 }
 
-/* line 144, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 144, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 ol.categories .category .last-topic span {
   text-transform: lowercase;
 }
 
-/* line 155, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 155, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 ol.topics .topic {
   /**
 		 * Author name
@@ -3144,86 +3144,86 @@ ol.topics .topic {
 		 */
 }
 
-/* line 177, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 177, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 ol.topics .topic .moniker {
   clear: left;
 }
 
-/* line 192, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 192, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 ol.topics .topic .last-comment {
   clear: left;
 }
 
-/* line 202, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 202, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 ol.topics .topic .last-active {
   margin-left: 0.25em;
 }
 
-/* line 214, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 214, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 .page-forum {
   /**
 	 * Only show recent topics on Forum landing page
 	 */
 }
 
-/* line 216, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 216, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 .page-forum h2 {
   padding-top: 0;
 }
 
-/* line 226, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 226, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 .dom-forum .page-forum .section-menu ul {
   display: block;
   visibility: visible;
 }
 
-/* line 244, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 244, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 .page-forum ol.comments .comment {
   border: 1px solid #e5e5e5;
   border-top: 0.125em solid #2573ba;
   border-bottom: 0;
 }
 
-/* line 250, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 250, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 .page-forum ol.comments .comment:last-child {
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* line 259, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 259, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 .page-forum ol.comments .comment-header {
   background-color: #e5e5e5;
   padding: 0.5em;
 }
 
-/* line 277, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 277, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 .page-forum ol.comments .first .comment-body {
   border-bottom: 1px solid #e5e5e5;
   padding: 0.5em;
 }
 
-/* line 283, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 283, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 .page-forum ol.comments li.comment > .comment-body .comment-meta {
   background-color: #e5e5e5;
   margin: 0;
 }
 
-/* line 288, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 288, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 .page-forum ol.comments li.comment > .comment-body p {
   padding: 0.5em;
 }
 
-/* line 298, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 298, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 .page-forum ol.comments .edit-timestamp {
   margin: 0;
   padding: 0.5em;
 }
 
-/* line 306, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 306, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 .page-forum ol.comments .comment-tags {
   padding: 0.5em;
 }
 
-/* line 309, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 309, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 .page-forum ol.comments .comment-tags h4 {
   float: left;
   line-height: 1;
@@ -3232,7 +3232,7 @@ ol.topics .topic .last-active {
   padding: 0;
 }
 
-/* line 317, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-forum.scss */
+/* line 317, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-forum.scss */
 .page-forum ol.comments .comment-tags ul {
   line-height: 1;
 }
@@ -3242,28 +3242,28 @@ ol.topics .topic .last-active {
  * Styling specific to Mashery blog content.
  * Copyright (c) 2017. TIBCO Software Inc. All Rights Reserved.
  */
-/* line 14, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-blog.scss */
+/* line 14, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-blog.scss */
 .page-blog .browse .section {
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 17, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-blog.scss */
+/* line 17, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-blog.scss */
 .page-blog .browse .section.first {
   border-top: 0;
 }
 
-/* line 38, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-blog.scss */
+/* line 38, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-blog.scss */
 .page-blog li.comment-count a:before, .page-blog li.comment-count .link-block-styled:before {
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"><path d="M17 14.081c0 0.711 0.407 1.327 1 1.628v0.249c-0.166 0.023-0.335 0.035-0.508 0.035-1.063 0-2.021-0.446-2.699-1.16-0.41 0.109-0.844 0.168-1.293 0.168-2.485 0-4.5-1.791-4.5-4s2.015-4 4.5-4c2.485 0 4.5 1.791 4.5 4 0 0.865-0.309 1.665-0.834 2.32-0.107 0.232-0.166 0.489-0.166 0.761zM8 0c4.351 0 7.89 2.822 7.997 6.336-0.768-0.343-1.619-0.524-2.497-0.524-1.493 0-2.903 0.523-3.971 1.472-1.107 0.984-1.717 2.304-1.717 3.716 0 0.698 0.149 1.373 0.433 1.997-0.082 0.002-0.164 0.003-0.246 0.003-0.424 0-0.841-0.027-1.247-0.079-1.718 1.718-3.77 2.027-5.753 2.072v-0.421c1.071-0.525 2-1.48 2-2.572 0-0.152-0.012-0.302-0.034-0.448-1.809-1.192-2.966-3.012-2.966-5.052 0-3.59 3.582-6.5 8-6.5z" fill="#808080"></path></svg>');
   margin-right: 0.25em;
 }
 
-/* line 47, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-blog.scss */
+/* line 47, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-blog.scss */
 .page-blog ol.comments .comment {
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 52, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-blog.scss */
+/* line 52, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-blog.scss */
 .page-blog ol.comments .comment-meta {
   font-weight: bold;
 }
@@ -3273,7 +3273,7 @@ ol.topics .topic .last-active {
  * Styling specific to wiki pages.
  * Copyright (c) 2017. TIBCO Software Inc. All Rights Reserved.
  */
-/* line 15, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-wiki.scss */
+/* line 15, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-wiki.scss */
 .page-wiki .section-tags h3 {
   float: left;
   font-size: 1em;
@@ -3283,18 +3283,18 @@ ol.topics .topic .last-active {
   padding: 0;
 }
 
-/* line 24, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-wiki.scss */
+/* line 24, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-wiki.scss */
 .page-wiki .section-tags ul {
   line-height: 1;
   margin: 0;
 }
 
-/* line 34, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-wiki.scss */
+/* line 34, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-wiki.scss */
 .page-wiki ol.comments .comment {
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 39, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-wiki.scss */
+/* line 39, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-wiki.scss */
 .page-wiki ol.comments .comment-meta {
   font-weight: bold;
 }
@@ -3304,7 +3304,7 @@ ol.topics .topic .last-active {
  * Styling specific to the search results page.
  * Copyright (c) 2017. TIBCO Software Inc. All Rights Reserved.
  */
-/* line 9, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-search.scss */
+/* line 9, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-search.scss */
 .search-input {
   margin-bottom: 0;
   /**
@@ -3315,7 +3315,7 @@ ol.topics .topic .last-active {
 	 */
 }
 
-/* line 15, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-search.scss */
+/* line 15, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-search.scss */
 .search-input .search-box {
   border-radius: 1.3125em;
   margin-bottom: 0;
@@ -3324,12 +3324,12 @@ ol.topics .topic .last-active {
   width: 95%;
 }
 
-/* line 31, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-search.scss */
+/* line 31, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-search.scss */
 .search-input .search-button, .search-input .search-button:last-child {
   margin: 0;
 }
 
-/* line 37, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-search.scss */
+/* line 37, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-search.scss */
 .search-input .btn-search {
   display: inline;
   color: #808080;
@@ -3341,22 +3341,22 @@ ol.topics .topic .last-active {
   padding: 0.5em 0.6875em;
 }
 
-/* line 47, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-search.scss */
+/* line 47, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-search.scss */
 .search-input .btn-search .icon {
   fill: #808080;
 }
 
-/* line 51, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-search.scss */
+/* line 51, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-search.scss */
 .search-input .btn-search:hover {
   color: #5a5a5a;
 }
 
-/* line 54, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-search.scss */
+/* line 54, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-search.scss */
 .search-input .btn-search:hover .icon {
   fill: #5a5a5a;
 }
 
-/* line 64, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-search.scss */
+/* line 64, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-search.scss */
 .search-form {
   /**
 	 * Remove default table styles from search form table
@@ -3369,7 +3369,7 @@ ol.topics .topic .last-active {
 	 */
 }
 
-/* line 69, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-search.scss */
+/* line 69, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-search.scss */
 .search-form td {
   background: transparent;
   border: none;
@@ -3380,39 +3380,39 @@ ol.topics .topic .last-active {
 		 */
 }
 
-/* line 78, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-search.scss */
+/* line 78, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-search.scss */
 .search-form td:first-child {
   width: 65%;
 }
 
 @media (min-width: 30em) {
-  /* line 78, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-search.scss */
+  /* line 78, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-search.scss */
   .search-form td:first-child {
     width: 75%;
   }
 }
 
 @media (min-width: 40em) {
-  /* line 78, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-search.scss */
+  /* line 78, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-search.scss */
   .search-form td:first-child {
     width: 85%;
   }
 }
 
-/* line 94, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-search.scss */
+/* line 94, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-search.scss */
 .search-form input[type="text"] {
   border-radius: 1.3125em;
   padding-left: 0.9375em;
   padding-right: 0.9375em;
 }
 
-/* line 103, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-search.scss */
+/* line 103, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-search.scss */
 .search-form input[type="submit"] {
   margin-left: 0.25em;
   /* Add back left margin removed by table styling */
 }
 
-/* line 118, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-search.scss */
+/* line 118, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-search.scss */
 .page-search .result .title {
   margin-bottom: 0;
 }
@@ -3427,25 +3427,25 @@ ol.topics .topic .last-active {
  * Styling specific to the "Manage My Account" page.
  * Copyright (c) 2017. TIBCO Software Inc. All Rights Reserved.
  */
-/* line 20, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-member.scss */
+/* line 20, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-member.scss */
 .page-member .section-menu.actions .change-email:before {
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#808080" d="M1.259 4.229l6 3.223c.202.108.462.159.725.159.262 0 .523-.051.725-.159l6-3.223c.391-.21.761-1.029.043-1.029H1.217c-.718 0-.348.818.042 1.029zM14.89 5.991c-.444.231-5.91 3.079-6.182 3.222s-.462.159-.725.159-.453-.017-.725-.159-5.706-2.991-6.15-3.222c-.312-.163-.309.028-.309.175V12c0 .336.453.8.8.8h12.8c.347 0 .8-.464.8-.8V6.166c0-.148.003-.338-.31-.175z"/></svg>');
   margin-right: 0.25em;
 }
 
-/* line 25, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-member.scss */
+/* line 25, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-member.scss */
 .page-member .section-menu.actions .change-password:before {
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#808080" d="M14.153 3.78C13.751 1.398 11.577-.194 9.298.227S5.093 2.48 5.496 4.863c.086.513.326 1.315.61 1.892l-4.14 6.178c-.153.228-.239.639-.194.913l.266 1.577a.488.488 0 0 0 .56.411l1.213-.225c.262-.047.595-.278.739-.511l1.638-2.649.014-.018 1.109-.205 1.912-3.103c.628.111 1.53.074 2.062-.025 2.278-.421 3.27-2.936 2.867-5.319zm-2.02 1.222c-.627.936-1.267.277-2.162-.38-.895-.654-1.708-1.058-1.082-1.994s1.861-1.164 2.758-.508c.896.655 1.113 1.946.486 2.882z"/></svg>');
   margin-right: 0.25em;
 }
 
-/* line 30, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-member.scss */
+/* line 30, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-member.scss */
 .page-member .section-menu.actions .public-profile:before {
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#808080" d="M6.18 1.717c-.813.605-1.031 1.562-.991 2.072.051.623.178 1.434.178 1.434s-.25.136-.25.683c.087 1.374.546.781.641 1.383.227 1.451.746 1.193.746 1.985 0 1.319-.544 1.936-2.242 2.667-1.704.734-3.461 1.658-3.461 3.258v.8h14.4v-.8c0-1.6-1.758-2.524-3.462-3.258-1.698-.731-2.241-1.347-2.241-2.667 0-.792.518-.534.746-1.985.095-.602.554-.01.642-1.383 0-.547-.251-.683-.251-.683s.126-.811.177-1.434a2.471 2.471 0 0 0-1.84-2.477c-.266-.272-.446-.705.373-1.139-1.792-.084-2.209.854-3.163 1.543z"/></svg>');
   margin-right: 0.25em;
 }
 
-/* line 35, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-member.scss */
+/* line 35, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-member.scss */
 .page-member .section-menu.actions .delete-self:before {
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#808080" d="M8 1.28a6.72 6.72 0 1 0 0 13.44A6.72 6.72 0 0 0 8 1.28zm3.831 9.169l-1.383 1.383L8 9.383l-2.449 2.448-1.383-1.383L6.618 8 4.169 5.551l1.383-1.382L8 6.617l2.449-2.449 1.383 1.383L9.382 8l2.449 2.449z"/></svg>');
   margin-right: 0.25em;
@@ -3459,12 +3459,12 @@ ol.topics .topic .last-active {
 /**
  * The graphs and charts
  */
-/* line 12, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 12, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 div.reports div.report {
   margin-bottom: 1.5625em;
 }
 
-/* line 16, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 16, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 div.reports div.chart {
   margin-bottom: 0.6875em;
 }
@@ -3472,7 +3472,7 @@ div.reports div.chart {
 /**
  * Usage progress bar
  */
-/* line 25, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 25, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 #quota {
   margin-bottom: 0.5em;
   height: 1.5625em;
@@ -3481,25 +3481,25 @@ div.reports div.chart {
 }
 
 @media (min-width: 40em) {
-  /* line 25, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+  /* line 25, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
   #quota {
     float: left;
     width: 50%;
   }
 }
 
-/* line 36, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 36, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 #quota div {
   background-color: #2573ba;
   height: 1.5625em;
 }
 
-/* line 40, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 40, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 #quota div.warning {
   background-color: #c7dd72;
 }
 
-/* line 44, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 44, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 #quota div.full {
   background-color: #880e14;
 }
@@ -3508,7 +3508,7 @@ div.reports div.chart {
  * Usage text
  */
 @media (min-width: 40em) {
-  /* line 53, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+  /* line 53, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
   .quotaUsage {
     margin-left: 1.3125em;
   }
@@ -3517,7 +3517,7 @@ div.reports div.chart {
 /**
  * Timezone info
  */
-/* line 63, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 63, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 span.timezone-note {
   display: block;
   font-style: italic;
@@ -3527,7 +3527,7 @@ span.timezone-note {
 /**
  * Quota Info
  */
-/* line 76, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 76, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 #quotaInfo {
   display: block;
   margin-bottom: 0.5em;
@@ -3535,7 +3535,7 @@ span.timezone-note {
   width: 100%;
 }
 
-/* line 84, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 84, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 #remainingCallsMessage,
 #limitReachedMessage,
 #nextPeriodMessage {
@@ -3543,12 +3543,12 @@ span.timezone-note {
   float: left;
 }
 
-/* line 91, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 91, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 #nextPeriodMessage {
   padding-left: 0.5em;
 }
 
-/* line 95, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 95, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 #limitReachedMessage {
   color: #880e14;
 }
@@ -3556,12 +3556,12 @@ span.timezone-note {
 /**
  * Details Tables
  */
-/* line 107, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 107, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 #detailTables_container.loading {
   background: none;
 }
 
-/* line 110, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 110, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 #detailTables_container.loading #detailTables {
   -webkit-animation: load6 1.7s infinite ease;
           animation: load6 1.7s infinite ease;
@@ -3634,7 +3634,7 @@ span.timezone-note {
 /**
  * Multicontainer tables
  */
-/* line 160, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 160, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 #detailTables_multicontainer .google-visualization-table-tr-head .gradient,
 #detailTables_multicontainer .google-visualization-table-tr-head-nonstrict .gradient,
 #detailTables_multicontainer .google-visualization-table-div-page .gradient {
@@ -3643,7 +3643,7 @@ span.timezone-note {
   vertical-align: baseline;
 }
 
-/* line 168, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 168, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 #detailTables_multicontainer .google-visualization-table-table div.barchart {
   color: #808080;
   font-size: 0.6875em;
@@ -3651,7 +3651,7 @@ span.timezone-note {
   text-align: left;
 }
 
-/* line 175, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 175, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 #detailTables_multicontainer .google-visualization-table-table div.barchart div.bar {
   border: 1px solid #e5e5e5;
   display: inline-block;
@@ -3661,20 +3661,20 @@ span.timezone-note {
   width: 65%;
 }
 
-/* line 184, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 184, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 #detailTables_multicontainer .google-visualization-table-table div.barchart div.bar div.value {
   background-color: #2573ba;
   height: 0.6875em;
   padding: 0;
 }
 
-/* line 189, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 189, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 #detailTables_multicontainer .google-visualization-table-tr-head td {
   text-align: left;
   border-bottom: 1px solid #808080;
 }
 
-/* line 195, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-key.scss */
+/* line 195, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-key.scss */
 #detailTables_multicontainer .google-visualization-table-td {
   text-align: left;
 }
@@ -3690,7 +3690,7 @@ span.timezone-note {
  * Copyright (c) 2017. TIBCO Software Inc. All Rights Reserved.
  */
 @media (min-width: 40em) {
-  /* line 23, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-login.scss */
+  /* line 23, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-login.scss */
   .page-login div.signin {
     border-right: 0.125em solid #e5e5e5;
   }
@@ -3704,20 +3704,20 @@ span.timezone-note {
 /**
  * Descriptive text on signup labels
  */
-/* line 11, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-register.scss */
+/* line 11, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-register.scss */
 .descr {
   font-weight: normal;
   font-style: italic;
 }
 
-/* line 25, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-register.scss */
+/* line 25, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-register.scss */
 .page-member.register {
   /**
 	 * Labels with descriptive text
 	 */
 }
 
-/* line 30, /Users/cferdinandi/Sites/mashery/portal-themes/src/sass/components/_mashery-register.scss */
+/* line 30, /Users/cferdinandi/Sites/client-portals/src/sass/components/_mashery-register.scss */
 .page-member.register label.require {
   line-height: 1;
 }
