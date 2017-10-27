@@ -19,6 +19,11 @@ window.addEventListener('portalAfterRender', function (event) {
 - `portalAfterRender` runs after the Portal is rendered.
 - `portalBeforeRenderAjax` runs before an Ajax page load.
 - `portalAfterRenderAjax` runs after an Ajax page load.
+- `portalIODocsShowMethod` runs after an IO-Docs method is shown.
+- `portalIODocsHideMethod` runs after an IO-Docs method is hidden.
+- `portalIODocsShowEndpoint` runs after an IO-Docs endpoint is shown.
+- `portalIODocsHideEndpoint` runs after an IO-Docs endpoint is hidden.
+
 
 ## Emitting your own custom events
 
