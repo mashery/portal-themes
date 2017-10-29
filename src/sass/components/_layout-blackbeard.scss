@@ -59,6 +59,11 @@
 
 #nav-docs {
 	@extend .list-unstyled;
+
+	// Active link
+	.current-page > a {
+		color: $color-gray-dark;
+	}
 }
 
 #footer {

@@ -29,6 +29,13 @@
 	@extend .list-inline;
 }
 
+#nav-docs {
+	// Active link
+	.current-page > a {
+		color: $color-gray-dark;
+	}
+}
+
 #footer {
 	background-color: $color-white;
 }

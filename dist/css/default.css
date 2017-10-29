@@ -448,7 +448,12 @@ figure {
   margin-bottom: 0;
 }
 
-/* line 32, src/sass/components/_layout-sparrow.scss */
+/* line 34, src/sass/components/_layout-sparrow.scss */
+#nav-docs .current-page > a, #nav-docs .current-page > .link-block-styled {
+  color: #808080;
+}
+
+/* line 39, src/sass/components/_layout-sparrow.scss */
 #footer {
   background-color: #ffffff;
 }
@@ -1545,8 +1550,13 @@ td {
   margin-right: 0.5em;
 }
 
+/* line 93, src/sass/components/_nav-sparrow.scss */
+.nav .current-page > a, .nav .current-page > .link-block-styled {
+  color: #808080;
+}
+
 @media (max-width: 60em) {
-  /* line 96, src/sass/components/_nav-sparrow.scss */
+  /* line 98, src/sass/components/_nav-sparrow.scss */
   .js-astro .nav {
     text-align: left;
   }
@@ -1562,14 +1572,14 @@ td {
 /**
  * Navigation Toggle
  */
-/* line 110, src/sass/components/_nav-sparrow.scss */
+/* line 112, src/sass/components/_nav-sparrow.scss */
 .nav-toggle {
   display: none;
   visibility: hidden;
 }
 
 @media (max-width: 60em) {
-  /* line 115, src/sass/components/_nav-sparrow.scss */
+  /* line 117, src/sass/components/_nav-sparrow.scss */
   .js-astro .nav-toggle {
     display: block;
     float: right;
@@ -1580,14 +1590,14 @@ td {
 /**
  * Clearfix
  */
-/* line 128, src/sass/components/_nav-sparrow.scss */
+/* line 130, src/sass/components/_nav-sparrow.scss */
 .nav-wrap:before,
 .nav-wrap:after {
   display: table;
   content: "";
 }
 
-/* line 134, src/sass/components/_nav-sparrow.scss */
+/* line 136, src/sass/components/_nav-sparrow.scss */
 .nav-wrap:after {
   clear: both;
 }

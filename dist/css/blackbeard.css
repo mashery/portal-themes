@@ -481,6 +481,11 @@ figure {
 }
 
 /* line 64, src/sass/components/_layout-blackbeard.scss */
+#nav-docs .current-page > a, #nav-docs .current-page > .link-block-styled {
+  color: #808080;
+}
+
+/* line 69, src/sass/components/_layout-blackbeard.scss */
 #footer {
   background-color: #ffffff;
 }
@@ -1527,17 +1532,22 @@ td {
 /**
  * Navigation Menu
  */
+/* line 106, src/sass/components/_nav-blackbeard.scss */
+.nav .current-page > a, .nav .current-page > .link-block-styled {
+  color: #808080;
+}
+
 /**
  * Navigation Toggle
  */
-/* line 110, src/sass/components/_nav-blackbeard.scss */
+/* line 115, src/sass/components/_nav-blackbeard.scss */
 .nav-toggle {
   display: none;
   visibility: hidden;
 }
 
 @media (max-width: 60em) {
-  /* line 115, src/sass/components/_nav-blackbeard.scss */
+  /* line 120, src/sass/components/_nav-blackbeard.scss */
   .js-astro .nav-toggle {
     display: block;
     float: right;
@@ -1548,14 +1558,14 @@ td {
 /**
  * Clearfix
  */
-/* line 128, src/sass/components/_nav-blackbeard.scss */
+/* line 133, src/sass/components/_nav-blackbeard.scss */
 .nav-wrap:before,
 .nav-wrap:after {
   display: table;
   content: "";
 }
 
-/* line 134, src/sass/components/_nav-blackbeard.scss */
+/* line 139, src/sass/components/_nav-blackbeard.scss */
 .nav-wrap:after {
   clear: both;
 }

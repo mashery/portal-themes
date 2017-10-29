@@ -101,6 +101,11 @@
 	// @media (min-width: $bp-large) {
 	// 	text-align: right;
 	// }
+
+	// Active link styling
+	.current-page > a {
+		color: $color-gray-dark;
+	}
 }
 
 

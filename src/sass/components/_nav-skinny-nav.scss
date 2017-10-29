@@ -87,9 +87,11 @@
 		float: none;
 		margin-left: calc-em(8px);
 		margin-right: calc-em(8px);
+	}
 
-		// Active Link Styling
-		&.active > a {}
+	// Active link styling
+	.current-page > a {
+		color: $color-gray-dark;
 	}
 
 	// @media (min-width: $bp-large) {

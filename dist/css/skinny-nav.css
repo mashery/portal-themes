@@ -450,7 +450,12 @@ figure {
   margin-bottom: 0;
 }
 
-/* line 34, src/sass/components/_layout-skinny-nav.scss */
+/* line 36, src/sass/components/_layout-skinny-nav.scss */
+#nav-docs .current-page > a, #nav-docs .current-page > .link-block-styled {
+  color: #808080;
+}
+
+/* line 41, src/sass/components/_layout-skinny-nav.scss */
 #footer {
   background-color: #ffffff;
 }
@@ -1547,17 +1552,22 @@ td {
   margin-right: 0.5em;
 }
 
+/* line 93, src/sass/components/_nav-skinny-nav.scss */
+.nav .current-page > a, .nav .current-page > .link-block-styled {
+  color: #808080;
+}
+
 /**
  * Navigation Toggle
  */
-/* line 104, src/sass/components/_nav-skinny-nav.scss */
+/* line 106, src/sass/components/_nav-skinny-nav.scss */
 .nav-toggle {
   display: none;
   visibility: hidden;
 }
 
 @media (max-width: 60em) {
-  /* line 109, src/sass/components/_nav-skinny-nav.scss */
+  /* line 111, src/sass/components/_nav-skinny-nav.scss */
   .js-astro .nav-toggle {
     display: block;
     float: right;
@@ -1568,14 +1578,14 @@ td {
 /**
  * Clearfix
  */
-/* line 122, src/sass/components/_nav-skinny-nav.scss */
+/* line 124, src/sass/components/_nav-skinny-nav.scss */
 .nav-wrap:before,
 .nav-wrap:after {
   display: table;
   content: "";
 }
 
-/* line 128, src/sass/components/_nav-skinny-nav.scss */
+/* line 130, src/sass/components/_nav-skinny-nav.scss */
 .nav-wrap:after {
   clear: both;
 }

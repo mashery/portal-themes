@@ -16,7 +16,7 @@ var customizer = function () {
 	var initCode = document.querySelector('#download-init');
 	var savedCache = sessionStorage.getItem('portalCustomizerCache');
 	var cache = savedCache ? JSON.parse(savedCache) : {};
-	var version, minified, layout, plugins, scripts, styles, inits, events, scriptsSize, stylesSize, timerID;
+	var isMin, minified, layout, plugins, scripts, styles, inits, events, scriptsSize, stylesSize, timerID;
 
 
 	//
@@ -208,17 +208,46 @@ var customizer = function () {
 	};
 
 	/**
+	 * Create URL to resume work with theme
+	 * @return {String} The URL
+	 */
+	var createURL = function () {
+
+		// Create the URL
+		var url =
+			'?compression=' + (isMin ? 'production' : 'development') +
+			'&layout=' + layout +
+			'&plugins=';
+		var pluginNames = [];
+
+		plugins.forEach(function (plugin) {
+			pluginNames.push(plugin.value);
+		});
+
+		url += pluginNames.join('+');
+
+		// If History API exists, replace state
+		if (history.replaceState) {
+			history.replaceState({}, null, url);
+		}
+
+		return url;
+
+	};
+
+	/**
 	 * Create the file header
 	 * @param  {String} filetype The file extension
 	 * @return {String}          The header
 	 */
 	var createHeader = function (filetype) {
+		var loc = window.location;
 		var header =
 			'/*! ' +
 				layout + minified + '.' + filetype + ' | ' +
 				'(c) ' + new Date().getFullYear() + ' TIBCO | ' +
 				'MIT License | ' +
-				'https://stagingcs1.mashery.com/docs/download ' +
+				loc.protocol + loc.hostname + loc.pathname + createURL() + ' ' +
 			'*/' +
 			'\n';
 		return header;
@@ -446,7 +475,8 @@ var customizer = function () {
 		setGeneratingStatus();
 
 		// Check if code should be minified or not
-		minified = document.querySelector('input[name="compression"]:checked').getAttribute('value') === 'production' ? '.min.beta' : '';
+		isMin = document.querySelector('input[name="compression"]:checked').getAttribute('value') === 'production' ? true : false;
+		minified = isMin ? '.min.beta' : '';
 
 		// Get the layout and plugins
 		layout = document.querySelector('input[name="layout"]:checked').getAttribute('value');
@@ -479,6 +509,57 @@ var customizer = function () {
 	};
 
 	/**
+	 * Get the URL parameters
+	 * source: https://css-tricks.com/snippets/javascript/get-url-variables/
+	 * @param  {String} url The URL
+	 * @return {Object}     The URL parameters
+	 */
+	var getParams = function (url) {
+		var params = {};
+		var parser = document.createElement('a');
+		parser.href = url;
+		var query = parser.search.substring(1);
+		var vars = query.split('&');
+		for (var i=0; i < vars.length; i++) {
+			var pair = vars[i].split("=");
+			params[pair[0]] = decodeURIComponent(pair[1]);
+		}
+		return params;
+	};
+
+	var setCodeFromUrl = function () {
+		var params = getParams(window.location.href);
+
+		// Set compression
+		if (params.compression && params.compression.length > 0) {
+			var compression = document.querySelector('input[name="compression"][value="' + params.compression + '"]');
+			if (compression) {
+				compression.setAttribute('checked', 'checked');
+			}
+		}
+
+		// Set layout
+		if (params.layout && params.layout.length > 0) {
+			var layout = document.querySelector('input[name="layout"][value="' + params.layout + '"]');
+			if (layout) {
+				layout.setAttribute('checked', 'checked');
+			}
+		}
+
+		// Set plugins
+		if (params.plugins && params.plugins.length > 0) {
+			var plugins = params.plugins.split('+');
+			plugins.forEach(function (pluginName) {
+				var plugin = document.querySelector('input[name="plugins"][value="' + pluginName + '"]');
+				if (plugin) {
+					plugin.setAttribute('checked', 'checked');
+				}
+			});
+		}
+
+	};
+
+	/**
 	 * Handle click events
 	 * @param {Event} event  The click event
 	 */
@@ -508,6 +589,7 @@ var customizer = function () {
 	// document.addEventListener('change', changeHandler, false);
 
 	// Setup initial files
+	setCodeFromUrl();
 	generateCodeDebounce();
 
 };
