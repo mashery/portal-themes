@@ -14,7 +14,7 @@ document.addEventListener('portalIODocsShowMethod', function (event) {
 
 // Remove active class from method
 document.addEventListener('portalIODocsHideMethod', function (event) {
-	event.target.closest('.method').classList.add('method-active');
+	event.target.closest('.method').classList.remove('method-active');
 }, false);
 ```
 
