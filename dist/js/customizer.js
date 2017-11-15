@@ -476,7 +476,7 @@ var customizer = function () {
 
 		// Check if code should be minified or not
 		isMin = document.querySelector('input[name="compression"]:checked').getAttribute('value') === 'production' ? true : false;
-		minified = isMin ? '.min.beta' : '';
+		minified = isMin ? '.min' : '';
 
 		// Get the layout and plugins
 		layout = document.querySelector('input[name="layout"]:checked').getAttribute('value');
