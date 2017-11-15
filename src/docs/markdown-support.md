@@ -1,6 +1,6 @@
 # Markdown Support
 
-Blackbeard supports [GitHub-flavored Markdown](https://github.github.com/gfm/) for documentation and custom pages.
+Mashery Portal 2 supports [GitHub-flavored Markdown](https://github.github.com/gfm/) for documentation and custom pages.
 
 *__Note:__ To use markdown, you MUST disable TinyMCE by unchecking "Use TinyMCE" in Control Center. If you ever edit a page written in markdown with TinyMCE enabled, it will wrap your content in paragraph elements and break your page, preventing markdown from rendering.*
 
@@ -71,7 +71,7 @@ If, for some reason, you need to keep a leading or trailing `#`, you can either 
 
 ### Header IDs
 
-Blackbeard markdown automatically generates header IDs.
+Mashery Portal markdown automatically generates header IDs.
 
 ```md
 ## My cool header with ID
@@ -135,7 +135,7 @@ Both bold and italic can use either a `*` or an `_` around the text for styling.
 
 ## Strikethrough
 
-Like GitHub, Blackbeard supports strikethrough elements by adding two tilde (`~~`) characters around
+Like GitHub, the Mashery Portal supports strikethrough elements by adding two tilde (`~~`) characters around
 a word or groups of words.
 
 ```md
@@ -188,7 +188,7 @@ x = 2 + 2
 what is x
 ```
 
-You can specify a language after the triple backticks, and Blackbeard will automatically add syntax highlighting.
+You can specify a language after the triple backticks, and the Mashery Portal will automatically add syntax highlighting.
 
 	```javascript
 	var thing1 = document.querySelector('.thing2');
@@ -200,7 +200,7 @@ var thing1 = document.querySelector('.thing2');
 
 ## Lists
 
-Blackbeard markdown supports ordered (numbered) and unordered (bulleted) lists.
+Mashery Portal markdown supports ordered (numbered) and unordered (bulleted) lists.
 
 ### Unordered lists
 
@@ -230,7 +230,7 @@ You can make an ordered list by preceding list items with a number.
 2. Item 2
 3. Item 3
 
-It’s important to note that the actual numbers you use to mark the list have no effect on the HTML output Blackbeard markdown produces. So you can use the same number in all items if you wish to.
+It’s important to note that the actual numbers you use to mark the list have no effect on the HTML output Mashery Portal markdown produces. So you can use the same number in all items if you wish to.
 
 ```md
 0. Item 1
@@ -244,7 +244,7 @@ It’s important to note that the actual numbers you use to mark the list have n
 
 ### TaskLists
 
-Blackbeard markdown also supports GitHub styled takslists.
+Mashery Portal markdown also supports GitHub styled takslists.
 
 ```md
  - [x] checked list item
@@ -371,7 +371,7 @@ To put a *indented style* code block within a list item, the code block needs to
 
 ### Simple
 
-Blackbeard markdown will automagically turn every valid URL it finds in the text body to links for you.
+Mashery Portal markdown will automagically turn every valid URL it finds in the text body to links for you.
 
 ```md
 link to http://www.google.com/
