@@ -4,34 +4,9 @@ Labels make it easy for you to change headlines, labels, and messages in your Po
 
 Labels are changed by setting a `portalOptions.labels` value for the desired label. All of the available labels and their options names are detailed alphabetically below.
 
-## Customizing Labels
-
-When v1.x of Blackbeard goes live, these will be set under `Manage > Portal > Portal Settings` in the inline JavaScript area.
-
-For now, you can test their functionality by opening up the Console tab of Developer Tools in your browser and doing the following:
-
-0. Copy/paste your desired options from the list below into the console and hit enter.
-0. Paste `m$.setOptions(portalOptions)` in the console and hit enter to update Blackbeard's default settings.
-0. Paste `m$.renderPortal()` in the console and hit enter to re-render the site.
-
-### Example
-You can copy/paste this into the console in developer tools. It will update the user nav for logged out users.
-
-```js
-// Update the labels
-portalOptions.labels.userNav = {
-	signin: 'Login',
-	register: 'Join'
-};
-
-// Update the settings with our new options
-m$.setOptions(portalOptions);
-
-// Re-render the Portal
-m$.renderPortal();
-```
-
 ## The Labels
+
+Configure your labels under `Manage > Portal > Portal Settings` in the `Inline JavaScript > Body JavaScript` area.
 
 ### My Apps
 The page displaying a users registered applications.
