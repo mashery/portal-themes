@@ -1,6 +1,6 @@
 # Style and Script Hooks
 
-Blackbeard provides a handful of hooks you can use to adjust the style, layout, and content.
+Mashery Portal 2 provides a handful of hooks you can use to adjust the style, layout, and content.
 
 ## Style Hooks
 
@@ -8,7 +8,7 @@ The primary `#app-wrapper` container receives two classes on each page render.
 
 - `.category-*` is the content type. Examples include `.category-page` and `.category-docs`.
 - `.single-*` is a class unique to that specific page and not shared by any others. You can use it to target styles to a specific page.
-- `.content` is rendered on the primary content area `<div>` on custom pages and documentation. This class *can* be changed or overwritten if you [update the template](/docs/read/customizing/Templates) for either of these content types.
+- `.content` is rendered on the primary content area `<div>` on custom pages and documentation. This class *can* be changed or overwritten if you [update the template](/docs/read/customizing_your_portal/mashery_portal_2_documentation/Templates) for either of these content types.
 
 ```css
 /* Make the H1 element smaller on documentation pages */
