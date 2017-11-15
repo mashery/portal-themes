@@ -2,7 +2,7 @@
 
 Create beautiful, single-page documentation with toggleable code examples. Inspired by [Stripe](https://stripe.com/docs/api) and [PayPal's](https://developer.paypal.com/docs/api/) API documentation, and the [Slate open source project](https://github.com/lord/slate).
 
-[View the demo.](/docs/plugins/Better_Docs/demo/)
+[View the demo.](/docs/read/customizing_your_portal/plugins/better_docs/Demo)
 
 <div id="plugin-note"></div>
 
