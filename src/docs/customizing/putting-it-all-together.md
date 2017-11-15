@@ -1,6 +1,6 @@
 # Putting It All Together
 
-Let's look at how to take everything convered in the ["Customizing Your Portal"](/docs/read/customizing) section of the documentation and put it all together to customize our Portal.
+Let's look at how to take everything convered in [this seciton of the documentation](/docs/read/customizing_your_portal/mashery_portal_2_documentation) and put it all together to customize our Portal.
 
 For this exercise, we're going to...
 
@@ -13,7 +13,7 @@ For this exercise, we're going to...
 
 ## Our Portal Customizations
 
-Once version 1.x of Blackbeard goes live, these would get added to `Manage > Portal > Portal Settings` under one of the inline JavaScript sections.
+These would get added `Manage > Portal > Portal Settings` in the `Inline JavaScript > Body JavaScript` area.
 
 ```js
 // Update the logo
