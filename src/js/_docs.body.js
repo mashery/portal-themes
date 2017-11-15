@@ -107,12 +107,17 @@ window.addEventListener('portalAfterInit', function () {
  * Initialize plugins
  */
 window.addEventListener('portalAfterRender', function () {
+
     // Load Portal plugins
     astro.init();
     fluidvids.init({
         selector: ['iframe', 'object'], // runs querySelectorAll()
         players: ['www.youtube.com', 'player.vimeo.com'] // players to support
     });
+    window.addEventListener('portalAfterRenderAjax', function renderFluidVids () {
+        fluidvids.render();
+        window.removeEventListener('portalAfterRenderAjax', renderFluidVids, false);
+    }, false);
     var scroll = new SmoothScroll('.category-page a[href*="#"], .category-docs a[href*="#"], .category-docs a[href*="#"], .category-blogall a[href*="#"], .category-blogsingle a[href*="#"]', {
         ignore: '.js-scroll-ignore'
     });
@@ -142,6 +147,13 @@ window.addEventListener('portalAfterRender', function () {
             repo: 'portal-themes',
             root: 'docs/', // The root directory for all of my documentation
             failMessage: '<p>Unable to load content. Visit <a target="_blank" href="https://github.com/mashery/portal-themes/tree/master/docs/' + mashery.globals.github + '">https://github.com/mashery/portal-themes/tree/master/docs/' + mashery.globals.github + '</a> to view the documentation.</p>'
+        });
+    });
+
+    // Houdini
+    m$.loadJS('/files/houdini.min.js', function () {
+        houdini.init({
+            selectorToggle: '.collapse-toggle'
         });
     });
 
@@ -177,6 +189,15 @@ window.addEventListener('portalAfterRender', function () {
 
     });
 
+    // Latest Blog Posts
+    window.addEventListener('portalAfterGitHubRender', function () {
+        m$.loadJS('/files/latestBlogPosts.min.js', function () {
+            latestBlogPosts({
+                selector: '#latest-blog-posts-container'
+            });
+        });
+    });
+
     // Add logged-in/logged-out class
     if (window.mashery.loggedIn) {
         document.documentElement.classList.add('is-logged-in');
@@ -198,7 +219,7 @@ window.addEventListener('portalAfterRender', function () {
 var generateNavList = function (selector) {
     var list = document.querySelector(selector);
     if (!list) return;
-    document.querySelectorAll('#nav-docs .current-page li').forEach(function (item) {
+    document.querySelectorAll('#nav-docs .current-page > ul > li').forEach(function (item) {
         var newItem = item.cloneNode(true);
         list.append(newItem);
     });
@@ -322,3 +343,13 @@ var renderToC = function () {
 };
 window.addEventListener('portalAfterRender', renderToC, false);
 window.addEventListener('portalAfterGitHubRender', renderToC, false);
+
+
+/**
+ * Load additional stylesheets
+ */
+window.addEventListener('portalBeforeRender', function () {
+    // m$.loadCSS('/files/betterDocs.min.css');
+    m$.loadCSS('/files/images.min.css');
+    m$.loadCSS('/files/houdini.min.css');
+}, false);

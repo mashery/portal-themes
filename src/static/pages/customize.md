@@ -53,45 +53,45 @@ Pick your layout, and add plugins and components. In a future release, you'll al
 	<div class="grid-half">
 		<label>
 			<input type="checkbox" class="has-js has-events" name="plugins" value="astro">
-			<a target="_blank" href="/docs/read/plugins/ExpandandCollapse_Mobile_Navigation">Expand-and-Collapse Mobile Navigation</a>
+			<a target="_blank" href="/docs/read/customizing_your_portal/plugins/ExpandandCollapse_Mobile_Navigation">Expand-and-Collapse Mobile Navigation</a>
 		</label>
 		<label>
 			<input type="checkbox" class="has-js" name="plugins" value="githubDocs">
-			<a target="_blank" href="/docs/plugins/GitHubHosted_Documentation">GitHub-Hosted Documentation</a>
+			<a target="_blank" href="/docs/read/customizing_your_portal/plugins/GitHubHosted_Documentation">GitHub-Hosted Documentation</a>
 		</label>
 		<label>
 			<input type="checkbox" class="has-js has-events" name="plugins" value="fluidvids">
-			<a target="_blank" href="/docs/plugins/Responsive_Videos">Responsive iFrame Videos</a>
+			<a target="_blank" href="/docs/read/customizing_your_portal/plugins/Responsive_Videos">Responsive iFrame Videos</a>
 		</label>
 		<label>
 			<input type="checkbox" class="has-css" name="plugins" value="images">
-			<a target="_blank" href="/docs/plugins/Images_Styles">Image Styles</a> <em class="text-no-bold text-muted">(round, border, photograph)</em>
+			<a target="_blank" href="/docs/read/customizing_your_portal/plugins/Images_Styles">Image Styles</a> <em class="text-no-bold text-muted">(round, border, photograph)</em>
 		</label>
 		<label>
 			<input type="checkbox" class="has-css has-events" name="plugins" value="conditional-content">
-			<a target="_blank" href="/docs/plugins/Conditional_Content">Conditional Content</a> <em class="text-no-bold text-muted">(logged-in/logged-out)</em>
+			<a target="_blank" href="/docs/read/customizing_your_portal/plugins/Conditional_Content">Conditional Content</a> <em class="text-no-bold text-muted">(logged-in/logged-out)</em>
 		</label>
 	</div>
 	<div class="grid-half">
 		<label>
 			<input type="checkbox" class="has-css has-js has-events" name="plugins" value="houdini">
-			<a target="_blank" href="/docs/plugins/ExpandandCollapse_Accordions">Expand-and-Collapse/Accordions</a>
+			<a target="_blank" href="/docs/read/customizing_your_portal/plugins/ExpandandCollapse_Accordions">Expand-and-Collapse/Accordions</a>
 		</label>
 		<label>
 			<input type="checkbox" class="has-js has-events" name="plugins" value="smooth-scroll">
-			<a target="_blank" href="/docs/plugins/Smooth_Scroll">Smooth Scroll</a>
+			<a target="_blank" href="/docs/read/customizing_your_portal/plugins/Smooth_Scroll">Smooth Scroll</a>
 		</label>
 		<label>
 			<input type="checkbox" class="has-js has-css has-events" name="plugins" value="betterDocs">
-			<a target="_blank" href="/docs/read/plugins/Better_Docs">Better Docs</a>
+			<a target="_blank" href="/docs/read/customizing_your_portal/plugins/better_docs">Better Docs</a>
 		</label>
 		<label>
 			<input type="checkbox" class="has-css" name="plugins" value="code-overflow">
-			<a target="_blank" href="/docs/read/plugins/code_overflow">Code Overflow</a>
+			<a target="_blank" href="/docs/read/customizing_your_portal/plugins/Code_Overflow">Code Overflow</a>
 		</label>
 		<label>
 			<input type="checkbox" class="has-js has-events" name="plugins" value="latestBlogPosts">
-			<a target="_blank" href="/docs/read/plugins/latest_blog_posts">Latest Blog Posts</a>
+			<a target="_blank" href="/docs/read/customizing_your_portal/plugins/Latest_Blog_Posts">Latest Blog Posts</a>
 		</label>
 	</div>
 </div>
