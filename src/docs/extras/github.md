@@ -2,7 +2,7 @@
 
 You can now host your documentation on GitHub&mdash;taking advantage of its markdown support and version control features&mdash;and display it dynamically on your Mashery Portal.
 
-To make this work, we'll use Blackbeard's [event hooks](/docs/read/customizing/Events) and [custom JavaScript globals](/docs/read/customizing/hooks#custom-globals) with the [GitHub Content API](https://developer.github.com/v3/repos/contents/).
+To make this work, we'll use the Mashery Portal's [event hooks](/docs/read/customizing_your_portal/mashery_portal_2_documentation/Event_Hooks) and [custom JavaScript globals](/docs/read/customizing_your_portal/mashery_portal_2_documentation/Style_and_Script_Hooks#custom-globals) with the [GitHub Content API](https://developer.github.com/v3/repos/contents/).
 
 ## Getting Started
 
@@ -10,7 +10,7 @@ To make this work, we'll use Blackbeard's [event hooks](/docs/read/customizing/E
 
 githubDocs.js is a tiny little helper script that fetches content from GitHub via the Content API, base64 decodes it, converts any markdown into HTML, and injects it into the DOM.
 
-Load it into your portal after it's rendered using one of the [custom event hooks](/docs/read/customizing/Events) and [`m$.loadJS()`](/docs/read/customizing/API#loadjs).
+Load it into your portal after it's rendered using one of the [custom event hooks](/docs/read/customizing_your_portal/mashery_portal_2_documentation/Event_Hooks) and [`m$.loadJS()`](/docs/read/customizing_your_portal/mashery_portal_2_documentation/JavaScript_API#loadjs).
 
 ```js
 window.addEventListener('portalAfterRender', function () {
@@ -54,7 +54,7 @@ window.addEventListener('portalAfterRender', function () {
 
 ### 4. Point to your content
 
-In Control Center under `Manage > Content`, click on the page you'd like to render from GitHub. Uncheck "Use TinyMCE", and add an inline script with a [global script hook](/docs/read/customizing/hooks) named `github`.
+In Control Center under `Manage > Content`, click on the page you'd like to render from GitHub. Uncheck "Use TinyMCE", and add an inline script with a [global script hook](/docs/read/customizing_your_portal/mashery_portal_2_documentation/Style_and_Script_Hooks) named `github`.
 
 It should be a string that points to the content path in your project (within the `root` directory if you specified one).
 
@@ -68,13 +68,13 @@ And that's it!
 
 ## An Example
 
-Here's an example from the Blackbeard demo Portal.
+Here's an example from this demo Portal.
 
 **Setup**
 
 ```js
 window.addEventListener('portalAfterRender', function () {
-	m$.loadJS('https://stagingcs1.mashery.com/files/githubDocs.min.beta.js', function () {
+	m$.loadJS('https://stagingcs1.mashery.com/files/githubDocs.min.js', function () {
 		githubDocs({
 			user: 'mashery',
 			repo: 'blackbeard',
