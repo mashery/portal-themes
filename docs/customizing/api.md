@@ -1,10 +1,10 @@
 # JavaScript API
 
-Blackbeard includes smart defaults and simple options and settings to make it easy for you to configure and customize your Portal.
+Mashery Portal 2 includes smart defaults and simple options and settings to make it easy for you to configure and customize your Portal.
 
 But for developers who want more fine-grained control and customization, it also provides a robust JavaScript API that you can use to extend functionality with your own scripts.
 
-All of Blackbeard's APIs are namespaced under the `m$` global variable.
+All of the Mashery Portal's APIs are namespaced under the `m$` global variable.
 
 ## `loadJS()`
 Load a JavaScript file asynchronously. Adapted from [loadJS by Filament Group](https://github.com/filamentgroup/loadJS/).
