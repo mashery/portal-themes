@@ -1,6 +1,6 @@
 # Putting It All Together
 
-Let's look at how to take everything convered in [this seciton of the documentation](/docs/read/customizing_your_portal/mashery_portal_2_documentation) and put it all together to customize our Portal.
+Let's look at how to take everything convered in the [Customizations](/docs/read/customizing_your_portal/mashery_portal_2_documentation) section and put it all together to customize our Portal.
 
 For this exercise, we're going to...
 
