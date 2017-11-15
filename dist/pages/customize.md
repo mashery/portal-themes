@@ -1,8 +1,6 @@
-<!-- Pick your layout, add plugins and components, and customize the color palette to match your brand. Layout and color changes will automatically live preview on this site. -->
+Themes are pre-bundled Mashery Portal configurations you can use to build an awesome Portal more quickly.
 
-Themes are pre-bundled [labels, templates, and plugins](/docs/read/customizing) that help you build an awesome Portal more quickly.
-
-Pick your layout, and add plugins and components. In a future version, you'll also be able to customize the color palette and see a live preview of your theme.
+Pick your layout, and add plugins and components. In a future release, you'll also be able to customize colors. Once you're setup, [dig into the documentation](/docs/customizing_your_portal/mashery_portal_2_documentation/) to learn how to further customize your Portal.
 
 <div class="row">
 	<div class="grid-third text-right-large">
@@ -142,48 +140,12 @@ Must be a valid CSS color attribute (examples: `#000`, `rgb(0, 0, 0)`, `rgba(0, 
 
 ## 4. Setup your Portal.
 
-### 4a. First, add the core Blackbeard files to your site.
+1. Upload your CSS file via the File Manager in Control Center. Then go to `Manage > Portal > Portal Settings`, and link to it under the `Custom CSS Files` section.
+2. Load and initialize your JavaScript.
 
-To ensure that you always have the latest version of Blackbeard, load it from the CDN.
+	Copy-and-paste the following code into one of the `Inline JavaScript` sections under `Manage > Portal > Portal Settings` in control center. If you have a JavaScript file, upload it via the File Manager in Control Center.
 
-*__Note:__ These files will be auto-loaded via the core after the beta test, and this step will go away.*
+	<pre class="lang-javascript"><code id="download-init">// No initialization needed...</code></pre>
 
-**Header JS File**
 
-```
-https://dinw9xheo7f2n.cloudfront.net/js/placeholders.min.beta.js
-```
-
-**Body JS File**
-
-```
-https://dinw9xheo7f2n.cloudfront.net/js/app.min.beta.js
-```
-
-**Header JS Inline**
-
-This bootstraps in the polyfills needed to run Blackbeard across a variety of browsers. It takes advantage of a hack with the inline JS sections that let's us add additional content to the header.
-
-<pre class="lang-html"><code>&lt;/script&gt;
-&lt;script src="https://cdn.polyfill.io/v2/polyfill.min.js"&gt;
-&lt;script&gt;</code></pre>
-
-**Body JS Inline**
-
-```js
-// Initialize the portal after the file loads
-// The event listener hack is required because the inline JS loads *before* the external file does
-window.addEventListener('portalLoaded', function () {
-	m$.init(portalOptions);
-}, false);
-```
-
-### 4b. Next, load your theme styles.
-
-Upload your CSS file via the File Manager in Control Center. Then go to `Manage > Portal > Portal Settings`, and link to it under the `Custom CSS Files` section.
-
-### 4c. Finally, load and initialize your JavaScript.
-
-Copy-and-paste the following code into one of the `Inline JavaScript` sections under `Manage > Portal > Portal Settings` in control center. If you have a JavaScript file, upload it via the File Manager in Control Center.
-
-<pre class="lang-javascript"><code id="download-init">// No initialization needed...</code></pre>
+**Ready to dig deeper?** [Check out the full Mashery Portal 2.0 documentation.](/docs/customizing_your_portal/mashery_portal_2_documentation/)

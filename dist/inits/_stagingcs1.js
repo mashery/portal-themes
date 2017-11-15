@@ -543,12 +543,3 @@ window.addEventListener('portalLoaded', function () {
 	m$.loadCSS('https://stagingcs1.mashery.com/files/conditional-content.min.beta.css');
 	m$.loadCSS('https://stagingcs1.mashery.com/files/houdini.min.beta.css');
 }, false);
-
-
-/**
- * Initialize the Portal
- */
-
-window.addEventListener('portalLoaded', function () {
-	m$.init(portalOptions);
-}, false);

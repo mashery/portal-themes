@@ -1,35 +1,12 @@
 # Options & Settings
 
-Blackbeard let's you customize and configure a variety of options using the `portalOptions` JavaScript variable.
+Mashery Portal 2 let's you customize and configure a variety of options using the `portalOptions` JavaScript variable.
 
 All of the available options and settings are detailed alphabetically below.
 
-## Customizing Options
-
-When v1.x of Blackbeard goes live, these will be set under `Manage > Portal > Portal Settings` in the inline JavaScript area.
-
-For now, you can test their functionality by opening up the Console tab of Developer Tools in your browser and doing the following:
-
-0. Copy/paste your desired options into the console and hit enter.
-0. Paste `m$.setOptions(portalOptions)` in the console and hit enter to update Blackbeard's default settings.
-0. Paste `m$.renderPortal()` in the console and hit enter to re-render the site.
-
-### Example
-
-You can copy/paste this into the console in developer tools. It will add a logo.
-
-```js
-// Update the logo
-portalOptions.logo = '<img height="44" width="180" alt="Mashery" src="https://support.mashery.com/files/tibco-mashery.jpg">';
-
-// Update the settings with our new options
-m$.setOptions(portalOptions);
-
-// Re-render the Portal
-m$.renderPortal();
-```
-
 ## The Options
+
+Configure your options under `Manage > Portal > Portal Settings` in the `Inline JavaScript > Body JavaScript` area.
 
 ### Ajax page loads
 Whether to load pages async or with a page reload
