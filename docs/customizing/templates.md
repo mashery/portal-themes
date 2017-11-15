@@ -1,75 +1,12 @@
 # Templates
 
-With templates, you can modify the layout of and content of any page on your Portal.
+With templates, you can modify the layout and content of any page on your Portal.
 
 Templates are modified by setting a `portalOptions.templates` value for the desired template. They can be simple JavaScript strings, or for more complex or logic-driven layouts, a function that returns a string.
 
 Templates also accept placeholder variables that are automatically replaced with content during the render process. All of the available templates and their accepted variables are detailed alphabetically below.
 
-## Customizing Templates
-
-When v1.x of Blackbeard goes live, these will be set under `Manage > Portal > Portal Settings` in the inline JavaScript area.
-
-For now, you can test their functionality by opening up the Console tab of Developer Tools in your browser and doing the following:
-
-0. Copy/paste your desired template from the list below into the console and hit enter.
-0. Paste `m$.setOptions(portalOptions)` in the console and hit enter to update Blackbeard's default settings.
-0. Paste `m$.renderPortal()` in the console and hit enter to re-render the site.
-
-*__Note:__ This may produce a layout you're unhappy with. Reload the browser to reset this demo Portal back to it's defaults.*
-
-### Example
-You can copy/paste this into the console in developer tools. It will update the base layout.
-
-```js
-// Remove the user nav
-portalOptions.templates.userNav = null;
-
-// Update the primary navigation
-portalOptions.templates.primaryNav = function () {
-	var template =
-		'<div class="nav-primary nav-wrap nav-collapse" id="nav-primary">' +
-			'<div class="container padding-top-small padding-bottom-small">' +
-				'<a id="logo" class="logo margin-bottom" href="/">{{content.logo}}</a>' +
-				'<a role="button" class="nav-toggle" id="nav-primary-toggle" data-nav-toggle="#nav-primary-menu" href="#">{{content.menuToggle}}</a>' +
-				'<div class="nav-menu" id="nav-primary-menu">' +
-					'<ul class="nav" id="nav-primary-list">' +
-						'{{content.navItemsPrimary}}' +
-					'</ul>' +
-					'<ul class="nav-user-list" id="nav-user-list">' +
-						'{{content.navItemsUser}}' +
-					'</ul>' +
-					'{{content.searchForm}}' +
-					(mashery.contentType === 'docs' ? '<h2 class="margin-top">In The Docs</h2><ul class="nav-docs" id="nav-docs">{{content.secondary}}</ul>' : '') +
-				'</div>' +
-			'</div>' +
-		'</div>';
-	return template;
-};
-
-// Update the base layout
-portalOptions.templates.layout =
-	'<div class="row row-no-padding clearfix">' +
-		'<div class="grid-three-fourths">' +
-			'{{layout.main}}' +
-			'<footer class="footer" id="footer">' +
-				'{{layout.footer1}}' +
-				'{{layout.navSecondary}}' +
-				'{{layout.footer2}}' +
-			'</footer>' +
-		'</div>' +
-		'<div class="grid-fourth">' +
-			'<a class="screen-reader screen-reader-focusable" href="#main">Skip to content</a>' +
-			'{{layout.navPrimary}}' +
-		'</div>' +
-	'</div>';
-
-// Update the settings with our new options
-m$.setOptions(portalOptions);
-
-// Re-render the Portal
-m$.renderPortal();
-```
+Configure your labels under `Manage > Portal > Portal Settings` in the `Inline JavaScript > Body JavaScript` area.
 
 ## Global Placeholder Variables
 
@@ -80,7 +17,7 @@ Placeholder variables for content.
 
 - `{{mashery.area}}` - The name of your Portal as defined in Control Center.
 - `{{content.heading}}` - The title of the page's H1 element, if one exists.
-- `{{content.main}}` - The main content for the page. On custom pages and documentation, this is whatever content you've entered in Control Center. On Mashery-generate pages, it's the primary body content. On some pages, this is overridden by a [page-specific label that you can customize](/docs/read/customizing/Labels).
+- `{{content.main}}` - The main content for the page. On custom pages and documentation, this is whatever content you've entered in Control Center. On Mashery-generate pages, it's the primary body content. On some pages, this is overridden by a [page-specific label that you can customize](/docs/read/customizing_your_portal/mashery_portal_2_documentation/Labels).
 - `{{content.form}}` - On pages with forms (sign in, registration, etc.), the form.
 - `{{content.secondary}}` - Varies by page. On the Documentation pages, it's the navigation sidebar.
 - `{{content.logo}}` - Your logo, if one is specified. If not, falls back to `{{mashery.area}}`.
