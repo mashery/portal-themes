@@ -1,6 +1,6 @@
 # Event Hooks
 
-Blackbeard emits custom JavaScript events that you can hook into to run other scripts. Use `addEventListener()` on the `window` element to listen for Blackbeard events.
+Mashery Portal 2 emits custom JavaScript events that you can hook into to run other scripts. Use `addEventListener()` on the `window` element to listen for Portal events.
 
 For example, here's how to open an alert window every time a page is rendered.
 
@@ -27,4 +27,4 @@ window.addEventListener('portalAfterRender', function (event) {
 
 ## Emitting your own custom events
 
-Blackbeard also includes [a JavaScript API for emitting your own custom events](/docs/read/customizing/API#emitevent).
+Mashery Portal 2 also includes [a JavaScript API for emitting your own custom events](/docs/read/customizing_your_portal/mashery_portal_2_documentation/JavaScript_API#emitevent).
