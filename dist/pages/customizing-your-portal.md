@@ -1,6 +1,6 @@
 <span class="text-large">Version 2.0 of the Mashery Portal runs on a modern, JavaScript-powered front end that gives you incredible amounts of control and flexibility.</span>
 
-Mashery Portal 2.0 is currently in beta. To join, ask your Mashery representative to enable the *Enhanced Portal* flag in MashDash.
+Mashery Portal 2.0 is currently in beta. To join, ask your Mashery representative to [enable the *Enhanced Portal* flag in MashDash](/docs/customizing_your_portal/Enable_in_MashDash).
 
 <a class="btn btn-large" href="/docs/read/customizing_your_portal/Theme_Builder">Get Started &rarr;</a>
 

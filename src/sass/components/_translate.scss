@@ -1,0 +1,43 @@
+/*!
+ * translate.js v1.0.0
+ * Provide multi-language portal suport
+ * (c) 2017 TIBCO Software Inc.
+ * Written by Chris Ferdinandi
+ * All Rights Reserved
+ */
+
+/**
+ * Translated content
+ */
+.translate {
+	display: none;
+	visibility: hidden;
+}
+
+.translate.active {
+	display: block;
+	visibility: visible;
+}
+
+/**
+ * Translation toggle links/buttons
+ */
+[data-translate] {
+	display: none;
+	visibility: hidden;
+}
+
+.js-translate [data-translate] {
+	display: block;
+	visibility: visible;
+}
+
+[data-translate].active {
+	cursor: not-allowed;
+	font-weight: bold;
+	pointer-events: none;
+}
+
+a[data-translate].active {
+	color: $color-black;
+}

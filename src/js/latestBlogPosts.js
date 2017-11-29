@@ -1,3 +1,10 @@
+/*!
+ * latestBlogPosts.js v1.0.0
+ * Load the latest blog posts onto any page
+ * (c) 2017 TIBCO Software Inc.
+ * Written by Chris Ferdinandi
+ * All Rights Reserved
+ */
 var latestBlogPosts = function (options) {
 
 	var defaults = {

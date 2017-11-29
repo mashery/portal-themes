@@ -523,6 +523,7 @@
 			headerHeight = null;
 			eventTimeout = null;
 			animationInterval = null;
+
 		};
 
 		/**
