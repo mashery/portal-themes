@@ -8,9 +8,9 @@ Add multi-language support to your Mashery developer portal.
 ## Demo
 
 <ul class="list-inline">
-	<li><a data-translate="en" href="#">EN</a></li>
-	<li><a data-translate="fr" href="#">FR</a></li>
-	<li><a data-translate="sp" href="#">SP</a></li>
+	<li><a class="js-scroll-ignore" data-translate="en" href="#">EN</a></li>
+	<li><a class="js-scroll-ignore" data-translate="fr" href="#">FR</a></li>
+	<li><a class="js-scroll-ignore" data-translate="sp" href="#">SP</a></li>
 </ul>
 
 <div class="translate translate-en active">
@@ -24,6 +24,8 @@ Add multi-language support to your Mashery developer portal.
 <div class="translate translate-sp">
 	<p>¡Hola Mundo!</p>
 </div>
+
+*__Psst...__ notice how the navigation menu up at the top of the page updates, too?*
 
 
 ## Getting Started
