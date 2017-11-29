@@ -71,12 +71,12 @@ Pick your layout, and add plugins and components. In a future release, you'll al
 			<input type="checkbox" class="has-css has-events" name="plugins" value="conditional-content">
 			<a target="_blank" href="/docs/read/customizing_your_portal/plugins/Conditional_Content">Conditional Content</a> <em class="text-no-bold text-muted">(logged-in/logged-out)</em>
 		</label>
-	</div>
-	<div class="grid-half">
 		<label>
 			<input type="checkbox" class="has-css has-js has-events" name="plugins" value="houdini">
 			<a target="_blank" href="/docs/read/customizing_your_portal/plugins/ExpandandCollapse_Accordions">Expand-and-Collapse/Accordions</a>
 		</label>
+	</div>
+	<div class="grid-half">
 		<label>
 			<input type="checkbox" class="has-js has-events" name="plugins" value="smooth-scroll">
 			<a target="_blank" href="/docs/read/customizing_your_portal/plugins/Smooth_Scroll">Smooth Scroll</a>
@@ -92,6 +92,10 @@ Pick your layout, and add plugins and components. In a future release, you'll al
 		<label>
 			<input type="checkbox" class="has-js has-events" name="plugins" value="latestBlogPosts">
 			<a target="_blank" href="/docs/read/customizing_your_portal/plugins/Latest_Blog_Posts">Latest Blog Posts</a>
+		</label>
+		<label>
+			<input type="checkbox" class="has-js has-css has-events" name="plugins" value="translate">
+			<a target="_blank" href="/docs/customizing_your_portal/plugins/Translate">Translate</a> <em class="text-no-bold text-muted">(multi-language support)</em>
 		</label>
 	</div>
 </div>

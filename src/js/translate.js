@@ -150,7 +150,7 @@
 		 */
 		translate.removeSavedLang = function () {
 			localStorage.removeItem('translateLang');
-		}
+		};
 
 		/**
 		 * Set the current language
