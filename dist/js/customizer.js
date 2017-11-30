@@ -157,7 +157,13 @@ var customizer = function () {
 	 * Get initialization code for the selected theme
 	 */
 	var getThemeInits = function () {
-		if (cache[baseURL + 'inits/' + layout + '.js']) {
+
+		if (layout === 'diy') {
+
+			// Add any plugins
+			getPluginInits();
+
+		} else if (cache[baseURL + 'inits/' + layout + '.js']) {
 
 			// Create styles
 			inits = cache[baseURL + 'inits/' + layout + '.js'];
@@ -302,11 +308,21 @@ var customizer = function () {
 	 * Get the overrides.css file
 	 */
 	var getOverrides = function () {
-		if (cache[baseURL + 'css/overrides' + minified + '.css']) {
+		if (layout === 'diy') {
+
+			// Update the download button
+			createDownload(btnCSS, styles);
+
+		} else if (cache[baseURL + 'css/overrides' + minified + '.css']) {
 
 			// Create scripts
 			styles += cache[baseURL + 'css/overrides' + minified + '.css'].styles;
 			stylesSize += cache[baseURL + 'css/overrides' + minified + '.css'].size;
+
+			// Update the download button
+			createDownload(btnCSS, styles);
+
+		} else {
 
 			// Update the download button
 			createDownload(btnCSS, styles);
@@ -424,7 +440,10 @@ var customizer = function () {
 	 * Get the base layout CSS
 	 */
 	var getLayout = function () {
-		if (cache[baseURL + 'css/' + layout + minified + '.css']) {
+
+		if (layout = 'diy') {
+			getPlugins();
+		} else if (cache[baseURL + 'css/' + layout + minified + '.css']) {
 
 			// Create styles
 			styles = cache[baseURL + 'css/' + layout + minified + '.css'].styles;

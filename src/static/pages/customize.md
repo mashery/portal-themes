@@ -23,25 +23,35 @@ Pick your layout, and add plugins and components. In a future release, you'll al
 ## 1. Pick your layout.
 
 <div class="row">
-	<div class="grid-third margin-bottom">
+	<div class="grid-half margin-bottom">
 		<label>
 			<img title="Default Theme" src="/files/sparrow.jpg"><br>
 			<input type="radio" name="layout" value="default" checked>
 			Default
 		</label>
 	</div>
-	<div class="grid-third margin-bottom">
+	<div class="grid-half margin-bottom">
 		<label>
 			<img title="Blackbeard Theme" src="/files/blackbeard.jpg"><br>
 			<input type="radio" name="layout" value="blackbeard">
 			Blackbeard
 		</label>
 	</div>
-	<div class="grid-third margin-bottom">
+</div>
+
+<div class="row">
+	<div class="grid-half margin-bottom">
 		<label>
 			<img title="Skinny Nav Theme" src="/files/skinny-nav.jpg"><br>
 			<input type="radio" name="layout" value="skinny-nav">
 			Skinny Nav
+		</label>
+	</div>
+	<div class="grid-half margin-bottom">
+		<label>
+			<img title="No Theme" src="/files/themeless.jpg"><br>
+			<input type="radio" name="layout" value="diy">
+			No Layout <em class="text-no-bold text-muted">(roll your own)</em>
 		</label>
 	</div>
 </div>
